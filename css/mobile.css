@@ -1,0 +1,255 @@
+/*
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+##Device = 데스크탑
+##Screen = 1281px 이상 해상도 데스크탑
+*/
+
+@media (min-width: 1281px) {
+    body{
+        /* background-color: pink; */
+    }
+
+}
+/*
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+##Device = 랩탑, 데스크탑
+##Screen = 1025px에서 1280px 사이
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body{
+        /* background-color: yellow; */
+    }
+    /* 위젯 없애기 */
+    .left-widget, .right-widget{
+        display: none;
+    }
+}
+
+/*
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(가로)
+##Screen = 768px에서 1024px 사이
+*/
+/* 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {}
+/*
+##Device = Tablets, Ipads (portrait),
+##Screen = B/w 768px to 1024px
+##Device = 태블릿, 아이패드(세로),
+##Screen = 768px에서 1024px 사이
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    body{
+        /* background-color: yellowgreen; */
+    }
+    /* 위젯 없애기 */
+    .left-widget, .right-widget{
+        display: none;
+    }
+}
+
+/*
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+##Device = 저해상도 태블릿, 모바일(가로)
+##Screen = 481px에서 767px 사이
+*/
+@media (min-width: 320px) and (max-width: 767px) {
+    /* 위젯 없애기 */
+    .left-widget, .right-widget{
+        display: none;
+    }
+
+    /* 헤더 설정-모바일 */
+    .mobile-logo{
+        display: flex;
+        font-size: 1.3rem;
+    }
+    .header{
+        min-height: 3.5rem;
+        justify-content: space-between;
+        position: fixed;
+    }
+    .header-btn{
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-btn.active,.header-btn:active{
+        color: var(--secondary-color);
+    }
+    .search-widget.active{
+        height: auto;
+        max-height: 100%;
+        display: inherit;
+        padding: 0.5rem;
+        border: var(--disable-color) solid thin;
+        box-shadow: 0px 7px 7px #0000004f;
+    }
+    .search-widget{
+        top: 3.5rem;
+        display: inherit;
+        left: 0;
+        width: -webkit-fill-available;
+        position: fixed;
+        background-color: #fff;
+        z-index: 6;
+        padding: 0.5rem;
+        border-radius: 0;
+        max-height: 0;
+        padding: 0;
+        border: var(--disable-color) solid 0px;
+        overflow: hidden;
+        box-shadow: 0px 0px #0000004f;
+    }
+    #local-search-result ul {
+        padding: 0;
+        margin-top: 0.5rem;
+        max-height: 20rem;
+    }
+    .search-mention {
+        margin-top: .5rem;
+    }
+    .pagenater{
+        top: 3.5rem;
+    }
+    .header-display{
+        min-height: 18.5rem;
+    }
+    .menus{
+    flex:none;
+    }
+
+    .header .menus a .header-name {
+        width: 0;
+        overflow: hidden;
+    }
+    .header-icon {
+        margin-right: 0rem;
+    }
+     .header .menus a {
+        min-width: 3.5rem;
+    }
+
+    /*404 페이지*/
+    .alert-title{
+        margin: .5rem 0;
+    }
+    .alert-subtitle{
+        margin: .5rem 0;
+    }
+    /* 페이지 공통 */
+    .post,.archive-page,.prologue,.guest-page,.guest-alert {
+        padding: 1.5rem;
+    }
+    .post .title,
+    .prologue .title,
+    .guest-page .title,
+    .guest-alert .title {
+        padding-bottom: 1rem;
+    }
+    .archive-page .title{
+        padding-bottom: .5rem;
+    }
+
+    /* archive 아카이브 페이지 */
+    .archive-zone{
+        padding: 0.5rem 0rem 0rem 0.5rem;
+    }
+    .archive-alert {
+        margin: 0;
+    }
+    .post-factor-wrap {
+        flex-direction: column;
+    }
+    .th-left{
+        margin-right: 0rem;
+        width: auto;
+    }
+    .th-right .category {
+        padding-top: 0.3rem;
+        padding-bottom: 0rem;	
+    }
+    .th-right .write-date {
+        top: 12.5rem;
+    }
+    .archive-searcher{
+        padding: .5rem;
+    }
+
+    /*guest 페이지*/
+    .guest-alert {
+        font-size: .8rem;
+    }
+
+    /* post 페이지 */
+    body{
+        font-size:.85rem;
+        line-height: 1.8;
+    }
+    .post-header{
+        margin: 0rem -.5rem 0rem -1rem;
+        overflow: hidden;
+    }
+    .post-header .post-category {
+        font-size: .9rem;
+    }
+    .post-header .post-title {
+        font-size: var(--post-title-mb);
+        white-space: nowrap;
+        overflow: auto;
+        margin:.4rem 0rem 1rem 0rem;
+    }
+    .post-header .post-date {
+        top: 0;
+    }
+    .post-tag{
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .post-content{
+        padding-top: auto;
+        padding-bottom: 1.5rem;
+        font-size:.85rem;
+        line-height: 1.8;
+    }
+    .post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+        margin: 1rem 0;
+        padding: 0;
+    }
+    figure {
+        margin: 1rem 0;
+    }
+    blockquote {
+        padding: 0rem 1rem 0 0.5rem;
+        line-height: 1.7;
+        word-break: break-word;
+    }
+    blockquote::before {
+        content: '💭';
+    }
+    .post-content ul, .post-content ol{
+        padding-left: 1.8rem;
+    }
+
+}
+
+/*
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+##Device = 대부분의 스마트폰 모바일 기기(세로)
+##Screen = 320px에서 479px 사이
+480px
+*/
+
+/* @media (min-width: 320px) and (max-width: 480px) {
+    body{
+        background-color: plum;
+    }
+    
+} */

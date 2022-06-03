@@ -1,0 +1,14 @@
+.footer{
+    min-height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: var(--disable-color) thin solid;
+    font-size: .9rem;
+    color: var(--tag-color);
+}
+.footer-contents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

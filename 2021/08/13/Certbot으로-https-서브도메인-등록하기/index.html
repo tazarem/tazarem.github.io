@@ -1,0 +1,331 @@
+<html lang="ko">
+    <!-- head -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      Coding Coconut
+    </title>
+    <!-- 스크립트들 쓰기~ -->
+    <link rel="stylesheet" href="/libs/fontawesome5/all.css">
+    <link rel="stylesheet" href="/css/nanumgothic_coding.css">
+    <link rel="stylesheet" href="/css/nanumsquare_round.css">
+    
+    <link rel="stylesheet" href="/css/generic.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/widget.css">
+    <link rel="stylesheet" href="/css/prologue.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/archives.css">
+    <link rel="stylesheet" href="/css/guest.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/tracker.js"></script>
+    <script src="/js/imgoverlay.js"></script>
+
+    
+      <link rel="stylesheet" href="/css/searcher.css">
+      <script src="/js/search.js"></script>
+      <script type="text/javascript">      
+        var search_path = "search.json";
+        if (search_path.length == 0) {
+          search_path = "search.json";
+        }
+        var path = "/" + search_path;
+        console.log(path)
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      </script>
+   
+
+   <link rel="stylesheet" href="/css/mobile.css">
+   <link rel="stylesheet" href="/css/hide.css">
+
+   <script src="/js/attacher.js"></script>
+
+   <script>
+    $(function(){
+        draw_tracker()
+    })
+   </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <!-- head -->
+    <body class="scroll">
+    <div class="header-wrap">
+    <div class="header">
+        <div class="mobile-logo" >
+            <!-- Coding Coconut -->
+
+            <div class="header-btn" onclick="toTheTop()">
+                <i class="fas fa-level-up-alt"
+                ></i>
+            </div>
+            
+                <div class="header-btn" id="searchToggler" onclick="toggleSearcher(this)">
+                    <i class="fas fa-search"></i>
+                </div>
+            
+        </div>
+        <div class="menus">
+            
+                <a href="/prologue" class="header-btn ">
+                    <i class="header-icon fas fa-user-astronaut"></i>
+                    <div class="header-name">Prologue
+                    </div>
+                </a>
+            
+                <a href="/" class="header-btn ">
+                    <i class="header-icon fas fa-satellite"></i>
+                    <div class="header-name">Blog
+                    </div>
+                </a>
+            
+                <a href="/archives" class="header-btn ">
+                    <i class="header-icon fas fa-meteor"></i>
+                    <div class="header-name">Archives
+                    </div>
+                </a>
+            
+                <a href="/guest" class="header-btn ">
+                    <i class="header-icon fas fa-rocket"></i>
+                    <div class="header-name">Guest
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+    
+    <div class="header-display">
+        <!-- 슬라이더나 위젯 넣어도 되고.. 헤더 이미지 넣어도 됨 -->
+        <div class="header-title-zone" onclick="goToMain()">
+            <div class="blog-title">
+                Coding Coconut
+            </div>
+            <div class="blog-subtitle">
+                개발 블로그
+            </div>
+        </div>
+    </div>
+    
+        <!-- 검색 위젯 -->
+
+<div class="search-widget">
+    <div class="form-group">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" 
+        id="local-search-input" 
+        name="q" results="0"
+        placeholder="Search Posts"
+        class="st-search-input st-default-search-input form-control"
+        />
+    </div>  
+    <div id="local-search-result"></div>
+</div>
+
+    
+</div>
+
+
+    <div class="contents">
+        
+
+    <!-- 단일 게시물 -->
+    <div class="post">
+    <!-- 토픽 트래커. 작성할 것-->
+<div class="left-widget">
+        <div class="left-component category">
+    <div class="title">
+        <i class="fas fa-bookmark"></i>
+        Category
+    </div>
+    <div class="category-zone">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/">CI/CD</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/Docker/">Docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Express/">Express</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Hexo/">Hexo</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a><span class="category-list-count">2</span></li></ul>
+    </div>
+</div>
+
+        
+    <div class="left-component topic-tracker">
+        <div class="title">
+            <i class="fas fa-thumbtack"></i>
+            Topic Tracker
+        </div>
+        <div class="track-list">
+    
+        </div>
+    </div>
+
+    
+        <div class="left-component tags">
+    <div class="title">
+        <i class="fas fa-tags"></i>
+        Tags</div>
+    <div class="tag-zone">
+        <a href="/tags/Certbot/" style="font-size: 10px; color: #d17def">Certbot</a> <a href="/tags/asyncawait/" style="font-size: 10px; color: #d17def">asyncawait</a> <a href="/tags/bash/" style="font-size: 10px; color: #d17def">bash</a> <a href="/tags/cmd/" style="font-size: 10px; color: #d17def">cmd</a> <a href="/tags/docker/" style="font-size: 10px; color: #d17def">docker</a> <a href="/tags/hexo/" style="font-size: 20px; color: #7685d8">hexo</a> <a href="/tags/pm2/" style="font-size: 10px; color: #d17def">pm2</a> <a href="/tags/postman/" style="font-size: 10px; color: #d17def">postman</a> <a href="/tags/ssh/" style="font-size: 10px; color: #d17def">ssh</a> <a href="/tags/terminal/" style="font-size: 10px; color: #d17def">terminal</a> <a href="/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/" style="font-size: 10px; color: #d17def">비동기</a> <a href="/tags/%EC%86%8D%EB%8F%84-%EA%B0%9C%EC%84%A0/" style="font-size: 10px; color: #d17def">속도 개선</a> <a href="/tags/%EC%8A%A4%ED%81%AC%EB%9E%A9/" style="font-size: 10px; color: #d17def">스크랩</a> <a href="/tags/%EC%9E%A1%EB%8B%B4/" style="font-size: 10px; color: #d17def">잡담</a>
+    </div>
+</div>
+
+    <div class="left-component tothetop">
+        <a class="title" onclick="toTheTop()">
+            <i class="fas fa-chevron-up"></i>
+            To the top
+        </a>
+    </div>
+</div>
+
+
+    <div class="right-widget">
+    <!-- 스티커 어태쳐 -->
+
+<div class="right-component sticker-attacher">
+    <div class="title">
+        <i class="fas fa-disease"></i>
+        Stricker Attacher
+    </div>
+    <div class="sticker-list scroll">
+        
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/cocona.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/ggyul.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/pinkwhale.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/sunnysideup.png">
+                </div>
+            
+        
+    </div>
+    <div class="attacher-btn remove"
+    onclick="attacher.toggleDeleteMode(this)">
+        스티커 떼기
+    </div>
+    <div class="attacher-btn deleteAll"
+    onclick="attacher.deleteAllSticker()">
+        이 페이지의 스티커 전부 삭제
+    </div>
+</div>
+
+
+    <div class="right-component recent-post">
+    <div class="title">
+        <i class="fas fa-bolt"></i>
+        Recent Post
+    </div>
+    <div class="post-list">
+        
+              <a href="/2022/05/20/SSH%ED%82%A4%EB%A1%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B2%95/">SSH키로 로그인하는 법</a>
+          
+              <a href="/2022/05/20/pm2%EC%99%80-%ED%81%B4%EB%9F%AC%EC%8A%A4%ED%84%B0%ED%99%94/">pm2와 클러스터화</a>
+          
+              <a href="/2022/01/27/%ED%95%A8%EC%88%98%EC%9D%98-%EB%B9%84%EB%8F%99%EA%B8%B0%ED%99%94%EC%99%80-async-%ED%82%A4%EC%9B%8C%EB%93%9C/">함수의 비동기화와 async 키워드</a>
+          
+              <a href="/2022/01/21/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/">블로그 새단장</a>
+          
+    </div>
+</div>
+    <div class=""></div>
+</div>
+
+
+    <div class="post-header">
+        <div class="post-category">
+            <a class="category-link" href="/categories/Framework/">Framework</a>  >  <a class="category-link" href="/categories/Framework/Express/">Express</a>
+        </div>
+        <div class="post-title">Certbot으로 https 서브도메인 등록하기</div>
+        <div class="post-date">
+            <!-- 작성됨 -->
+            <div class="post-date-write">2021-08-13 08:55:12</div>
+        </div>
+        <div class="post-tag">
+            <a class="tag-none-link" href="/tags/Certbot/" rel="tag">Certbot</a>
+        </div>
+    </div>
+    <div class="post-content">
+        <p>시행착오가 좀 많았다.</p>
+<p>회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!</p>
+<p>AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)</p>
+<p>클라우드 중 가장 싸다는 Vultr호스팅을 이용하고 싶었으나.. 회원가입할때 1인 1계정 원칙이 있는데, 하필이면 잘 모르는 초짜 고고넛이 회원가입할 때 실수를 해서 락이 걸렸다. </p>
+<p>문의 처리는 빨랐지만  Vultr가 해외 호스팅 서버라 처리하는게 좀 번거로워서..  고심한 끝에,</p>
+<p>cafe24의 클라우드 호스팅 서비스를 이용하기로 결정했다.</p>
+<p>가격도 Vultr 랑 비교해서 둘이 비슷하다! 성능은 cafe24 클라우드 호스팅 쪽이 램을 더 잘 지원하고.. 용량이 쪼끔 더 작다.(벌쳐는 램이 작고 용량이 큰 편) 그리고.. 벌쳐는 클라우드 서버를 사면 공인 IP도 같이 주는데 cafe24쪽은 공인 IP를 따로 사야한다.</p>
+<p>사내 홈피처럼 공적인 부분은 공인 IP가 꼭 필요하므로~ 공인 IP도 클라우드 서버와 같이 구매했다.</p>
+<p>개인 블로그 구축을 경험삼아 Ubuntu 18 바이오닉 서버에 Node.js Express서버를 배포하려고 했다.</p>
+<p>cafe24클라우드의 특성상 보안을 위해 SSH키를 사용해야만 접속할 수 있고,</p>
+<p>SSH 키는 cafe24클라우드가 서버 살 때 키까지 만들어준다.</p>
+<p>SSH 키로 접속할때 고고낫은 Putty를 이용했으므로, 키를 읽어서 변환해주는 puttygen이 필요했다.</p>
+<p>홈피서 pem 키를 받고 puttygen에서 불러오기를 하면 exe프로그램이 putty전용으로 key를 변환해준다.</p>
+<p>save Private Key를 하면 ppk로 내려지는데,</p>
+<p>Putty &gt; Connection &gt; SSH &gt; Auth 에서 맨 밑 항목을 보면 Private key file for authentication 하고 ppk키를 등록하는 부분이 있다.</p>
+<p>푸티에도 등록해주고, 파일질라에도 상단의 사이트 관리자 항목을 보면 키를 등록해주는 부분이 있다.</p>
+<blockquote>
+<p>❕  Putty 와 Filezila 연결을 위한 방화벽 설정은 cafe24 클라우드 웹콘솔 화면에서 사람이 정말~ 설정하기 쉽도록 되어 있다. ufw 치고.. 막 콘솔 창 안 들여다봐도 된다 ㅎㅎ</p>
+</blockquote>
+<p>여튼 key를 이용해서 putty로 ssh접속하면, 지정된 계정 이름으로 접속하게 되어있는데, 이 계정한텐 root권한이 없어서 명령수행 할 때 일시적으로 제약을 해제해줘야 했다.</p>
+<p><code>sudo -i</code></p>
+<p>파일질라로 배포할 파일 업로드하는 과정은 생략한다. Express(Node)는 일종의 SSR서버이므로~ 직접 접근하게 하면 좀 위험하고 정적 서버인 apache를 통해 프록시하면 좋을 것 같아서 apache2도 깔았다. 프록시설정하는 과정도 생략한다!</p>
+<p>인터넷 상으로 접속 확인하고 ip도메인 연결하고 도메인 주소를 치면 사이트가 다 뜨는 것까지 확인했다.(다만 http일 뿐이지..)</p>
+<h3 id="본론"><a href="#본론" class="headerlink" title="본론!"></a>본론!</h3><p>서론이 쫌 길었다.. 클라우드 얘기만 대판 ..ㅡ.ㅡ) 이제 https를 등록할 차례인데,</p>
+<p>Certbot이 너무 친절한게.. 공식 사이트 가서 서버 종류랑 컴퓨터 운영체제를 입력하면 어떻게 깔아야 하는지 튜토리얼이 너무 잘 되어있다…ㅠ.ㅠ</p>
+<p><a target="_blank" rel="noopener" href="https://certbot.eff.org/lets-encrypt/ubuntubionic-apache">https://certbot.eff.org/lets-encrypt/ubuntubionic-apache</a></p>
+<p>아파치 사양으로 하라는 대로 했다. 여기까진 아무 문제 없었다. 근데 왠걸.. 선택지가 두개 뜨는데, 한 도메인은 www를 포함하고, 다른 한 도메인은 www를 포함하지 않는 도메인을 보여주면서 둘 중 인증서 발급 받을 주소를 하나 택하라고 한다</p>
+<p>둘다 발급받을건데.? 하고 서트봇 인증서 발급 명령을 두번 실행하면</p>
+<p>인증서는 두개인데.. 사이트 들어가서 확인해봤더니만,</p>
+<p>정작 적용은 맨 마지막에 발급받은 인증서 하나만 되는 것 같았다.</p>
+<p>여기서 좀 많이 해멨는데, 방법은.. 인증서를 하나만 발급받고 (www든 www가 아니든)</p>
+<p>아래처럼 서브도메인으로 인증서를 확장하는 명령을 내리는 것이었다.</p>
+<p><code>certbot --expand -d existing.com,example.com,newdomain.com</code></p>
+<p>이렇게 하면 하나의 인증서 아래에 여러 서브도메인이 붙는다.</p>
+<p>여튼 이걸로 도메인 여러개 발급받는 것 해결했음…</p>
+
+    </div>
+    
+    
+        <div class="reply">
+                
+        <script src="https://utteranc.es/client.js"
+        repo="tazarem/tazarem.github.io"
+        issue-term="2021/08/13/Certbot으로-https-서브도메인-등록하기/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    
+        </div>
+    
+</div>
+
+
+
+    </div>
+    <div class="overlay hide">
+    <div class="img-zone">
+        <div class="title"></div>
+        <div class="content"></div>
+    </div>
+    <!-- <div class="btn-banner">
+        <div class="btn close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="btn img-closer">
+            <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="btn img-wider">
+            <i class="fas fa-search-minus"></i>
+        </div>
+    </div> -->
+</div>
+    <div class="footer">
+    <div class="footer-contents">
+        <div>Copyright 2021 코딩코코넛 All rights reserved.</div>
+        <div>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></div>
+    </div>
+</div>
+    </body>
+</html>

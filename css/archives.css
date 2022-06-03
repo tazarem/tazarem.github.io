@@ -1,0 +1,124 @@
+.archive-page{
+    padding: 3rem;
+    line-height: 2rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    margin: auto;
+    max-width: 65rem;
+    min-height: 32rem;
+}
+.archives>.title{
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--disable-color) solid thin;
+}
+.archive-page a{
+    text-decoration:none;
+}
+.archive-zone{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    padding-bottom: 2rem;
+}
+.archive-alert{
+    margin: .5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.category-zone a.category-link {
+    /* color: var(--link-color); */
+    padding: var( --tag-padding);
+    margin: 0rem 1.5rem 0rem .5rem;
+    text-decoration: none;
+}
+.category-zone a.category-link:hover {
+    color: var(--secondary-color);
+}
+.archive-zone a.archive-link {
+    /* color: var(--secondary-color); */
+    padding: var( --tag-padding);
+    margin: 0rem 1.5rem 0rem .5rem;
+    text-decoration: none;
+}
+.archive-zone a.archive-link:hover {
+    color: var(--secondary-color);
+}
+.post-length{
+    color: var(--accent2-color);
+    margin-left: .3rem;
+}
+.tag-zone{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tag-zone a{
+    text-decoration: none;
+    margin:0 .3rem;
+}
+.category-count, .archive-count{
+    margin-left: 1rem;
+    position: absolute;
+    color: #ff9800;
+    /* 폰트컬러를 가독성 좋은것으로 설정 */
+}
+
+/* postlist */
+.post-factor{
+    text-decoration: none;
+}
+.post-factor-wrap{
+    padding: 1rem;
+    display: flex;
+    max-height: fit-content;
+    overflow: hidden;
+    position: relative;
+}
+.post-factor-wrap:hover{
+    cursor: pointer;
+    background-color: var(--factor-hover-color);
+}
+.th-left{
+    height: 11rem;
+    width: 15rem;
+    overflow: hidden;
+    flex: none;
+    border: var(--disable-color) thin solid;
+    margin-right: 1rem;
+    display: flex;
+    background-color: #fff;
+}
+
+.th-left img{
+    flex: 1;
+    height: max-content;
+}
+.th-right .write-date{
+    font-size: .8rem;
+    color: var(--tag-color);
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+}
+.th-right .title{
+    color: var(--active-color);
+    padding-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+.th-right .category{
+    padding-bottom: .3rem;
+    font-size: .9rem;
+    color:var(--tag-color);
+    min-height: 2rem;
+}
+.tag-highlight{
+    color: var(--secondary-color);
+    margin-right: .3rem;
+}
+.category-highlight{
+    color: var(--sublink-color);
+    margin-right: .3rem;
+}

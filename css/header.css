@@ -1,0 +1,77 @@
+.header {
+    width: 100%;
+    min-height: 5rem;
+    border-bottom: var(--disable-color) solid thin;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+.blog-title{
+    
+}
+.menus{
+    max-width: 980px;
+    display: flex;
+    flex: 1;
+}
+.header .menus a{
+    text-decoration: none;
+    color: #555;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    font-size: 1.15rem;
+    align-items: center;
+}
+.header a i,.header a .header-name{
+    transition: all ease .3s;
+}
+.header a:hover i,.header a:hover .header-name{
+    filter: brightness(1.3);
+    color: #6b6b6b;
+    transition: all ease .3s;
+}
+.header-icon{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+.header-display{
+    min-height: 25rem;
+    display: flex;
+    position: static;
+    background: url('../img/background-space.jpg');
+    background-size: cover;
+    /* align-items: flex-end; */
+}
+.header-display:hover .header-title-zone div{
+    color: var(--disable-color);
+    transition: all ease .3s;
+}
+.header-display:hover .header-title-zone{
+    backdrop-filter: blur(1px) brightness(.9);
+    transition: all ease .3s;
+}
+.header-display .header-title-zone{
+    transition: all ease 1s;
+}
+.header-display .header-title-zone div{
+    transition: all ease .3s;
+}
+.header-title-zone{
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+}
+.blog-title {
+    color: #ffffff7d;
+    font-size: 1.8rem;
+    font-style: italic;
+}

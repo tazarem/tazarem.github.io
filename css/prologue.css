@@ -1,0 +1,92 @@
+.prologue{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 65rem;
+    margin: auto;
+}
+.prologue .title {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--disable-color) solid thin;
+}
+.profile-wrap{
+    max-width: 21rem;
+    margin: auto;
+}
+.profile{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: var(--disable-color) thin solid;
+    background: url(../img/profile.png);
+    background-position: top;
+    background-position-x: 24px;
+    background-size: contain;
+    margin-top: 2rem;
+}
+.profile-author{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem 0rem 1rem 1rem;
+    color: var(--active-color);
+}
+.profile-des-wrap{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+.profile-descript{
+    max-width: 18rem;
+    word-break: keep-all;
+}
+
+.has-skills{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    /* color: var(--sublink-color); */
+}
+.skill-kind{
+    color: var(--secondary-color);
+}
+.has-skills .skill-group:nth-child(odd) {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+}
+.has-skills .skill-group:nth-child(odd) .skill-tag-group{
+    justify-content: flex-end;
+}
+.has-skills .skill-group:nth-child(odd) .skill-kind{
+    color: var(--accent-color);
+}
+.has-skills .title,
+.profile-wrap .title
+ {
+    font-size: 1.5rem;
+}
+.has-skills .title{
+    margin: 1.5rem 0 1rem 0;
+}
+.profile-wrap .title{
+    margin-left: -2.5rem;
+}
+.skill-kind{
+    font-size: 1.1rem;
+    margin: 1rem 0rem .3rem 0rem;
+}
+.skill-tag-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-tag{
+    background-color: #bbb;
+    color: #fff;
+    margin: var(--tag-margin);
+    padding: var(--tag-padding);
+    border-radius: var(--tag-radius);
+}
