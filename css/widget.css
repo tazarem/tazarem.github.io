@@ -22,12 +22,27 @@ html{
 .left-component:not(:first-child){
     margin-top: 1.5rem;
 }
+.category-list, .track-list, .tag-zone{
+    position: relative;
+    max-height: 8rem;
+    overflow: auto;
+    transition: backdrop-filter ease-in .3s;
+}
+.category-list:hover, .track-list:hover, .tag-zone:hover{
+    transition: backdrop-filter ease .3s;
+    backdrop-filter:brightness(.96);
+}
+.track-list{
+    padding-left: 0.5rem;
+}
 .topic-tracker li{
     list-style: none;
     display: flex;
+    flex:1;
 }
 .topic-tracker li a{
     text-decoration:none;
+    flex:1;
     color: var(--tag-color);
 }
 .topic-tracker li a:hover,

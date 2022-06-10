@@ -78,7 +78,6 @@ let attacher=(function(){
     }
 })()
 
-
 // 마우스이벤트 수신자
 
 $(document).on('dragend','.sticker-thumb',function(e){
