@@ -83,7 +83,7 @@
                     </div>
                 </a>
             
-                <a href="/archives" class="header-btn active">
+                <a href="/archives" class="header-btn ">
                     <i class="header-icon fas fa-meteor"></i>
                     <div class="header-name">Archives
                     </div>
@@ -130,7 +130,10 @@
 
 
     <div class="contents">
-        <div class="archive-page">
+        
+
+    <!-- 단일 게시물 -->
+    <div class="post">
     <!-- 토픽 트래커. 작성할 것-->
 <div class="left-widget">
         <div class="left-component category">
@@ -144,6 +147,16 @@
 </div>
 
         
+    <div class="left-component topic-tracker">
+        <div class="title">
+            <i class="fas fa-thumbtack"></i>
+            Topic Tracker
+        </div>
+        <div class="track-list">
+    
+        </div>
+    </div>
+
     
         <div class="left-component tags">
     <div class="title">
@@ -223,58 +236,82 @@
     <div class=""></div>
 </div>
 
-    <div class="archives">
-        <div class="title">Archives</div>
-        <!-- 기존에 필터링만 해줬구나.. -->
-        <div class="archive-zone">
-            <a class="archive-link" href="/archives/2022/">2022<span class="archive-count">6</span></a><a class="archive-link" href="/archives/2021/">2021<span class="archive-count">5</span></a>
+
+    <div class="post-header">
+        <div class="post-category">
+            <a class="category-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a>
+        </div>
+        <div class="post-title">Github Page에 커스텀 도메인 연결하기</div>
+        <div class="post-date">
+            <!-- 작성됨 -->
+            <div class="post-date-write">2022-07-21 17:20:52</div>
+        </div>
+        <div class="post-tag">
+            <a class="tag-none-link" href="/tags/dns/" rel="tag">dns</a><a class="tag-none-link" href="/tags/domain/" rel="tag">domain</a><a class="tag-none-link" href="/tags/github-page/" rel="tag">github_page</a>
         </div>
     </div>
-    <div class="archive-alert">
-        
-        
-            2021
-            아카이브에는 <span class="post-length">1</span>
-            개의 게시물이 있습니다.
-        
-        
+    <div class="post-content">
+        <h1 id="Github-Page에-커스텀-도메인-연결하기"><a href="#Github-Page에-커스텀-도메인-연결하기" class="headerlink" title="Github Page에 커스텀 도메인 연결하기"></a>Github Page에 커스텀 도메인 연결하기</h1><p>방법은 다음과 같다.</p>
+<h3 id="도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기"><a href="#도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기" class="headerlink" title="도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기"></a>도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기</h3><p>도메인을 구입한 사이트에서 있어야 할 레코드는 다음과 같다.</p>
+<table>
+<thead>
+<tr>
+<th>레코드명</th>
+<th>이름</th>
+<th>데이터</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CNAME</td>
+<td>www</td>
+<td>[yourRepo].github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.108.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.109.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.110.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.111.153</td>
+</tr>
+</tbody></table>
+<p>네임서버는 따로 이관하지 않아도 된다.</p>
+<h3 id="블로그로-서비스되고있는-깃허브-페이지의-리포지토리-gt-Setting-gt-Page"><a href="#블로그로-서비스되고있는-깃허브-페이지의-리포지토리-gt-Setting-gt-Page" class="headerlink" title="블로그로 서비스되고있는 깃허브 페이지의 리포지토리 =&gt; Setting =&gt; Page"></a>블로그로 서비스되고있는 깃허브 페이지의 리포지토리 =&gt; Setting =&gt; Page</h3><p><img src="/img/postimg/custom_domain.png" alt="커스텀 도메인"></p>
+<p>save를 누르면 위에 등록한 DNS정보가 모두 올바를 경우 해당 주소로 퍼블리시되었다는 알람을 띄운다.</p>
+<p>아래 체크박스를 보면 알 수 있지만 GithubPage 특성상 https 옵션을 활성화할 수 있다.</p>
+<p>도메인으로 접속했을 때 깃허브 페이지가 뜨면 성공!</p>
+
     </div>
     
-        
-        
-        <div class="post-factor-wrap" onclick="location.href='/2021/09/17/%EB%A7%81%ED%81%AC-%EC%8A%A4%ED%81%AC%EB%9E%A9-%EB%B0%8F-%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/'">
-            <div class="th-left">
-                
-                
-                
-                    <img src="/img/no-thumbnail.png">
-                
-            </div>
-            <div class="th-right">
-                <div class="category">
-                    <a class="category-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a>
-                </div>
-                <div class="title">링크 스크랩 및 참고자료</div>
-                <div class="write-date">
-                    2021-09-17
-                     09:30:08
-                </div>
-                <div class="content">
-                    💬
-                    
-                    
-                    리눅스 명령어들sudo grep -ir  /etc/mysql/해당 위치에 원하는 텍스트가 있는 파일을 찾는 명령어
-iptables -I INPUT -s 1.1.1.1 -j DROP특정 IP막기
-
-https://thisblogbusy.tistory.com/entry/ip...
-                </div>
-            </div>
-        </div>
-
-
     
+        <div class="reply">
+                
+        <script src="https://utteranc.es/client.js"
+        repo="tazarem/tazarem.github.io"
+        issue-term="2022/07/21/Github-Page에-커스텀-도메인-연결하기/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    
+        </div>
     
 </div>
+
+
+
     </div>
     <div class="overlay hide">
     <div class="img-zone">

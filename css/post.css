@@ -85,6 +85,26 @@ a.tag-none-link:hover{
     margin-top: -2rem;
     padding-top: 3rem;
 }
+table{
+    text-align: center;
+    width: -webkit-fill-available;
+    border-collapse: collapse;
+    margin: 1.5rem;
+    /* max-width: 768px; */
+}
+table thead{
+
+}
+table thead tr th{
+    padding: .8rem;
+    background-color: var(--accent-bg-color);
+    border-bottom: var(--accent-color) solid 2px;
+}
+
+table tbody tr td{
+    padding: .8rem;
+}
+
 blockquote::before {
     content: '✨';
     margin-right: 0.5rem;
