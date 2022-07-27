@@ -85,7 +85,7 @@ a.tag-none-link:hover{
     margin-top: -2rem;
     padding-top: 3rem;
 }
-table{
+table:not(figure table){
     text-align: center;
     width: -webkit-fill-available;
     border-collapse: collapse;
@@ -94,13 +94,13 @@ table{
 table thead{
 
 }
-table thead tr th{
+table:not(figure table) thead tr th{
     padding: .8rem;
     background-color: var(--accent-bg-color);
     border-bottom: var(--accent-color) solid 2px;
 }
 
-table tbody tr td{
+table:not(figure table) tbody tr td{
     padding: .8rem;
 }
 

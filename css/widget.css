@@ -37,8 +37,11 @@ html{
 }
 .topic-tracker li{
     list-style: none;
-    display: flex;
-    flex:1;
+    display: block;
+    flex: 1;
+    text-overflow: ellipsis;
+    max-width: fit-content;
+    overflow: hidden;
 }
 .topic-tracker li a{
     text-decoration:none;

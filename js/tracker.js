@@ -14,7 +14,7 @@ function draw_tracker() {
         })
         tracker_dom += `
         <li>
-            <a onclick="goToHeadline('${tracker_id}')" data-gh="${tracker_id}" >${tracker_title}</a>
+            <a onclick="goToHeadline('${tracker_id}')" data-gh="${tracker_id}" title="${tracker_title}" >${tracker_title}</a>
         </li>`
     }
     $('.track-list').html(tracker_dom)
