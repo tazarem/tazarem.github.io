@@ -45,6 +45,7 @@ html{
 }
 .topic-tracker li a{
     text-decoration:none;
+    white-space: nowrap;
     flex:1;
     color: var(--tag-color);
 }
