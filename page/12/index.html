@@ -131,9 +131,15 @@
 
     <div class="contents">
         
+ 
+    <!-- 페이지네이션 -->
+    <div class="pagenater">
+    <a class="extend prev" rel="prev" href="/page/11/">&lt;</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+</div>
 
-    <!-- 단일 게시물 -->
-    <div class="post">
+
+    
+        <div class="post">
     <!-- 토픽 트래커. 작성할 것-->
 <div class="left-widget">
         <div class="left-component category">
@@ -239,19 +245,58 @@
 
     <div class="post-header">
         <div class="post-category">
-            
+            <a class="category-link" href="/categories/CI-CD/">CI/CD</a>  >  <a class="category-link" href="/categories/CI-CD/Docker/">Docker</a>
         </div>
-        <div class="post-title">portfolio</div>
+        <div class="post-title">Docker 명령어 정리</div>
         <div class="post-date">
             <!-- 작성됨 -->
-            <div class="post-date-write">2021-01-14 16:23:08</div>
+            <div class="post-date-write">2021-02-05 09:00:04</div>
         </div>
         <div class="post-tag">
-            
+            <a class="tag-none-link" href="/tags/docker/" rel="tag">docker</a><a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>
         </div>
     </div>
     <div class="post-content">
-        
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png" alt="titleimg"></p>
+<p>도커를 한번 써 보니 생각보다 서버를 운영하는 데 편리하고 컨테이너 단위 관리가 용이해서, 이를 잊어버리는 일이 없도록 실행부터 가동 중지까지, 방법을 정리하려고 한다.</p>
+<h3 id="1-서버-이미지-만들기"><a href="#1-서버-이미지-만들기" class="headerlink" title="1. 서버 이미지 만들기"></a>1. 서버 이미지 만들기</h3><p>서버 구축 후, 프로젝트 폴더를 Shift + 우클릭하여 cmd(명령 프롬프트 창) 실행</p>
+<p>Docker Desktop 이 설치되어있고, 가동시켜서 현재 서비스가 돌아가고 있다는 전제 하에 아래의 명령어를 입력</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t [생성할 이미지명] .</span><br></pre></td></tr></table></figure>
+
+<p>생성할 이미지명 예시 : ex) MyContainer</p>
+<p>온점까지 제대로 입력해야한다.<br>해당 명령어를 실행하면, 도커가 프로젝트의 Dockerfile 이 제대로 작성되었다는 가정하에 Dockerfile 내부의 명령어를 실행시켜 컨테이너를 구축한다. 실행 예시는 다음 링크를 참조 <a target="_blank" rel="noopener" href="https://hexo.io">[링크]:도커파일 작성하기(Node.js Express)</a></p>
+<h3 id="2-이미지-실행하기"><a href="#2-이미지-실행하기" class="headerlink" title="2. 이미지 실행하기"></a>2. 이미지 실행하기</h3><p>이미지를 빌드해서 생성했으면, 이제 컨테이너화하여 서버를 운영할 수 있다.</p>
+<blockquote>
+<ol>
+<li>Docker Desktop 가동</li>
+<li>좌측의 Images 에 지정했던 이미지명 찾기</li>
+<li>RUN 을 통해 가동 (세부설정은 Optional Settings를 통해 설정할 수 있다. 컨테이너명과 Port 등을 지정할 수 있다.)</li>
+<li>성공적으로 가동하면 왼측 Containers/Apps 의 컨테이너 목록란에 초록색 컨테이너 박스로 표기된다.</li>
+</ol>
+</blockquote>
+<p>+) 만약 Dockerfile 등의 결함이 있거나 하면 shell 실행이 중지되는데,<br><img src="/img/postimg/container_disable.png" alt="containericon"><br>요로코롬 컨테이너 아이콘이 회색으로 표기된다.<br>클릭을 통해 해당 로그란을 확인할 수 있다.<br>이 경우에는 파일 빌드 자체에 오류가 있는 경우이므로 이미지를 재빌드해야만 한다.</p>
+<h3 id="3-컨테이너-실행-확인"><a href="#3-컨테이너-실행-확인" class="headerlink" title="3. 컨테이너 실행 확인"></a>3. 컨테이너 실행 확인</h3><p>도커 위에서 돌아가고 있는 이미지 컨테이너를 확인해 보자.<br><img src="/img/postimg/container_correct.png" alt="containericon"><br>정상적으로 돌아가고 있다면 컨테이너 박스가 녹색으로 표기된다.<br>필자는 웹서버이므로 웹 연결을 통해 컨테이너가 해당 로컬 포트를 통해 돌아가고 있는 것을 확인하였다.<br>이미지 가동 시 포트를 따로 뚫어 뒀다면 포트포워딩을 통해 포팅하고있는 컴퓨터의 외부 접속도 가능하다.</p>
+<h3 id="4-컨테이너-중지"><a href="#4-컨테이너-중지" class="headerlink" title="4. 컨테이너 중지"></a>4. 컨테이너 중지</h3><p><img src="/img/postimg/active_server_delete.png" alt="containericon"></p>
+<blockquote>
+<p>위 그림처럼 Docker Desktop의 Container/Apps 목록에서 컨테이너를 Delete 한다.</p>
+</blockquote>
+<p>서버에 대한 이미지는 기존에 작성해 놓았기 때문에 컨테이너를 삭제해도 무방하다!<br>재가동시킬 땐 이미지를 다시 가동시키면 되니깐..</p>
+<h3 id="5-그-외-명령어들"><a href="#5-그-외-명령어들" class="headerlink" title="5. 그 외 명령어들"></a>5. 그 외 명령어들</h3><blockquote>
+<p>파일 접근하기 </p>
+</blockquote>
+<p>+) 서버가 돌아갈때 로그 등을 생성하도록 해두었다면, 현재 돌아가고 있는 컨테이너의 내부 파일에 접근하는 것도 가능하다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker cp [컨테이너명]:[접근할 파일 경로] [저장할 경로명]</span><br></pre></td></tr></table></figure>
+
+<p>컨테이너명 예시 : ex) MyConatiner<br>접근할 파일 경로 예시 : ex)/root/etc/logs<br>파일을 저장할 경로명 예시: ex) C:\Users\Desktop\Server_Container_Logs</p>
+<p>위 커맨드를 실행하면 서버 내부의 로그파일을 빼낼 수 있다!</p>
+<blockquote>
+<p>컨테이너 내부 시간대 맞추기</p>
+</blockquote>
+<p>+) 이미지 가동 시 옵셔널 세팅에 포함되지 않은 기능이다.. ㅡ.ㅡ 왜 이렇게 해놓았을까..?<br> 다소 곤란한 감이 있지만 이 경우도 명령어로 제어가 가능하다.<br> 컨테이너 가동 시에 시간대를 국제시간대로 맞춰주면 된다.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker run --name [컨테이너명] -p [로컬로 접근할 포트명]:[컨테이너 내부로 뜷어놓을 포트명]</span><br><span class="line">-e TZ&#x3D;Asia&#x2F;Seoul [이미지명]</span><br></pre></td></tr></table></figure>
+
+<p> 이런 식으로 가동하면 -e 커맨드를 통해 이미지 컨테이너의 시간대가 서울로 설정되어 가동된다.</p>
+
     </div>
     
     
@@ -259,7 +304,7 @@
                 
         <script src="https://utteranc.es/client.js"
         repo="tazarem/tazarem.github.io"
-        issue-term="portfolio/index.html"
+        issue-term="2021/02/05/Docker-명령어-정리/"
         theme="github-light"
         crossorigin="anonymous"
         async>
@@ -270,6 +315,7 @@
 </div>
 
 
+    
 
     </div>
     <div class="overlay hide">
