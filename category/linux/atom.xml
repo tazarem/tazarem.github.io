@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://coding-coconut.com</id>
+    <title>Coding Coconut • Posts by &#34;linux&#34; category</title>
+    <link href="https://coding-coconut.com" />
+    <updated>2022-05-20T08:44:10.000Z</updated>
+    <category term="Certbot" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="docker" />
+    <category term="hexo" />
+    <category term="issue" />
+    <category term="custom_domain" />
+    <category term="배포" />
+    <category term="hexo_deploy" />
+    <category term="ssh" />
+    <category term="terminal" />
+    <category term="cmd" />
+    <category term="bash" />
+    <category term="pm2" />
+    <category term="스크랩" />
+    <category term="잡담" />
+    <category term="비동기" />
+    <category term="asyncawait" />
+    <category term="postman" />
+    <category term="속도 개선" />
+    <entry>
+        <id>https://coding-coconut.com/2022/05/20/SSH%ED%82%A4%EB%A1%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B2%95/</id>
+        <title>SSH키로 로그인하는 법</title>
+        <link rel="alternate" href="https://coding-coconut.com/2022/05/20/SSH%ED%82%A4%EB%A1%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B2%95/"/>
+        <content type="html">&lt;h2 id=&#34;SSH키로-로그인하는-법&#34;&gt;&lt;a href=&#34;#SSH키로-로그인하는-법&#34; class=&#34;headerlink&#34; title=&#34;SSH키로 로그인하는 법&#34;&gt;&lt;/a&gt;SSH키로 로그인하는 법&lt;/h2&gt;&lt;h3 id=&#34;SSH-키-생성하기&#34;&gt;&lt;a href=&#34;#SSH-키-생성하기&#34; class=&#34;headerlink&#34; title=&#34;SSH 키 생성하기&#34;&gt;&lt;/a&gt;SSH 키 생성하기&lt;/h3&gt;&lt;p&gt;깃허브나 벌쳐 인증서버/원격 데이터베이스에 접속할 때 키로그인을 필요로 하기도 한다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;키 생성하기&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight cmd&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh-keygen&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;모든 설정 기본값으로 하면 내 컴퓨터/사용자 폴더/.ssh폴더(숨겨진 폴더)안에 다음처럼 rsa 키가 생성된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;id_rsa&lt;/li&gt;
+&lt;li&gt;id_rsa.pub&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;키-파일-등록&#34;&gt;&lt;a href=&#34;#키-파일-등록&#34; class=&#34;headerlink&#34; title=&#34;키 파일 등록&#34;&gt;&lt;/a&gt;키 파일 등록&lt;/h3&gt;&lt;p&gt;ssh 를 이용해서 로그인하려면 이전 과정에서 생성된 두가지 키가 필요하다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;id_rsa (클라이언트 피시가 가지고 있을 프라이빗 키. 이걸로 로그인함!)&lt;/li&gt;
+&lt;li&gt;id_rsa.pub (호스트에 등록할 퍼블릭 키. 긁어서 호스트에 등록해야한다.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;id_rsa는 다른 이름이거나 확장자가 &lt;code&gt;.ppk&lt;/code&gt; 또는 &lt;code&gt;.pem&lt;/code&gt;일 수 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;.ssh 안에 프라이빗 키를 집어넣고, 퍼블릭 키는 파일을 열어 내부를 긁어서 호스트에 등록한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;SSH-원격-접속-Config-파일-작성&#34;&gt;&lt;a href=&#34;#SSH-원격-접속-Config-파일-작성&#34; class=&#34;headerlink&#34; title=&#34;SSH 원격 접속 Config 파일 작성&#34;&gt;&lt;/a&gt;SSH 원격 접속 Config 파일 작성&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;터미널 원격 ssh 접속 시 간편 커맨드를 위한 .ssh/config 파일을 설정한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Host [ConnectionName]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	HostName [HostIP]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	User [HostLoginID]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	IdentityFile ~/.ssh/[YOUR_PRIVATE_KEY_FILE]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;위처럼 만들어 저장해 놓으면&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh [ConnectionName]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;으로 간편하게 접속할 수 있다.&lt;/p&gt;
+&lt;p&gt;키 파일 위치만 올바르다면 별도의 패스워드를 요구하진 않는다.&lt;/p&gt;
+&lt;h3 id=&#34;기타-파일변환&#34;&gt;&lt;a href=&#34;#기타-파일변환&#34; class=&#34;headerlink&#34; title=&#34;기타 파일변환&#34;&gt;&lt;/a&gt;기타 파일변환&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;putty .ppk파일을 제네릭한 .pem으로 변환(윈도즈 putty가 있으면 ppk 그대로 사용해도됨)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Mac 인 경우(선제 homebrew 설치 필요)&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;brew install putty &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;puttygen 원본.ppk -O private-openssh -o 내보낼.pem&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;Windows인 경우 putty-keygen exe를 이용한다.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="ssh" />
+        <category term="terminal" />
+        <category term="cmd" />
+        <category term="bash" />
+        <updated>2022-05-20T08:44:10.000Z</updated>
+    </entry>
+</feed>

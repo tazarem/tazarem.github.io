@@ -68,7 +68,7 @@ var searchFunc = function(path, search_id, content_id) {
                         if (isMatch) {
                             matchingCount++
                             str += `<li onclick="location.href='${data_url}'"><a class='search-result-title'>${data_title}</a>`;
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            var content = data.content.trim().replace(/<br>/g, " ").replace(/<[^>]+>/g, ""); //  엔터를 띄어쓰기로 치환
                             if (first_occur >= 0) {
                                 // cut out 100 characters
                                 var start = first_occur - 20;

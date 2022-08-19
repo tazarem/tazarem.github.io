@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://coding-coconut.com</id>
+    <title>Coding Coconut • Posts by &#34;certbot&#34; tag</title>
+    <link href="https://coding-coconut.com" />
+    <updated>2021-08-12T23:55:12.000Z</updated>
+    <category term="Certbot" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="docker" />
+    <category term="hexo" />
+    <category term="issue" />
+    <category term="custom_domain" />
+    <category term="배포" />
+    <category term="hexo_deploy" />
+    <category term="ssh" />
+    <category term="terminal" />
+    <category term="cmd" />
+    <category term="bash" />
+    <category term="pm2" />
+    <category term="스크랩" />
+    <category term="잡담" />
+    <category term="비동기" />
+    <category term="asyncawait" />
+    <category term="postman" />
+    <category term="속도 개선" />
+    <entry>
+        <id>https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</id>
+        <title>Certbot으로 https 서브도메인 등록하기</title>
+        <link rel="alternate" href="https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/"/>
+        <content type="html">&lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
+&lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
+&lt;p&gt;AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)&lt;/p&gt;
+&lt;p&gt;클라우드 중 가장 싸다는 Vultr호스팅을 이용하고 싶었으나.. 회원가입할때 1인 1계정 원칙이 있는데, 하필이면 잘 모르는 초짜 고고넛이 회원가입할 때 실수를 해서 락이 걸렸다. &lt;/p&gt;
+&lt;p&gt;문의 처리는 빨랐지만  Vultr가 해외 호스팅 서버라 처리하는게 좀 번거로워서..  고심한 끝에,&lt;/p&gt;
+&lt;p&gt;cafe24의 클라우드 호스팅 서비스를 이용하기로 결정했다.&lt;/p&gt;
+&lt;p&gt;가격도 Vultr 랑 비교해서 둘이 비슷하다! 성능은 cafe24 클라우드 호스팅 쪽이 램을 더 잘 지원하고.. 용량이 쪼끔 더 작다.(벌쳐는 램이 작고 용량이 큰 편) 그리고.. 벌쳐는 클라우드 서버를 사면 공인 IP도 같이 주는데 cafe24쪽은 공인 IP를 따로 사야한다.&lt;/p&gt;
+&lt;p&gt;사내 홈피처럼 공적인 부분은 공인 IP가 꼭 필요하므로~ 공인 IP도 클라우드 서버와 같이 구매했다.&lt;/p&gt;
+&lt;p&gt;개인 블로그 구축을 경험삼아 Ubuntu 18 바이오닉 서버에 Node.js Express서버를 배포하려고 했다.&lt;/p&gt;
+&lt;p&gt;cafe24클라우드의 특성상 보안을 위해 SSH키를 사용해야만 접속할 수 있고,&lt;/p&gt;
+&lt;p&gt;SSH 키는 cafe24클라우드가 서버 살 때 키까지 만들어준다.&lt;/p&gt;
+&lt;p&gt;SSH 키로 접속할때 고고낫은 Putty를 이용했으므로, 키를 읽어서 변환해주는 puttygen이 필요했다.&lt;/p&gt;
+&lt;p&gt;홈피서 pem 키를 받고 puttygen에서 불러오기를 하면 exe프로그램이 putty전용으로 key를 변환해준다.&lt;/p&gt;
+&lt;p&gt;save Private Key를 하면 ppk로 내려지는데,&lt;/p&gt;
+&lt;p&gt;Putty &amp;gt; Connection &amp;gt; SSH &amp;gt; Auth 에서 맨 밑 항목을 보면 Private key file for authentication 하고 ppk키를 등록하는 부분이 있다.&lt;/p&gt;
+&lt;p&gt;푸티에도 등록해주고, 파일질라에도 상단의 사이트 관리자 항목을 보면 키를 등록해주는 부분이 있다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;❕  Putty 와 Filezila 연결을 위한 방화벽 설정은 cafe24 클라우드 웹콘솔 화면에서 사람이 정말~ 설정하기 쉽도록 되어 있다. ufw 치고.. 막 콘솔 창 안 들여다봐도 된다 ㅎㅎ&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;여튼 key를 이용해서 putty로 ssh접속하면, 지정된 계정 이름으로 접속하게 되어있는데, 이 계정한텐 root권한이 없어서 명령수행 할 때 일시적으로 제약을 해제해줘야 했다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo -i&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;파일질라로 배포할 파일 업로드하는 과정은 생략한다. Express(Node)는 일종의 SSR서버이므로~ 직접 접근하게 하면 좀 위험하고 정적 서버인 apache를 통해 프록시하면 좋을 것 같아서 apache2도 깔았다. 프록시설정하는 과정도 생략한다!&lt;/p&gt;
+&lt;p&gt;인터넷 상으로 접속 확인하고 ip도메인 연결하고 도메인 주소를 치면 사이트가 다 뜨는 것까지 확인했다.(다만 http일 뿐이지..)&lt;/p&gt;
+&lt;h3 id=&#34;본론&#34;&gt;&lt;a href=&#34;#본론&#34; class=&#34;headerlink&#34; title=&#34;본론!&#34;&gt;&lt;/a&gt;본론!&lt;/h3&gt;&lt;p&gt;서론이 쫌 길었다.. 클라우드 얘기만 대판 ..ㅡ.ㅡ) 이제 https를 등록할 차례인데,&lt;/p&gt;
+&lt;p&gt;Certbot이 너무 친절한게.. 공식 사이트 가서 서버 종류랑 컴퓨터 운영체제를 입력하면 어떻게 깔아야 하는지 튜토리얼이 너무 잘 되어있다…ㅠ.ㅠ&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://certbot.eff.org/lets-encrypt/ubuntubionic-apache&#34;&gt;https://certbot.eff.org/lets-encrypt/ubuntubionic-apache&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;아파치 사양으로 하라는 대로 했다. 여기까진 아무 문제 없었다. 근데 왠걸.. 선택지가 두개 뜨는데, 한 도메인은 www를 포함하고, 다른 한 도메인은 www를 포함하지 않는 도메인을 보여주면서 둘 중 인증서 발급 받을 주소를 하나 택하라고 한다&lt;/p&gt;
+&lt;p&gt;둘다 발급받을건데.? 하고 서트봇 인증서 발급 명령을 두번 실행하면&lt;/p&gt;
+&lt;p&gt;인증서는 두개인데.. 사이트 들어가서 확인해봤더니만,&lt;/p&gt;
+&lt;p&gt;정작 적용은 맨 마지막에 발급받은 인증서 하나만 되는 것 같았다.&lt;/p&gt;
+&lt;p&gt;여기서 좀 많이 해멨는데, 방법은.. 인증서를 하나만 발급받고 (www든 www가 아니든)&lt;/p&gt;
+&lt;p&gt;아래처럼 서브도메인으로 인증서를 확장하는 명령을 내리는 것이었다.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;certbot --expand -d existing.com,example.com,newdomain.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;이렇게 하면 하나의 인증서 아래에 여러 서브도메인이 붙는다.&lt;/p&gt;
+&lt;p&gt;여튼 이걸로 도메인 여러개 발급받는 것 해결했음…&lt;/p&gt;
+</content>
+        <category term="Certbot" />
+        <updated>2021-08-12T23:55:12.000Z</updated>
+    </entry>
+</feed>
