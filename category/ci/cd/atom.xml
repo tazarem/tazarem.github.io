@@ -4,12 +4,12 @@
     <title>Coding Coconut • Posts by &#34;ci/cd&#34; category</title>
     <link href="https://coding-coconut.com" />
     <updated>2021-02-05T00:00:04.000Z</updated>
-    <category term="Certbot" />
+    <category term="certbot" />
+    <category term="docker" />
+    <category term="hexo" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="docker" />
-    <category term="hexo" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="배포" />
@@ -18,6 +18,9 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="pm2" />
     <category term="스크랩" />
     <category term="잡담" />
