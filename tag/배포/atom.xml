@@ -18,11 +18,11 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="pm2" />
+    <category term="스크랩" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="pm2" />
-    <category term="스크랩" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />

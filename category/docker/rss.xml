@@ -21,11 +21,11 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>pm2</category>
+        <category>스크랩</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>pm2</category>
-        <category>스크랩</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>

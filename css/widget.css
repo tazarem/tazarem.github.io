@@ -156,6 +156,10 @@ width: 10rem;
 }
 .post-list a{
     text-decoration: none;
+    white-space: nowrap;
+    max-width: 11rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .post-list a:hover{
     filter:brightness(1.2);
