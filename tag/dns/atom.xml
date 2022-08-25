@@ -4,26 +4,26 @@
     <title>Coding Coconut • Posts by &#34;dns&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-07-21T08:20:52.000Z</updated>
-    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="issue" />
+    <category term="certbot" />
+    <category term="dns" />
     <category term="github_page" />
+    <category term="domain" />
+    <category term="issue" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="dns" />
-    <category term="domain" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="잡담" />
     <category term="스크랩" />
     <category term="pm2" />
-    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
@@ -74,8 +74,8 @@
 &lt;p&gt;아래 체크박스를 보면 알 수 있지만 GithubPage 특성상 https 옵션을 활성화할 수 있다.&lt;/p&gt;
 &lt;p&gt;도메인으로 접속했을 때 깃허브 페이지가 뜨면 성공!&lt;/p&gt;
 </content>
-        <category term="github_page" />
         <category term="dns" />
+        <category term="github_page" />
         <category term="domain" />
         <updated>2022-07-21T08:20:52.000Z</updated>
     </entry>
