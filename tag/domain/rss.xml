@@ -7,7 +7,7 @@
         <language>ko</language>
         <pubDate>Thu, 21 Jul 2022 17:20:52 +0900</pubDate>
         <lastBuildDate>Thu, 21 Jul 2022 17:20:52 +0900</lastBuildDate>
-        <category>certbot</category>
+        <category>certbot2</category>
         <category>docker</category>
         <category>hexo</category>
         <category>dns</category>
@@ -20,17 +20,17 @@
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
+        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
         <category>잡담</category>
+        <category>스크랩</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>스크랩</category>
         <item>
             <guid isPermalink="true">https://coding-coconut.com/2022/07/21/Github-Page%EC%97%90-%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%8F%84%EB%A9%94%EC%9D%B8-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0/</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>

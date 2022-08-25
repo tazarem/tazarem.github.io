@@ -4,7 +4,7 @@
     <title>Coding Coconut • Posts by &#34;ssh&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-05-20T08:44:10.000Z</updated>
-    <category term="certbot" />
+    <category term="certbot2" />
     <category term="docker" />
     <category term="hexo" />
     <category term="dns" />
@@ -17,17 +17,17 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
+    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="pm2" />
     <category term="잡담" />
+    <category term="스크랩" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="스크랩" />
     <entry>
         <id>https://coding-coconut.com/2022/05/20/SSH%ED%82%A4%EB%A1%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8%ED%95%98%EB%8A%94-%EB%B2%95/</id>
         <title>SSH키로 로그인하는 법</title>

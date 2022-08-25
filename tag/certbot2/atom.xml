@@ -1,47 +1,38 @@
 <?xml version="1.0"?>
-<rss version="2.0">
-    <channel>
-        <title>Coding Coconut • Posts by &#34;certbot&#34; tag</title>
-        <link>https://coding-coconut.com</link>
-        <description>주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? </description>
-        <language>ko</language>
-        <pubDate>Wed, 24 Aug 2022 18:14:09 +0900</pubDate>
-        <lastBuildDate>Wed, 24 Aug 2022 18:14:09 +0900</lastBuildDate>
-        <category>certbot</category>
-        <category>docker</category>
-        <category>hexo</category>
-        <category>dns</category>
-        <category>github_page</category>
-        <category>domain</category>
-        <category>issue</category>
-        <category>custom_domain</category>
-        <category>배포</category>
-        <category>hexo_deploy</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
-        <category>ssh</category>
-        <category>terminal</category>
-        <category>cmd</category>
-        <category>bash</category>
-        <category>pm2</category>
-        <category>잡담</category>
-        <category>비동기</category>
-        <category>asyncawait</category>
-        <category>postman</category>
-        <category>속도 개선</category>
-        <category>스크랩</category>
-        <item>
-            <guid isPermalink="true">https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
-            <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-            <link>https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
-            <category>certbot</category>
-            <category>배포</category>
-            <category>https</category>
-            <category>인증서</category>
-            <category>apache</category>
-            <pubDate>Wed, 24 Aug 2022 18:14:09 +0900</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;들어가며&#34;&gt;&lt;a href=&#34;#들어가며&#34; class=&#34;headerlink&#34; title=&#34;들어가며&#34;&gt;&lt;/a&gt;들어가며&lt;/h3&gt;&lt;p&gt;인증서 발급방법은 기존에 알고있어서 문제가 되지 않았는데 아파치 설정파일 만지는 법을 까먹어서 한동안 설정파일과 씨름했다.. -.-;;&lt;br&gt;로그인한 유저가 관리자 권한일 경우 굳이 sudo를 입력하지 않아도 된다!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://coding-coconut.com</id>
+    <title>Coding Coconut • Posts by &#34;certbot2&#34; tag</title>
+    <link href="https://coding-coconut.com" />
+    <updated>2022-08-24T09:14:09.000Z</updated>
+    <category term="certbot2" />
+    <category term="docker" />
+    <category term="hexo" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="issue" />
+    <category term="custom_domain" />
+    <category term="배포" />
+    <category term="hexo_deploy" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
+    <category term="pm2" />
+    <category term="ssh" />
+    <category term="terminal" />
+    <category term="cmd" />
+    <category term="bash" />
+    <category term="잡담" />
+    <category term="스크랩" />
+    <category term="비동기" />
+    <category term="asyncawait" />
+    <category term="postman" />
+    <category term="속도 개선" />
+    <entry>
+        <id>https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</id>
+        <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
+        <link rel="alternate" href="https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/"/>
+        <content type="html">&lt;h3 id=&#34;들어가며&#34;&gt;&lt;a href=&#34;#들어가며&#34; class=&#34;headerlink&#34; title=&#34;들어가며&#34;&gt;&lt;/a&gt;들어가며&lt;/h3&gt;&lt;p&gt;인증서 발급방법은 기존에 알고있어서 문제가 되지 않았는데 아파치 설정파일 만지는 법을 까먹어서 한동안 설정파일과 씨름했다.. -.-;;&lt;br&gt;로그인한 유저가 관리자 권한일 경우 굳이 sudo를 입력하지 않아도 된다!&lt;/p&gt;
 &lt;h3 id=&#34;0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요&#34;&gt;&lt;a href=&#34;#0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요&#34; class=&#34;headerlink&#34; title=&#34;0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요&#34;&gt;&lt;/a&gt;0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
 &lt;h3 id=&#34;1-linux-전용-apache2-설치&#34;&gt;&lt;a href=&#34;#1-linux-전용-apache2-설치&#34; class=&#34;headerlink&#34; title=&#34;1. linux 전용 apache2 설치&#34;&gt;&lt;/a&gt;1. linux 전용 apache2 설치&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install apache2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -71,15 +62,19 @@
 
 &lt;p&gt;해당 항목을 선택하면 Certbot의 인증서 파일(000-default-le-ssl.conf)이 다시 갱신된다.&lt;/p&gt;
 &lt;h3 id=&#34;7-확인&#34;&gt;&lt;a href=&#34;#7-확인&#34; class=&#34;headerlink&#34; title=&#34;7. 확인&#34;&gt;&lt;/a&gt;7. 확인&lt;/h3&gt;&lt;p&gt;웹페이지에 접속해서 자물쇠 표시가 뜨면 성공!&lt;/p&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</guid>
-            <title>Certbot으로 https 서브도메인 등록하기</title>
-            <link>https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</link>
-            <category>certbot</category>
-            <pubDate>Fri, 13 Aug 2021 08:55:12 +0900</pubDate>
-            <description><![CDATA[ &lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
+</content>
+        <category term="certbot2" />
+        <category term="배포" />
+        <category term="https" />
+        <category term="인증서" />
+        <category term="apache" />
+        <updated>2022-08-24T09:14:09.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</id>
+        <title>Certbot으로 https 서브도메인 등록하기</title>
+        <link rel="alternate" href="https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/"/>
+        <content type="html">&lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
 &lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
 &lt;p&gt;AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)&lt;/p&gt;
 &lt;p&gt;클라우드 중 가장 싸다는 Vultr호스팅을 이용하고 싶었으나.. 회원가입할때 1인 1계정 원칙이 있는데, 하필이면 잘 모르는 초짜 고고넛이 회원가입할 때 실수를 해서 락이 걸렸다. &lt;/p&gt;
@@ -114,7 +109,8 @@
 &lt;p&gt;&lt;code&gt;certbot --expand -d existing.com,example.com,newdomain.com&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;이렇게 하면 하나의 인증서 아래에 여러 서브도메인이 붙는다.&lt;/p&gt;
 &lt;p&gt;여튼 이걸로 도메인 여러개 발급받는 것 해결했음…&lt;/p&gt;
- ]]></description>
-        </item>
-    </channel>
-</rss>
+</content>
+        <category term="certbot2" />
+        <updated>2021-08-12T23:55:12.000Z</updated>
+    </entry>
+</feed>

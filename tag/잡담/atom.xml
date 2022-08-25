@@ -4,7 +4,7 @@
     <title>Coding Coconut • Posts by &#34;잡담&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-01-21T07:40:37.000Z</updated>
-    <category term="certbot" />
+    <category term="certbot2" />
     <category term="docker" />
     <category term="hexo" />
     <category term="dns" />
@@ -17,17 +17,17 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
+    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="pm2" />
     <category term="잡담" />
+    <category term="스크랩" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="스크랩" />
     <entry>
         <id>https://coding-coconut.com/2022/01/21/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/</id>
         <title>블로그 새단장</title>
