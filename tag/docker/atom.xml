@@ -4,7 +4,7 @@
     <title>Coding Coconut • Posts by &#34;docker&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2021-02-05T00:00:04.000Z</updated>
-    <category term="certbot2" />
+    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
     <category term="dns" />
@@ -17,11 +17,11 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="pm2" />
     <category term="잡담" />
     <category term="스크랩" />
     <category term="비동기" />

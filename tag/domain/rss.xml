@@ -7,7 +7,7 @@
         <language>ko</language>
         <pubDate>Thu, 21 Jul 2022 17:20:52 +0900</pubDate>
         <lastBuildDate>Thu, 21 Jul 2022 17:20:52 +0900</lastBuildDate>
-        <category>certbot2</category>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
         <category>dns</category>
@@ -20,11 +20,11 @@
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>pm2</category>
         <category>잡담</category>
         <category>스크랩</category>
         <category>비동기</category>

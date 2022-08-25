@@ -4,7 +4,7 @@
     <title>Coding Coconut • Posts by &#34;배포&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-08-24T09:14:09.000Z</updated>
-    <category term="certbot2" />
+    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
     <category term="dns" />
@@ -17,11 +17,11 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="pm2" />
     <category term="잡담" />
     <category term="스크랩" />
     <category term="비동기" />
@@ -63,7 +63,7 @@
 &lt;p&gt;해당 항목을 선택하면 Certbot의 인증서 파일(000-default-le-ssl.conf)이 다시 갱신된다.&lt;/p&gt;
 &lt;h3 id=&#34;7-확인&#34;&gt;&lt;a href=&#34;#7-확인&#34; class=&#34;headerlink&#34; title=&#34;7. 확인&#34;&gt;&lt;/a&gt;7. 확인&lt;/h3&gt;&lt;p&gt;웹페이지에 접속해서 자물쇠 표시가 뜨면 성공!&lt;/p&gt;
 </content>
-        <category term="certbot2" />
+        <category term="certbot" />
         <category term="배포" />
         <category term="https" />
         <category term="인증서" />

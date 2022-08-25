@@ -4,7 +4,7 @@
     <title>Coding Coconut • Posts by &#34;express&#34; category</title>
     <link href="https://coding-coconut.com" />
     <updated>2021-08-12T23:55:12.000Z</updated>
-    <category term="certbot2" />
+    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
     <category term="dns" />
@@ -17,11 +17,11 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="pm2" />
     <category term="잡담" />
     <category term="스크랩" />
     <category term="비동기" />
@@ -68,7 +68,7 @@
 &lt;p&gt;이렇게 하면 하나의 인증서 아래에 여러 서브도메인이 붙는다.&lt;/p&gt;
 &lt;p&gt;여튼 이걸로 도메인 여러개 발급받는 것 해결했음…&lt;/p&gt;
 </content>
-        <category term="certbot2" />
+        <category term="certbot" />
         <updated>2021-08-12T23:55:12.000Z</updated>
     </entry>
 </feed>

@@ -7,7 +7,7 @@
         <language>ko</language>
         <pubDate>Wed, 24 Aug 2022 18:14:09 +0900</pubDate>
         <lastBuildDate>Wed, 24 Aug 2022 18:14:09 +0900</lastBuildDate>
-        <category>certbot2</category>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
         <category>dns</category>
@@ -20,11 +20,11 @@
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>pm2</category>
         <category>잡담</category>
         <category>스크랩</category>
         <category>비동기</category>
@@ -35,7 +35,7 @@
             <guid isPermalink="true">https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
             <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
             <link>https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</link>
-            <category>certbot2</category>
+            <category>certbot</category>
             <category>배포</category>
             <category>https</category>
             <category>인증서</category>
@@ -427,7 +427,7 @@
             <guid isPermalink="true">https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</guid>
             <title>Certbot으로 https 서브도메인 등록하기</title>
             <link>https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</link>
-            <category>certbot2</category>
+            <category>certbot</category>
             <pubDate>Fri, 13 Aug 2021 08:55:12 +0900</pubDate>
             <description><![CDATA[ &lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
 &lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
