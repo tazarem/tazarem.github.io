@@ -96,7 +96,7 @@
         top: 3.5rem;
         display: inherit;
         left: 0;
-        width: -webkit-fill-available;
+        width: calc(100% - 1.1rem);
         position: fixed;
         background-color: #fff;
         z-index: 6;

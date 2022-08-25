@@ -17,7 +17,6 @@
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>pm2</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -25,12 +24,13 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>스크랩</category>
+        <category>pm2</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>스크랩</category>
         <item>
             <guid isPermalink="true">https://coding-coconut.com/2021/09/17/%EB%A7%81%ED%81%AC-%EC%8A%A4%ED%81%AC%EB%9E%A9-%EB%B0%8F-%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/</guid>
             <title>링크 스크랩 및 참고자료</title>

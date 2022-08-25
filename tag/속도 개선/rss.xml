@@ -17,7 +17,6 @@
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>pm2</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -25,12 +24,13 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>스크랩</category>
+        <category>pm2</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>스크랩</category>
         <item>
             <guid isPermalink="true">https://coding-coconut.com/2022/01/27/%ED%95%A8%EC%88%98%EC%9D%98-%EB%B9%84%EB%8F%99%EA%B8%B0%ED%99%94%EC%99%80-async-%ED%82%A4%EC%9B%8C%EB%93%9C/</guid>
             <title>함수의 비동기화와 async 키워드</title>

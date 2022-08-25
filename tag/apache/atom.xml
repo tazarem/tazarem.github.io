@@ -14,7 +14,6 @@
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="pm2" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -22,12 +21,13 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="스크랩" />
+    <category term="pm2" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
+    <category term="스크랩" />
     <entry>
         <id>https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</id>
         <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>

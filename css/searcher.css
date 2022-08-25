@@ -5,13 +5,13 @@ input:focus{
 .search-widget{
     display: none;
     border: var(--disable-color) solid thin;
-    padding: 1rem;
+    padding: .8rem;
     position: absolute;
     width: 23rem;
     border-radius: var(--tag-radius);
     background-color: var(--header-widget-color);
-    top: 8rem;
-    right: 3rem;
+    top: 7rem;
+    right: 2rem;
     transition: all ease .3s;
 }
 .search-widget.active{
@@ -54,7 +54,7 @@ input:focus{
 #local-search-result ul{
     padding: 0;
     margin-top: 0.5rem;
-    max-height: 8rem;
+    max-height: 13.7rem;
 }
 #local-search-result li{
     margin: 0rem;

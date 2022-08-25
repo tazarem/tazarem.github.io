@@ -14,7 +14,6 @@
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="pm2" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -22,12 +21,13 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="스크랩" />
+    <category term="pm2" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
+    <category term="스크랩" />
     <entry>
         <id>https://coding-coconut.com/2022/01/21/%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%83%88%EB%8B%A8%EC%9E%A5/</id>
         <title>블로그 새단장</title>
