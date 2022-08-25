@@ -58,6 +58,7 @@ html{
     padding-left:.5rem;
     margin: 0rem;
 }
+
 .category-zone li{
     list-style: none;
 }
@@ -71,6 +72,39 @@ html{
 .category-list-count{
     margin-left: .5rem;
     color: var(--accent2-color);
+}
+
+.category-zone ul{
+    flex:1 1 0;
+    overflow: auto;
+}
+.category-zone ul::-webkit-scrollbar
+{
+/* display: none; */
+position: absolute;
+width: 10px;
+height: 0px;
+background-color: transparent;
+}
+.category-zone ul::-webkit-scrollbar-corner
+{
+background-color: transparent;
+border-color: transparent;
+}
+.category-zone ul:hover::-webkit-scrollbar-thumb
+{
+background-color: #0000007a;
+border-radius: 1rem;
+transition: all ease .3s;
+}
+.category-zone ul:hover::-webkit-scrollbar-track
+{
+background-color: transparent;
+transition: all ease .3s;
+}
+.category-zone ul::-webkit-scrollbar-thumb,.category-zone ul::-webkit-scrollbar-track
+{
+opacity: 0;
 }
 
 .tothetop{
