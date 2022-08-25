@@ -7,21 +7,21 @@
     <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="issue" />
+    <category term="dns" />
     <category term="github_page" />
+    <category term="domain" />
+    <category term="issue" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="dns" />
-    <category term="domain" />
+    <category term="pm2" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="https" />
-    <category term="인증서" />
-    <category term="apache" />
-    <category term="pm2" />
     <category term="스크랩" />
     <category term="잡담" />
     <category term="비동기" />
@@ -38,8 +38,8 @@
 &lt;p&gt;이후 &lt;code&gt;hexo deploy&lt;/code&gt; 커맨드를 입력하여 배포해도 깃허브 페이지의 커스텀 도메인이 해제되지 않는다.&lt;/p&gt;
 </content>
         <category term="hexo" />
-        <category term="issue" />
         <category term="github_page" />
+        <category term="issue" />
         <category term="custom_domain" />
         <category term="배포" />
         <category term="hexo_deploy" />

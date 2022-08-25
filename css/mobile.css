@@ -86,6 +86,7 @@
     .search-widget.active{
         height: auto;
         max-height: 100%;
+        width: calc(100% - 1.1rem);
         display: inherit;
         padding: 0.5rem;
         border: var(--disable-color) solid thin;
