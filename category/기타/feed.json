@@ -11,8 +11,8 @@
             "date_published": "2022-07-21T08:20:52.000Z",
             "content_html": "<h1 id=\"Github-Page에-커스텀-도메인-연결하기\"><a href=\"#Github-Page에-커스텀-도메인-연결하기\" class=\"headerlink\" title=\"Github Page에 커스텀 도메인 연결하기\"></a>Github Page에 커스텀 도메인 연결하기</h1><p>방법은 다음과 같다.</p>\n<h3 id=\"도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기\"><a href=\"#도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기\" class=\"headerlink\" title=\"도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기\"></a>도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기</h3><p>도메인을 구입한 사이트에서 있어야 할 레코드는 다음과 같다.</p>\n<table>\n<thead>\n<tr>\n<th>레코드명</th>\n<th>이름</th>\n<th>데이터</th>\n</tr>\n</thead>\n<tbody><tr>\n<td>CNAME</td>\n<td>www</td>\n<td>[yourRepo].github.io</td>\n</tr>\n<tr>\n<td>A</td>\n<td>@</td>\n<td>185.199.108.153</td>\n</tr>\n<tr>\n<td>A</td>\n<td>@</td>\n<td>185.199.109.153</td>\n</tr>\n<tr>\n<td>A</td>\n<td>@</td>\n<td>185.199.110.153</td>\n</tr>\n<tr>\n<td>A</td>\n<td>@</td>\n<td>185.199.111.153</td>\n</tr>\n</tbody></table>\n<p>네임서버는 따로 이관하지 않아도 된다.</p>\n<h3 id=\"블로그로-서비스되고있는-깃허브-페이지의-리포지토리-gt-Setting-gt-Page\"><a href=\"#블로그로-서비스되고있는-깃허브-페이지의-리포지토리-gt-Setting-gt-Page\" class=\"headerlink\" title=\"블로그로 서비스되고있는 깃허브 페이지의 리포지토리 =&gt; Setting =&gt; Page\"></a>블로그로 서비스되고있는 깃허브 페이지의 리포지토리 =&gt; Setting =&gt; Page</h3><p><img src=\"/img/postimg/custom_domain.png\" alt=\"커스텀 도메인\"></p>\n<p>save를 누르면 위에 등록한 DNS정보가 모두 올바를 경우 해당 주소로 퍼블리시되었다는 알람을 띄운다.</p>\n<p>아래 체크박스를 보면 알 수 있지만 GithubPage 특성상 https 옵션을 활성화할 수 있다.</p>\n<p>도메인으로 접속했을 때 깃허브 페이지가 뜨면 성공!</p>\n",
             "tags": [
-                "dns",
                 "github_page",
+                "dns",
                 "domain"
             ]
         },
