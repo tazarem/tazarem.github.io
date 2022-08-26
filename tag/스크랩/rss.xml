@@ -7,9 +7,9 @@
         <language>ko</language>
         <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
         <lastBuildDate>Fri, 17 Sep 2021 09:30:08 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>certbot</category>
         <category>issue</category>
         <category>github_page</category>
         <category>custom_domain</category>
@@ -20,64 +20,27 @@
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>error</category>
-        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>잡담</category>
         <category>스크랩</category>
+        <category>pm2</category>
+        <category>error</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyk000w7c5o3nd62pmx/</guid>
+            <guid>cl7a3uv0t000mfr5o1myh1or5</guid>
             <title>링크 스크랩 및 참고자료</title>
-            <link>https://coding-coconut.com/post/cl7a33yyk000w7c5o3nd62pmx/</link>
+            <link>https://coding-coconut.com/post/cl7a3uv0t000mfr5o1myh1or5/</link>
             <category>스크랩</category>
             <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;리눅스-명령어들&#34;&gt;&lt;a href=&#34;#리눅스-명령어들&#34; class=&#34;headerlink&#34; title=&#34;리눅스 명령어들&#34;&gt;&lt;/a&gt;리눅스 명령어들&lt;/h3&gt;&lt;p&gt;&lt;code&gt;sudo grep -ir &amp;#39;bind-address&amp;#39; /etc/mysql/&lt;/code&gt;&lt;br&gt;해당 위치에 원하는 텍스트가 있는 파일을 찾는 명령어&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;iptables -I INPUT -s 1.1.1.1 -j DROP&lt;/code&gt;&lt;br&gt;특정 IP막기&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://thisblogbusy.tistory.com/entry/iptables-%ED%8A%B9%EC%A0%95-IP-%EB%A7%89%EA%B8%B0?category=692140&#34;&gt;https://thisblogbusy.tistory.com/entry/iptables-특정-IP-막기?category=692140&lt;/a&gt; &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;cat /var/log/apache2/access.log&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;tail access.log&lt;/code&gt;&lt;br&gt;접속 기록 확인&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;nohup npm start &amp;amp;&lt;/code&gt;&lt;br&gt;노헙으로 종료가되어도 계속 실행되도록 백그라운드로 npm start실행.&lt;/p&gt;
-&lt;h3 id=&#34;https-인증&#34;&gt;&lt;a href=&#34;#https-인증&#34; class=&#34;headerlink&#34; title=&#34;https 인증&#34;&gt;&lt;/a&gt;https 인증&lt;/h3&gt;&lt;p&gt;호스트 서버컴퓨터에 snap 깔고 certbot 깔고&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;certbot --apache&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;리버스프록시로 아파치를 설정해뒀다면 아파치 사양으로 certbot이 자동으로 인증서를 설정해줌.&lt;/p&gt;
-&lt;h3 id=&#34;ip-접속기록-확인-아파치-이용&#34;&gt;&lt;a href=&#34;#ip-접속기록-확인-아파치-이용&#34; class=&#34;headerlink&#34; title=&#34;ip 접속기록 확인 (아파치 이용)&#34;&gt;&lt;/a&gt;ip 접속기록 확인 (아파치 이용)&lt;/h3&gt;&lt;p&gt;&lt;code&gt;sudo awk &amp;#39;&amp;#123; print $1&amp;#125;&amp;#39; /var/log/apache2/access.log | sort | uniq -c | sort -nr | head -n 10&lt;/code&gt;&lt;br&gt;접속기록 빈도 10위까지 출력&lt;/p&gt;
-&lt;h3 id=&#34;ssh-키페어-등록하기&#34;&gt;&lt;a href=&#34;#ssh-키페어-등록하기&#34; class=&#34;headerlink&#34; title=&#34;ssh 키페어 등록하기&#34;&gt;&lt;/a&gt;ssh 키페어 등록하기&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://extrememanual.net/26803&#34;&gt;https://extrememanual.net/26803&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;puttygen 이용, rsa 키페어 생성&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;퍼블릭키와 프라이빗키 저장&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;호스트 서버 들어가서 유저계정 고유 폴더에 .ssh 폴더 만들기&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;mkdir .ssh&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;vi .ssh/authorized_keys&lt;/code&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;해당 편집기에 public key 부분을 텍스트 붙여넣기 후 저장&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;드래그앤드롭-라이브러리&#34;&gt;&lt;a href=&#34;#드래그앤드롭-라이브러리&#34; class=&#34;headerlink&#34; title=&#34;드래그앤드롭 라이브러리&#34;&gt;&lt;/a&gt;드래그앤드롭 라이브러리&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://interactjs.io/&#34;&gt;https://interactjs.io/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://web.dev/drag-and-drop/&#34;&gt;https://web.dev/drag-and-drop/&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;드래그앤드롭 파일 업로드 및 설명 튜토리얼.&lt;/p&gt;
-&lt;h3 id=&#34;Electron-시작하기&#34;&gt;&lt;a href=&#34;#Electron-시작하기&#34; class=&#34;headerlink&#34; title=&#34;Electron 시작하기&#34;&gt;&lt;/a&gt;Electron 시작하기&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://musma.github.io/2019/07/17/electron-getting-started.html&#34;&gt;https://musma.github.io/2019/07/17/electron-getting-started.html&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Electron을 이용해서 node.js 와 js로 데스크톱 어플리케이션을 만들 수 있다.&lt;/p&gt;
- ]]></description>
+            <description>
+                리눅스 명령어들 sudo grep -ir &amp;#39;bind-address&amp;#39; /etc/mysql/해당 위치에 원하는 텍스트가 있는 파일을 찾는 명령어 iptables -I INPUT -s 1.1.1.1 -j DROP특정 IP막기  https://thisblogbusy.tistory.com/entry/iptables-특정-IP-막기?category=692140   cat /var/log/apache2/access.log tail access.log접속 기록 확인 nohup npm start &amp;amp;노헙으로 종료가되어도 계속 실...
+            </description>
         </item>
     </channel>
 </rss>

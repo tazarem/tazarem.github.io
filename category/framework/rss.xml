@@ -7,9 +7,9 @@
         <language>ko</language>
         <pubDate>Fri, 10 Jun 2022 17:03:21 +0900</pubDate>
         <lastBuildDate>Fri, 10 Jun 2022 17:03:21 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>certbot</category>
         <category>issue</category>
         <category>github_page</category>
         <category>custom_domain</category>
@@ -20,214 +20,57 @@
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>error</category>
-        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>잡담</category>
         <category>스크랩</category>
+        <category>pm2</category>
+        <category>error</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyg00097c5o3rendffe/</guid>
+            <guid>cl7a3uv0q0009fr5oeh121toy</guid>
             <title>Hexo 테마 만들기</title>
-            <link>https://coding-coconut.com/post/cl7a33yyg00097c5o3rendffe/</link>
+            <link>https://coding-coconut.com/post/cl7a3uv0q0009fr5oeh121toy/</link>
             <category>hexo</category>
             <pubDate>Fri, 10 Jun 2022 17:03:21 +0900</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Hexo-테마-구축하기&#34;&gt;&lt;a href=&#34;#Hexo-테마-구축하기&#34; class=&#34;headerlink&#34; title=&#34;Hexo 테마 구축하기&#34;&gt;&lt;/a&gt;Hexo 테마 구축하기&lt;/h1&gt;&lt;h4 id=&#34;들어가며&#34;&gt;&lt;a href=&#34;#들어가며&#34; class=&#34;headerlink&#34; title=&#34;들어가며&#34;&gt;&lt;/a&gt;들어가며&lt;/h4&gt;&lt;p&gt;Hexo 에서 기본적으로 제공하는 기본값 레이아웃 icarus의 소스가 많이 도움이 되었다.&lt;br&gt;&lt;br&gt;Hexo 는 블로그 ‘프레임워크’ 이며, 공식 문서에서는 helper라는 이름으로 렌더링 스크립트도 제공한다. 용어가 생소해서 많이 헤맸던 기억이 난다.&lt;br&gt;헬퍼에서 제공하는 스크립트는 서버사이드 혹은 클라이언트 사이드 렌더링처럼 뷰 엔진 파일 위에서 사용할 수 있다. 해외에서 안내하는 방법대로 테마를 만들어보고, 정리해보고자 이렇게 게시물을 작성하게 되었다.&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&#34;목차&#34;&gt;&lt;a href=&#34;#목차&#34; class=&#34;headerlink&#34; title=&#34;목차&#34;&gt;&lt;/a&gt;목차&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;테마 폴더 만들기&lt;/li&gt;
-&lt;li&gt;layout 파일 만들기&lt;/li&gt;
-&lt;li&gt;기본 페이지 추가하기&lt;ul&gt;
-&lt;li&gt;index&lt;/li&gt;
-&lt;li&gt;archive&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;부분 렌더링(페이지 쪼개기)&lt;/li&gt;
-&lt;li&gt;정적 소스 불러오기&lt;/li&gt;
-&lt;li&gt;만든 테마 적용하기&lt;/li&gt;
-&lt;li&gt;테마가 적용된 블로그 배포하기&lt;/li&gt;
-&lt;li&gt;테마 만들기 심화&lt;ul&gt;
-&lt;li&gt;부가 페이지 만들기&lt;/li&gt;
-&lt;li&gt;댓글 위젯 달기(utterances)&lt;/li&gt;
-&lt;li&gt;손수 위젯 만들기&lt;/li&gt;
-&lt;li&gt;커스텀 404 페이지(github)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;테마-폴더-만들기&#34;&gt;&lt;a href=&#34;#테마-폴더-만들기&#34; class=&#34;headerlink&#34; title=&#34;테마 폴더 만들기&#34;&gt;&lt;/a&gt;테마 폴더 만들기&lt;/h2&gt;&lt;p&gt;Hexo init을 실행하고 나서, 프로젝트의 루트 경로 아래에 themes 폴더를 만든다.&lt;/p&gt;
-&lt;p&gt;themes 폴더 하위에 테마 이름을 짓고 영문명으로 폴더를 생성한다. ex)your-theme-name&lt;/p&gt;
-&lt;p&gt;your-theme-name 폴더 하위에도 _config.yml 파일을 만든다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Hexo는 _config.yml을 환경변수 겸용 클라이언트딴 전역변수처럼 사용할 수 있는데, &lt;br&gt;&lt;br&gt;테마 하위에 있는 _config.yml은 이 테마에서만 특별하게 적용되는 환경변수값을 지정해서 사용한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;[your-theme-name]폴더 하위에 렌더링 형태를 결정할 layout 폴더와, 테마의 정적 리소스들이 들어갈 source 폴더를 만든다.&lt;/p&gt;
-&lt;h4 id=&#34;요약&#34;&gt;&lt;a href=&#34;#요약&#34; class=&#34;headerlink&#34; title=&#34;요약&#34;&gt;&lt;/a&gt;요약&lt;/h4&gt;&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;themes 폴더 &amp;gt; [your-theme-name] 폴더 생성&lt;/li&gt;
-&lt;li&gt;하위에 layout/source 폴더, _config.yml 만들기&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;layout-파일-만들기&#34;&gt;&lt;a href=&#34;#layout-파일-만들기&#34; class=&#34;headerlink&#34; title=&#34;layout 파일 만들기&#34;&gt;&lt;/a&gt;layout 파일 만들기&lt;/h2&gt;&lt;p&gt;폴더 구조를 잡았으면, [yout-theme-name]/layout 폴더 하위에 이제 페이지 골격을 이루는 파일을 만들어야 한다.&lt;br&gt;Hexo는 서버사이드 렌더링이나 클라이언트 사이드 렌더링을 할 때처럼 부분 렌더링을 지원한다.&lt;br&gt;이는 ejs나 pug 같은 뷰 엔진을 통해 이루어진다.&lt;/p&gt;
-&lt;p&gt;특히 layout 파일은 테마의 전반적인 레이아웃을 결정한다.&lt;br&gt;메인 페이지, 블로그 페이지, 아카이브 페이지로 이동할 때, layout 파일 구조에 베이스를 잡고 하위에 페이지를 그린다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;페이지별로 아예 다른 레이아웃을 적용하고 싶다면, 상위로 먼저 참조하는 layout을 이에 맞게 작성해야 한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;테마 폴더의 구조를 잡았으면 이제 렌더링할 뷰 엔진을 선택한다.&lt;br&gt;node.js를 하는 사람이라면 익숙한 뷰 엔진인 ejs 도 채택할 수 있다.&lt;br&gt;ejs를 사용한다면, 이에 맞는 layout 파일을 만든다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/postimg/layout01.png&#34; alt=&#34;layout 파일 구조&#34;&gt;&lt;/p&gt;
-&lt;p&gt;body 부분에 페이지가 이동될 때 페이지에 맞는 부분 레이아웃이 그려진다.&lt;/p&gt;
-&lt;h2 id=&#34;기본-페이지-추가하기&#34;&gt;&lt;a href=&#34;#기본-페이지-추가하기&#34; class=&#34;headerlink&#34; title=&#34;기본 페이지 추가하기&#34;&gt;&lt;/a&gt;기본 페이지 추가하기&lt;/h2&gt;&lt;p&gt;layout 파일을 작성했다면, 페이지의 레이아웃을 추가한다.&lt;/p&gt;
-&lt;h3 id=&#34;index&#34;&gt;&lt;a href=&#34;#index&#34; class=&#34;headerlink&#34; title=&#34;index&#34;&gt;&lt;/a&gt;index&lt;/h3&gt;&lt;p&gt;사이트에 진입했을 때, 가장 먼저 보여지는 페이지의 레이아웃은 index 페이지 레이아웃을 따른다.&lt;/p&gt;
-&lt;h3 id=&#34;archive&#34;&gt;&lt;a href=&#34;#archive&#34; class=&#34;headerlink&#34; title=&#34;archive&#34;&gt;&lt;/a&gt;archive&lt;/h3&gt;&lt;p&gt;아카이브 페이지는 주제별 카테고리 및 기간별 아카이브를 선택했을 때 그려지는 레이아웃이다.&lt;/p&gt;
-&lt;h2 id=&#34;부분-렌더링-페이지-쪼개기&#34;&gt;&lt;a href=&#34;#부분-렌더링-페이지-쪼개기&#34; class=&#34;headerlink&#34; title=&#34;부분 렌더링(페이지 쪼개기)&#34;&gt;&lt;/a&gt;부분 렌더링(페이지 쪼개기)&lt;/h2&gt;&lt;p&gt;Hexo는 앞서 말했듯이 뷰 엔진을 통한 부분 렌더링을 지원한다.&lt;br&gt;페이지 레이아웃에 통째로 작성해도 좋지만, 반복되는 구조 등이 있다면 partial 이라고 컴포넌트화 해서 위젯 붙이듯 붙여넣는 방법을 채택할 수도 있다.&lt;br&gt;이는 _partial 폴더 하위에 작성해서, partial 키워드로 렌더링 코드를 작성하면 된다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/postimg/folder_structure.png&#34; alt=&#34;테마 폴더의 내부 구조&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/postimg/layout01.png&#34; alt=&#34;작성한 partial 을 다음처럼 적용한다&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;정적-소스-불러오기&#34;&gt;&lt;a href=&#34;#정적-소스-불러오기&#34; class=&#34;headerlink&#34; title=&#34;정적 소스 불러오기&#34;&gt;&lt;/a&gt;정적 소스 불러오기&lt;/h2&gt;&lt;p&gt;source 폴더는 프로젝트의 루트에도 있고, 테마 내부에도 있다.&lt;/p&gt;
-&lt;p&gt;테마 내부의 source 폴더는 블로그 포스팅에 사용되는 img 나 css, js 파일과 같은 정적 리소스를 두는 데에 사용한다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/postimg/theme_source_folder.png&#34; alt=&#34;테마 내부의 source 폴더 안에는 정적 리소스가 들어간다&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;만든-테마-적용하기&#34;&gt;&lt;a href=&#34;#만든-테마-적용하기&#34; class=&#34;headerlink&#34; title=&#34;만든 테마 적용하기&#34;&gt;&lt;/a&gt;만든 테마 적용하기&lt;/h2&gt;&lt;p&gt;테마의 _config.yml이 아닌 프로젝트 루트 위치의 _config.yml에서 theme 명을&lt;br&gt;작성해 두었던 theme 명으로 변경한다.&lt;br&gt;변경사항을 저장하고 Hexo server를 가동하면 적용된 테마를 확인할 수 있다.&lt;/p&gt;
-&lt;h2 id=&#34;테마가-적용된-블로그-배포하기-github&#34;&gt;&lt;a href=&#34;#테마가-적용된-블로그-배포하기-github&#34; class=&#34;headerlink&#34; title=&#34;테마가 적용된 블로그 배포하기(github)&#34;&gt;&lt;/a&gt;테마가 적용된 블로그 배포하기(github)&lt;/h2&gt;&lt;p&gt;Hexo에는 배포 자동화 플러그인이 있다.&lt;br&gt;github에 배포하려면 hexo-deploy-git 플러그인을 사용하자.&lt;br&gt;프로젝트 루트의 _config.yml에서 deploy관련 설정을 작성해준다.&lt;br&gt;&lt;img src=&#34;/img/postimg/github_deploy_yml.png&#34; alt=&#34;깃허브 배포 yml 설정&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;테마-만들기-심화&#34;&gt;&lt;a href=&#34;#테마-만들기-심화&#34; class=&#34;headerlink&#34; title=&#34;테마 만들기 심화&#34;&gt;&lt;/a&gt;테마 만들기 심화&lt;/h2&gt;&lt;h3 id=&#34;부가-페이지-만들기&#34;&gt;&lt;a href=&#34;#부가-페이지-만들기&#34; class=&#34;headerlink&#34; title=&#34;부가 페이지 만들기&#34;&gt;&lt;/a&gt;부가 페이지 만들기&lt;/h3&gt;&lt;p&gt;hexo new page [페이지명] 커맨드를 하면 프로젝트 루트의 source 폴더 내부에 [페이지명]으로 된 폴더가 생기는데, 페이지 주소를 받기 위해 index.md 가 내장되어 있다.&lt;/p&gt;
-&lt;p&gt;프로파일처럼 아무 내용이 없더라도, 페이지는 만들어지며 .md 의 yml 부분에서 레이아웃을 설정해주지 않으면, 테마의 index.ejs의 레이아웃으로 적용된다.&lt;/p&gt;
-&lt;p&gt;theme에서 부가적으로 만들 페이지의 레이아웃을 설정해준다.&lt;/p&gt;
-&lt;p&gt;예시로 guest 나 prologue 등 부가적인 ejs를 생성한다.&lt;/p&gt;
-&lt;p&gt;해당 테마는 guest나 prologue라는 이름의 레이아웃이 생기게 되며,&lt;br&gt;프로젝트 루트 폴더/source 내부의 페이지 이름으로 된 폴더 내부의 index.md의 layout 값을&lt;br&gt;해당 페이지의 layout 이름으로 지정해준다.&lt;/p&gt;
-&lt;p&gt;서버를 가동하면 페이지에 레이아웃이 적용된 걸 확인할 수 있다.&lt;/p&gt;
-&lt;h3 id=&#34;댓글-위젯-달기-utterances&#34;&gt;&lt;a href=&#34;#댓글-위젯-달기-utterances&#34; class=&#34;headerlink&#34; title=&#34;댓글 위젯 달기(utterances)&#34;&gt;&lt;/a&gt;댓글 위젯 달기(utterances)&lt;/h3&gt;&lt;p&gt;포스트 페이지 아래에 utterances 플러그인을 삽입한다.&lt;/p&gt;
-&lt;p&gt;git 이슈와 연동하는 권한을 utterances에게 부여해야 한다.&lt;/p&gt;
-&lt;p&gt;Hexo 게시물의 퍼머링크와 해당 플러그인을 바인딩하면 각 포스트에 댓글을 달 때마다&lt;br&gt;포스트별로 이슈가 생성되고, 알람을 받아볼 수 있다.&lt;/p&gt;
-&lt;h3 id=&#34;손수-위젯-만들기&#34;&gt;&lt;a href=&#34;#손수-위젯-만들기&#34; class=&#34;headerlink&#34; title=&#34;손수 위젯 만들기&#34;&gt;&lt;/a&gt;손수 위젯 만들기&lt;/h3&gt;&lt;p&gt;partial 키워드가 부분 렌더링하는 걸 이용하여 위젯을 만들 수 있다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;최근 포스트&lt;/li&gt;
-&lt;li&gt;포스트의 내용 트래커&lt;/li&gt;
-&lt;li&gt;카테고리 메뉴&lt;/li&gt;
-&lt;li&gt;태그 클라우드 메뉴 등&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;커스텀-404-페이지-github&#34;&gt;&lt;a href=&#34;#커스텀-404-페이지-github&#34; class=&#34;headerlink&#34; title=&#34;커스텀 404 페이지(github)&#34;&gt;&lt;/a&gt;커스텀 404 페이지(github)&lt;/h3&gt;&lt;p&gt;배포를 깃허브에 하는 경우 source 폴더 바로 아래에 404.html 을 만들어 넣어두면&lt;br&gt;github에서 링크를 찾지 못할 때마다 404.html 로 리디렉션시킨다.&lt;/p&gt;
-&lt;p&gt;잘 꾸며서 넣어두면 따로 라우팅을 설정할 필요가 없어 편리하다.&lt;/p&gt;
- ]]></description>
+            <description>
+                Hexo 테마 구축하기 들어가며 Hexo 에서 기본적으로 제공하는 기본값 레이아웃 icarus의 소스가 많이 도움이 되었다.Hexo 는 블로그 ‘프레임워크’ 이며, 공식 문서에서는 helper라는 이름으로 렌더링 스크립트도 제공한다. 용어가 생소해서 많이 헤맸던 기억이 난다.헬퍼에서 제공하는 스크립트는 서버사이드 혹은 클라이언트 사이드 렌더링처럼 뷰 엔진 파일 위에서 사용할 수 있다. 해외에서 안내하는 방법대로 테마를 만들어보고, 정리해보고자 이렇게 게시물을 작성하게 되었다. 목차  테마 폴더 만들기 layout 파일 만들기 기본 ...
+            </description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyd00037c5o6f9qf8kj/</guid>
+            <guid>cl7a3uv0m0001fr5oevfdci1i</guid>
             <title>Certbot으로 https 서브도메인 등록하기</title>
-            <link>https://coding-coconut.com/post/cl7a33yyd00037c5o6f9qf8kj/</link>
+            <link>https://coding-coconut.com/post/cl7a3uv0m0001fr5oevfdci1i/</link>
             <category>certbot</category>
             <pubDate>Fri, 13 Aug 2021 08:55:12 +0900</pubDate>
-            <description><![CDATA[ &lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
-&lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
-&lt;p&gt;AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)&lt;/p&gt;
-&lt;p&gt;클라우드 중 가장 싸다는 Vultr호스팅을 이용하고 싶었으나.. 회원가입할때 1인 1계정 원칙이 있는데, 하필이면 잘 모르는 초짜 고고넛이 회원가입할 때 실수를 해서 락이 걸렸다. &lt;/p&gt;
-&lt;p&gt;문의 처리는 빨랐지만  Vultr가 해외 호스팅 서버라 처리하는게 좀 번거로워서..  고심한 끝에,&lt;/p&gt;
-&lt;p&gt;cafe24의 클라우드 호스팅 서비스를 이용하기로 결정했다.&lt;/p&gt;
-&lt;p&gt;가격도 Vultr 랑 비교해서 둘이 비슷하다! 성능은 cafe24 클라우드 호스팅 쪽이 램을 더 잘 지원하고.. 용량이 쪼끔 더 작다.(벌쳐는 램이 작고 용량이 큰 편) 그리고.. 벌쳐는 클라우드 서버를 사면 공인 IP도 같이 주는데 cafe24쪽은 공인 IP를 따로 사야한다.&lt;/p&gt;
-&lt;p&gt;사내 홈피처럼 공적인 부분은 공인 IP가 꼭 필요하므로~ 공인 IP도 클라우드 서버와 같이 구매했다.&lt;/p&gt;
-&lt;p&gt;개인 블로그 구축을 경험삼아 Ubuntu 18 바이오닉 서버에 Node.js Express서버를 배포하려고 했다.&lt;/p&gt;
-&lt;p&gt;cafe24클라우드의 특성상 보안을 위해 SSH키를 사용해야만 접속할 수 있고,&lt;/p&gt;
-&lt;p&gt;SSH 키는 cafe24클라우드가 서버 살 때 키까지 만들어준다.&lt;/p&gt;
-&lt;p&gt;SSH 키로 접속할때 고고낫은 Putty를 이용했으므로, 키를 읽어서 변환해주는 puttygen이 필요했다.&lt;/p&gt;
-&lt;p&gt;홈피서 pem 키를 받고 puttygen에서 불러오기를 하면 exe프로그램이 putty전용으로 key를 변환해준다.&lt;/p&gt;
-&lt;p&gt;save Private Key를 하면 ppk로 내려지는데,&lt;/p&gt;
-&lt;p&gt;Putty &amp;gt; Connection &amp;gt; SSH &amp;gt; Auth 에서 맨 밑 항목을 보면 Private key file for authentication 하고 ppk키를 등록하는 부분이 있다.&lt;/p&gt;
-&lt;p&gt;푸티에도 등록해주고, 파일질라에도 상단의 사이트 관리자 항목을 보면 키를 등록해주는 부분이 있다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;❕  Putty 와 Filezila 연결을 위한 방화벽 설정은 cafe24 클라우드 웹콘솔 화면에서 사람이 정말~ 설정하기 쉽도록 되어 있다. ufw 치고.. 막 콘솔 창 안 들여다봐도 된다 ㅎㅎ&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;여튼 key를 이용해서 putty로 ssh접속하면, 지정된 계정 이름으로 접속하게 되어있는데, 이 계정한텐 root권한이 없어서 명령수행 할 때 일시적으로 제약을 해제해줘야 했다.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo -i&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;파일질라로 배포할 파일 업로드하는 과정은 생략한다. Express(Node)는 일종의 SSR서버이므로~ 직접 접근하게 하면 좀 위험하고 정적 서버인 apache를 통해 프록시하면 좋을 것 같아서 apache2도 깔았다. 프록시설정하는 과정도 생략한다!&lt;/p&gt;
-&lt;p&gt;인터넷 상으로 접속 확인하고 ip도메인 연결하고 도메인 주소를 치면 사이트가 다 뜨는 것까지 확인했다.(다만 http일 뿐이지..)&lt;/p&gt;
-&lt;h3 id=&#34;본론&#34;&gt;&lt;a href=&#34;#본론&#34; class=&#34;headerlink&#34; title=&#34;본론!&#34;&gt;&lt;/a&gt;본론!&lt;/h3&gt;&lt;p&gt;서론이 쫌 길었다.. 클라우드 얘기만 대판 ..ㅡ.ㅡ) 이제 https를 등록할 차례인데,&lt;/p&gt;
-&lt;p&gt;Certbot이 너무 친절한게.. 공식 사이트 가서 서버 종류랑 컴퓨터 운영체제를 입력하면 어떻게 깔아야 하는지 튜토리얼이 너무 잘 되어있다…ㅠ.ㅠ&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://certbot.eff.org/lets-encrypt/ubuntubionic-apache&#34;&gt;https://certbot.eff.org/lets-encrypt/ubuntubionic-apache&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;아파치 사양으로 하라는 대로 했다. 여기까진 아무 문제 없었다. 근데 왠걸.. 선택지가 두개 뜨는데, 한 도메인은 www를 포함하고, 다른 한 도메인은 www를 포함하지 않는 도메인을 보여주면서 둘 중 인증서 발급 받을 주소를 하나 택하라고 한다&lt;/p&gt;
-&lt;p&gt;둘다 발급받을건데.? 하고 서트봇 인증서 발급 명령을 두번 실행하면&lt;/p&gt;
-&lt;p&gt;인증서는 두개인데.. 사이트 들어가서 확인해봤더니만,&lt;/p&gt;
-&lt;p&gt;정작 적용은 맨 마지막에 발급받은 인증서 하나만 되는 것 같았다.&lt;/p&gt;
-&lt;p&gt;여기서 좀 많이 해멨는데, 방법은.. 인증서를 하나만 발급받고 (www든 www가 아니든)&lt;/p&gt;
-&lt;p&gt;아래처럼 서브도메인으로 인증서를 확장하는 명령을 내리는 것이었다.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;certbot --expand -d existing.com,example.com,newdomain.com&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;이렇게 하면 하나의 인증서 아래에 여러 서브도메인이 붙는다.&lt;/p&gt;
-&lt;p&gt;여튼 이걸로 도메인 여러개 발급받는 것 해결했음…&lt;/p&gt;
- ]]></description>
+            <description>
+                시행착오가 좀 많았다. 회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다! AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ) 클라우드 중 가장 싸다는 Vultr호스팅을 이용하고 싶었으나.. 회원가입할때 1인 1계정 원칙이 있는데, 하필이면 잘 모르는 초짜 고고넛이 회원가입할 때 실수를 해서 락이 걸렸다.  문의 처리는 빨랐지만  Vultr가...
+            </description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyh000d7c5ohbl3g9m2/</guid>
+            <guid>cl7a3uv0s000hfr5ogjgx0dpb</guid>
             <title>Hexo와 API 서버 간의 통신</title>
-            <link>https://coding-coconut.com/post/cl7a33yyh000d7c5ohbl3g9m2/</link>
+            <link>https://coding-coconut.com/post/cl7a3uv0s000hfr5ogjgx0dpb/</link>
             <category>hexo</category>
             <pubDate>Mon, 08 Mar 2021 16:46:45 +0900</pubDate>
-            <description><![CDATA[ &lt;p&gt;Hexo 블로그에 서버 API를 이용하는 덧글 위젯을 직접 만들고 싶다면 참조할 수 있는 포스팅이다.&lt;br&gt;Hexo는 정적 웹 블로그를 빠르게 작성할 수 있도록 하는 데에 주요 목적이 있기 때문에, 쿼리를 통해 데이터를 가져오고 서버통신을 통해 html dom을 렌더링하는 로직에 대한 지원은 그다지 좋지 않다.&lt;br&gt; Hexo 공식 사이트에서 지원하는 플러그인, 또는 Disqus나 Utterances 와 같은 덧글 위젯이 있지만.. 이런 위젯은 커스터마이징이나 데이터 저장 방식이 유연하지 못하다는 게 사실이다.&lt;/p&gt;
-&lt;p&gt;요약해서 말하자면, 결국 개발자들의 입맞에 맞지 않기 때문에 커스텀 위젯을 만들고자 하는 것이다 ^^;;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;뭘 만들 것인가?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Hexo처럼 정적 프레임워크와 같이 사용할 수 있는, 덧글 위젯을 만들려고 한다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;어떻게 만들 것인가?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Hexo와 호환되려면 어떻게 해야 할까?&lt;br&gt;Hexo는 정적 블로그형 웹페이지 제작에 최적화된 별도의 서버를 가지고 있다. 이 서버는 Hexo를 가동시킬 때 .md(마크다운) 파일을 html로 내려준다.&lt;/p&gt;
-&lt;p&gt;*문제점 : Hexo와 위젯 API서버가 다르기 때문에 크로스오리진 이슈가 발생한다.&lt;/p&gt;
-&lt;p&gt;:할 수 있는 방법&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;위젯 따로 구동되는 방식을 이용해야 한다. 다른 웹페이지를 볼 수 있는 iframe 태그를 이용할수도 있고, 데이터만 전송받아 Hexo 상에서 DOM을 따로 그릴 수도 있다. 데이터 교환 방식은 ajax 또는 axios를 이용할 것이다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;흐름 구상은 다음과 같다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Hexo에서 ajax 혹은 axios를 이용하여 데이터를 요청한다.&lt;/li&gt;
-&lt;li&gt;api를 통해 댓글 데이터를 전송한다.&lt;/li&gt;
-&lt;li&gt;전송된 데이터를 받아서 Hexo상에서 HTML DOM을 직접 그린다.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;..해서 다음과 같은 과정이 될 것이다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hexo ajax 요청 =&amp;gt; 위젯 API의 수신 및 응답 =&amp;gt; Hexo ajax 응답 완료 =&amp;gt; Hexo의 js로 DOM 렌더링&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;그렇다면 이제 뭘 이용해서 구현할까?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;페이지를 렌더링해서 iframe하는 방식도 해봤고 데이터만 받아와서 hexo상에서 렌더링하는 방식도 해봤는데&lt;br&gt;iframe은 크로스오리진 이슈 때문에 iframe 내부의 DOM을 조작하기가 까다로워서 ajax 요청을 통해 api 서버로부터 데이터를 받아와서&lt;br&gt;Hexo 측에서 댓글 위젯을 그리는 편을 택했다.&lt;/p&gt;
-&lt;h3 id=&#34;1-Node-js-Express-프레임워크로-위젯이-가동될-서버-만들기&#34;&gt;&lt;a href=&#34;#1-Node-js-Express-프레임워크로-위젯이-가동될-서버-만들기&#34; class=&#34;headerlink&#34; title=&#34;1. Node.js Express 프레임워크로 위젯이 가동될 서버 만들기&#34;&gt;&lt;/a&gt;1. Node.js Express 프레임워크로 위젯이 가동될 서버 만들기&lt;/h3&gt;&lt;!-- 이미지 --&gt;
-&lt;p&gt;express를 사용하여 api 서버의 틀을 잡는다.&lt;/p&gt;
-&lt;!-- 이미지 --&gt;
-&lt;p&gt;댓글이 저장될 데이터베이스 또한 작성해야 한다.&lt;/p&gt;
-&lt;h3 id=&#34;2-위젯-서버의-API-로직-작성하기&#34;&gt;&lt;a href=&#34;#2-위젯-서버의-API-로직-작성하기&#34; class=&#34;headerlink&#34; title=&#34;2. 위젯 서버의 API 로직 작성하기&#34;&gt;&lt;/a&gt;2. 위젯 서버의 API 로직 작성하기&lt;/h3&gt;&lt;!-- 이미지 --&gt;
-&lt;p&gt;Node Express 서버에 기본 CRUD를 할 수 있도록 기능을 만든다.&lt;/p&gt;
-&lt;h3 id=&#34;3-Hexo-ajax-요청-로직-작성&#34;&gt;&lt;a href=&#34;#3-Hexo-ajax-요청-로직-작성&#34; class=&#34;headerlink&#34; title=&#34;3. Hexo ajax 요청 로직 작성&#34;&gt;&lt;/a&gt;3. Hexo ajax 요청 로직 작성&lt;/h3&gt;&lt;!-- 이미지 --&gt;
-&lt;p&gt;Hexo 댓글 위젯의 버튼을 누르면 ajax 또는 axios 를 통해 위에서 작성한 api에 데이터를 요청할 수 있도록 한다.&lt;/p&gt;
-&lt;h3 id=&#34;4-댓글-DOM-렌더링-로직-작성&#34;&gt;&lt;a href=&#34;#4-댓글-DOM-렌더링-로직-작성&#34; class=&#34;headerlink&#34; title=&#34;4. 댓글 DOM 렌더링 로직 작성&#34;&gt;&lt;/a&gt;4. 댓글 DOM 렌더링 로직 작성&lt;/h3&gt;&lt;!-- 이미지 --&gt;
-&lt;p&gt;데이터 전송이 끝나면 추가되는 댓글 또는 삭제되는 댓글을 렌더링할 수 있도록 html DOM 렌더러를 작성한다.&lt;/p&gt;
-&lt;h3 id=&#34;5-댓글이-갱신되는것을-확인&#34;&gt;&lt;a href=&#34;#5-댓글이-갱신되는것을-확인&#34; class=&#34;headerlink&#34; title=&#34;5. 댓글이 갱신되는것을 확인&#34;&gt;&lt;/a&gt;5. 댓글이 갱신되는것을 확인&lt;/h3&gt;&lt;!-- 이미지 --&gt;
-&lt;p&gt;댓글이 잘 작성된 것을 확인할 수 있었다.&lt;br&gt;지금은 익명 댓글이지만, 로그인 위젯을 만들어 놓으면 api 서버로부터 세션검증을 통해 유저검증을 하는 것도 가능할 것 같다.&lt;/p&gt;
- ]]></description>
+            <description>
+                Hexo 블로그에 서버 API를 이용하는 덧글 위젯을 직접 만들고 싶다면 참조할 수 있는 포스팅이다.Hexo는 정적 웹 블로그를 빠르게 작성할 수 있도록 하는 데에 주요 목적이 있기 때문에, 쿼리를 통해 데이터를 가져오고 서버통신을 통해 html dom을 렌더링하는 로직에 대한 지원은 그다지 좋지 않다. Hexo 공식 사이트에서 지원하는 플러그인, 또는 Disqus나 Utterances 와 같은 덧글 위젯이 있지만.. 이런 위젯은 커스터마이징이나 데이터 저장 방식이 유연하지 못하다는 게 사실이다. 요약해서 말하자면, 결국 개발자들의...
+            </description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyh000c7c5o35m7fsiu/</guid>
+            <guid>cl7a3uv0r000dfr5o3wind6k3</guid>
             <title>Hexo 테마 블로그 적용기</title>
-            <link>https://coding-coconut.com/post/cl7a33yyh000c7c5o35m7fsiu/</link>
+            <link>https://coding-coconut.com/post/cl7a3uv0r000dfr5o3wind6k3/</link>
             <category>hexo</category>
             <pubDate>Tue, 09 Feb 2021 12:19:02 +0900</pubDate>
-            <description><![CDATA[ &lt;p&gt;블로그의 첫 게시물은 도커가 장식했지만, 그래도 명색이 헥소로 기껏 만든 블로그인데 적용기를 써보자~&lt;br&gt;다른 블로그를 봐도 헥소 테마 레이아웃을 만드는 방법은 잘 나와있지 않아서, 이왕 하는 김에 테마 만드는 법도 같이 기술하련다.&lt;br&gt;헥소 프레임워크를 좀 만져봤는데, 작동원리는 쪼끔 알겠고 헥소 기반 테마 만드는법을 모르는 사람에게 추천한다. 헥소 공식 사이트에도 만드는 방법이 어렴풋하게나마 나와있으니 참조해도 좋다(그리 자세히 나와있진 않지만..)&lt;/p&gt;
-&lt;h3 id=&#34;1-레이아웃-폴더-만들기&#34;&gt;&lt;a href=&#34;#1-레이아웃-폴더-만들기&#34; class=&#34;headerlink&#34; title=&#34;1. 레이아웃 폴더 만들기&#34;&gt;&lt;/a&gt;1. 레이아웃 폴더 만들기&lt;/h3&gt;&lt;p&gt;우선… 블로그 폴더 구조는 다음과 같다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/postimg/blog_structure.png&#34; alt=&#34;blog_structure&#34;&gt;&lt;/p&gt;
-&lt;p&gt;먼저  프로젝트 루트 폴더에 themes 폴더를 만들고, 내부에 자기가 만들 테마의 이름을 짓자.&lt;br&gt;이 안에 블로그 틀이 들어갈 📁layout 폴더와 img/js/font처럼 정적 소스들이 들어갈 📁source 폴더를 만든다.&lt;br&gt;블로그 테마에 적용시킬 변수들을 모아 관리하는 &lt;code&gt;_config.yml&lt;/code&gt;파일도 만든다.&lt;/p&gt;
-&lt;h3 id=&#34;3-렌더링할-템플릿-엔진-선택&#34;&gt;&lt;a href=&#34;#3-렌더링할-템플릿-엔진-선택&#34; class=&#34;headerlink&#34; title=&#34;3. 렌더링할 템플릿 엔진 선택&#34;&gt;&lt;/a&gt;3. 렌더링할 템플릿 엔진 선택&lt;/h3&gt;&lt;p&gt;필자는 Express를 사용해와서.. 상대적으로 익숙한 ejs로 작성할 것이다.&lt;br&gt;블로그의 전체 레이아웃을 담당하는 &lt;code&gt;layout.ejs&lt;/code&gt; 파일을 📁layout 폴더 안에 만들어준다.&lt;br&gt;이 &lt;code&gt;layout.ejs&lt;/code&gt; 파일이 블로그의 뼈대 역할을 해줄 것이다.&lt;/p&gt;
-&lt;h3 id=&#34;4-부분-렌더링-파츠별로-작성&#34;&gt;&lt;a href=&#34;#4-부분-렌더링-파츠별로-작성&#34; class=&#34;headerlink&#34; title=&#34;4. 부분 렌더링 파츠별로 작성&#34;&gt;&lt;/a&gt;4. 부분 렌더링 파츠별로 작성&lt;/h3&gt;&lt;p&gt;📁layout 폴더 안에 각 부분별 파츠가 들어갈📁_partial 폴더를 만들어주고, &lt;code&gt;layout.ejs&lt;/code&gt; 파일을 한번 보자.&lt;/p&gt;
-&lt;h3 id=&#34;5-레이아웃-변수를-담당할-config-yml-파일-작성&#34;&gt;&lt;a href=&#34;#5-레이아웃-변수를-담당할-config-yml-파일-작성&#34; class=&#34;headerlink&#34; title=&#34;5. 레이아웃 변수를 담당할 _config.yml 파일 작성&#34;&gt;&lt;/a&gt;5. 레이아웃 변수를 담당할 _config.yml 파일 작성&lt;/h3&gt;&lt;p&gt;ejs 문법 속에 동적으로 들어갈 변수들을 yml 로 작성한다.&lt;/p&gt;
-&lt;h3 id=&#34;6-부가적인-것&#34;&gt;&lt;a href=&#34;#6-부가적인-것&#34; class=&#34;headerlink&#34; title=&#34;6. 부가적인 것&#34;&gt;&lt;/a&gt;6. 부가적인 것&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;서버 통신이 필요한 무언가를 만들고 싶다.. 가령 댓글이라거나..&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Hexo가 직접 댓글서비스를 지원하진 않지만, 관련 플러그인을 지원한다.&lt;br&gt;댓글을 붙이고 싶다면, 상세한 커스터마이징 없이 &lt;a href=&#34;https://utteranc.es/&#34;&gt;Utterances&lt;/a&gt;나 &lt;a href=&#34;https://help.disqus.com/en/&#34;&gt;Disqus&lt;/a&gt;처럼 댓글 위젯을 서비스받는 방법도 있다. Hexo 에서 직접 추천하는 방법이며, 공식 메뉴얼도 있다!&lt;/p&gt;
-&lt;p&gt;직접 만들고 싶다면, 아쉽게도 Hexo는 정적 서비스를 중점적으로 빠르게 작성하기 위한 프레임워크이기 때문에, 서버통신이 필요한 무언가를 작성할 때 그렇게 용이하지는 않다. 이렇게 되면.. 정적 소스 폴더 안의 js로 직접 서버 API로 ajax를 날리는 방법을 택해야💦..&lt;/p&gt;
-&lt;p&gt;이럴 바에야 차라리 서버사이드 렌더링(SSR) 방식으로 만드는 게 더 낫지 않은가 고민해보길 바란다. &lt;/p&gt;
-&lt;p&gt;그래도 Hexo 블로그에 서버 API를 이용하는 덧글 위젯을 직접 만들고 싶다면… &lt;a href=&#34;#&#34;&gt;[링크]:Hexo 와 API 서버 간의 통신&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;iframe 으로 위젯 만들기?&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;iframe 내부에 들어갈 위젯이 고정 높이폭과 너비를 가진다면 가능하다!&lt;br&gt;혹은 position: absolute; 로 동동 떠 있으면 iframe으로 위젯을 만들어도 좋다.&lt;/p&gt;
- ]]></description>
+            <description>
+                블로그의 첫 게시물은 도커가 장식했지만, 그래도 명색이 헥소로 기껏 만든 블로그인데 적용기를 써보자~다른 블로그를 봐도 헥소 테마 레이아웃을 만드는 방법은 잘 나와있지 않아서, 이왕 하는 김에 테마 만드는 법도 같이 기술하련다.헥소 프레임워크를 좀 만져봤는데, 작동원리는 쪼끔 알겠고 헥소 기반 테마 만드는법을 모르는 사람에게 추천한다. 헥소 공식 사이트에도 만드는 방법이 어렴풋하게나마 나와있으니 참조해도 좋다(그리 자세히 나와있진 않지만..) 1. 레이아웃 폴더 만들기 우선… 블로그 폴더 구조는 다음과 같다.  먼저  프로젝트 루트...
+            </description>
         </item>
     </channel>
 </rss>

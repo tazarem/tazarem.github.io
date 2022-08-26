@@ -4,9 +4,9 @@
     <title>Coding Coconut • Posts by &#34;javascript&#34; category</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-05-20T07:51:12.000Z</updated>
+    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="certbot" />
     <category term="issue" />
     <category term="github_page" />
     <category term="custom_domain" />
@@ -17,22 +17,22 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="error" />
-    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="잡담" />
     <category term="스크랩" />
+    <category term="pm2" />
+    <category term="error" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cl7a33yyj000n7c5o2iqc6lsk/</id>
+        <id>https://coding-coconut.com/post/cl7a3uv0t000ofr5oenoiashq/</id>
         <title>pm2와 클러스터화</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cl7a33yyj000n7c5o2iqc6lsk/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a3uv0t000ofr5oenoiashq/"/>
         <content type="html">&lt;h2 id=&#34;클러스터화-가동-설정-및-디버깅&#34;&gt;&lt;a href=&#34;#클러스터화-가동-설정-및-디버깅&#34; class=&#34;headerlink&#34; title=&#34;클러스터화 가동 설정 및 디버깅&#34;&gt;&lt;/a&gt;클러스터화 가동 설정 및 디버깅&lt;/h2&gt;&lt;p&gt;Node.js의 루트 바로 아래에 있는 인덱스 파일들은 package.json 설정 등을 통하면 멀티스레드로 실행할 수 있다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;package.json 파일 설정과 pm2를 이용하여 별개의 프로그램을 클러스터화 가동한다.&lt;/p&gt;
@@ -78,9 +78,9 @@
         <updated>2022-05-20T07:51:12.000Z</updated>
     </entry>
     <entry>
-        <id>https://coding-coconut.com/post/cl7a33yyl000z7c5o6cz2ai25/</id>
+        <id>https://coding-coconut.com/post/cl7a3uv0v000xfr5ob6wma07b/</id>
         <title>함수의 비동기화와 async 키워드</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cl7a33yyl000z7c5o6cz2ai25/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a3uv0v000xfr5ob6wma07b/"/>
         <content type="html">&lt;h1 id=&#34;함수의-비동기화&#34;&gt;&lt;a href=&#34;#함수의-비동기화&#34; class=&#34;headerlink&#34; title=&#34;함수의 비동기화&#34;&gt;&lt;/a&gt;함수의 비동기화&lt;/h1&gt;&lt;p&gt;기존 async await 를 단순히 비동기를 순차적으로 처리하는 데에만 이용하다가,&lt;br&gt;실무상 비동기로 함수를 처리해야 할 일이 생겼다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;일반적인 자바스크립트 함수&lt;/p&gt;

@@ -235,13 +235,13 @@
     </div>
     <div class="post-list">
         
-              <a href="/post/cl7a33yyi000j7c5o8yyibakk/">Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</a>
+              <a href="/post/cl7a3uv0u000tfr5oeez8avsm/">Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</a>
           
-              <a href="/post/cl7a33yyh000h7c5o6t19d2i8/">Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</a>
+              <a href="/post/cl7a3uv0r000efr5o12ij5z4u/">Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</a>
           
-              <a href="/post/cl7a33yyf00077c5o257171n5/">Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</a>
+              <a href="/post/cl7a3uv0p0007fr5o98xv6cxa/">Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</a>
           
-              <a href="/post/cl7a33yyg00087c5o1jarbq6n/">Github Page에 커스텀 도메인 연결하기</a>
+              <a href="/post/cl7a3uv0q0008fr5o1ppp9gtw/">Github Page에 커스텀 도메인 연결하기</a>
           
     </div>
 </div>
@@ -251,53 +251,58 @@
 
     <div class="post-header">
         <div class="post-category">
-            <a class="category-link" href="/categories/linux/">linux</a>
+            <a class="category-link" href="/categories/javascript/">javascript</a>
         </div>
-        <div class="post-title">SSH키로 로그인하는 법</div>
+        <div class="post-title">pm2와 클러스터화</div>
         <div class="post-date">
             <!-- 작성됨 -->
-            <div class="post-date-write">2022-05-20 17:44:10</div>
+            <div class="post-date-write">2022-05-20 16:51:12</div>
         </div>
         <div class="post-tag">
-            <a class="tag-none-link" href="/tags/bash/" rel="tag">bash</a><a class="tag-none-link" href="/tags/cmd/" rel="tag">cmd</a><a class="tag-none-link" href="/tags/ssh/" rel="tag">ssh</a><a class="tag-none-link" href="/tags/terminal/" rel="tag">terminal</a>
+            <a class="tag-none-link" href="/tags/pm2/" rel="tag">pm2</a>
         </div>
     </div>
     <div class="post-content">
-        <h2 id="SSH키로-로그인하는-법"><a href="#SSH키로-로그인하는-법" class="headerlink" title="SSH키로 로그인하는 법"></a>SSH키로 로그인하는 법</h2><h3 id="SSH-키-생성하기"><a href="#SSH-키-생성하기" class="headerlink" title="SSH 키 생성하기"></a>SSH 키 생성하기</h3><p>깃허브나 벌쳐 인증서버/원격 데이터베이스에 접속할 때 키로그인을 필요로 하기도 한다.</p>
+        <h2 id="클러스터화-가동-설정-및-디버깅"><a href="#클러스터화-가동-설정-및-디버깅" class="headerlink" title="클러스터화 가동 설정 및 디버깅"></a>클러스터화 가동 설정 및 디버깅</h2><p>Node.js의 루트 바로 아래에 있는 인덱스 파일들은 package.json 설정 등을 통하면 멀티스레드로 실행할 수 있다.</p>
 <blockquote>
-<p>키 생성하기</p>
+<p>package.json 파일 설정과 pm2를 이용하여 별개의 프로그램을 클러스터화 가동한다.</p>
 </blockquote>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
-<p>모든 설정 기본값으로 하면 내 컴퓨터/사용자 폴더/.ssh폴더(숨겨진 폴더)안에 다음처럼 rsa 키가 생성된다.</p>
-<ul>
-<li>id_rsa</li>
-<li>id_rsa.pub</li>
-</ul>
-<h3 id="키-파일-등록"><a href="#키-파일-등록" class="headerlink" title="키 파일 등록"></a>키 파일 등록</h3><p>ssh 를 이용해서 로그인하려면 이전 과정에서 생성된 두가지 키가 필요하다.</p>
-<ul>
-<li>id_rsa (클라이언트 피시가 가지고 있을 프라이빗 키. 이걸로 로그인함!)</li>
-<li>id_rsa.pub (호스트에 등록할 퍼블릭 키. 긁어서 호스트에 등록해야한다.)</li>
-</ul>
-<p>id_rsa는 다른 이름이거나 확장자가 <code>.ppk</code> 또는 <code>.pem</code>일 수 있다.</p>
-<blockquote>
-<p>.ssh 안에 프라이빗 키를 집어넣고, 퍼블릭 키는 파일을 열어 내부를 긁어서 호스트에 등록한다.</p>
-</blockquote>
-<h3 id="SSH-원격-접속-Config-파일-작성"><a href="#SSH-원격-접속-Config-파일-작성" class="headerlink" title="SSH 원격 접속 Config 파일 작성"></a>SSH 원격 접속 Config 파일 작성</h3><blockquote>
-<p>터미널 원격 ssh 접속 시 간편 커맨드를 위한 .ssh/config 파일을 설정한다.</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Host [ConnectionName]</span><br><span class="line">	HostName [HostIP]</span><br><span class="line">	User [HostLoginID]</span><br><span class="line">	IdentityFile ~/.ssh/[YOUR_PRIVATE_KEY_FILE]</span><br></pre></td></tr></table></figure>
+<h3 id="1-pm2-npm-모듈-글로벌-옵션으로-깔기-클러스터-작동-확인을-위한-도구"><a href="#1-pm2-npm-모듈-글로벌-옵션으로-깔기-클러스터-작동-확인을-위한-도구" class="headerlink" title="1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구)"></a>1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install pm2 -g</span><br></pre></td></tr></table></figure>
 
-<p>위처럼 만들어 저장해 놓으면</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh [ConnectionName]</span><br></pre></td></tr></table></figure>
-<p>으로 간편하게 접속할 수 있다.</p>
-<p>키 파일 위치만 올바르다면 별도의 패스워드를 요구하진 않는다.</p>
-<h3 id="기타-파일변환"><a href="#기타-파일변환" class="headerlink" title="기타 파일변환"></a>기타 파일변환</h3><blockquote>
-<p>putty .ppk파일을 제네릭한 .pem으로 변환(윈도즈 putty가 있으면 ppk 그대로 사용해도됨)</p>
+<h3 id="2-클러스터화-파일-작성"><a href="#2-클러스터화-파일-작성" class="headerlink" title="2. 클러스터화 파일 작성"></a>2. 클러스터화 파일 작성</h3><p>  각 클러스터의 dev 실행 명령어 지정 및 클러스터화 시동 명령어 지정(package.json)</p>
+<blockquote>
+<p>package.json 작성 예제. daum/blog/post는 각기 실행할 별개의 index.ts파일이라고 보면 됨.</p>
 </blockquote>
-<ul>
-<li>Mac 인 경우(선제 homebrew 설치 필요)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install putty </span><br><span class="line">puttygen 원본.ppk -O private-openssh -o 내보낼.pem</span><br></pre></td></tr></table></figure></li>
-<li>Windows인 경우 putty-keygen exe를 이용한다.</li>
-</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;:&#123;</span><br><span class="line">    &quot;start:cluster&quot;: &quot;pm2-runtime pm2.config.js&quot;,</span><br><span class="line">    &quot;dev:post&quot;: &quot;nodemon --legacy-watch --watch ./ --exec &#x27;npx&#x27; ts-node -r tsconfig-paths/register ./src/post.ts&quot;,</span><br><span class="line">    &quot;dev:blog&quot;: &quot;nodemon --legacy-watch --watch ./ --exec &#x27;npx&#x27; ts-node -r tsconfig-paths/register ./src/blog.ts&quot;,</span><br><span class="line">    &quot;dev:daum&quot;: &quot;nodemon --legacy-watch --watch ./ --exec &#x27;npx&#x27; ts-node -r tsconfig-paths/register ./src/daum.ts&quot;,</span><br><span class="line">    &quot;dev&quot;: &quot;npm run dev:blog &amp; npm run dev:daum &amp; npm run dev:post&quot;,</span><br><span class="line">    &quot;build&quot;: &quot;tsc -p tsconfig.json &amp;&amp; tsc-alias&quot;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>pm2.config.js 작성 예제. 클러스터화를 할 설정파일들을 지정한다. 인스턴스 갯수만큼 생성이 됨.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports=&#123;</span><br><span class="line">    apps:[</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;post&quot;</span>, <span class="attr">script</span>: <span class="string">&quot;./dist/post.js&quot;</span>, <span class="attr">instances</span>: <span class="number">1</span>, <span class="attr">exec_mode</span>: <span class="string">&quot;cluster&quot;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;blog&quot;</span>, <span class="attr">script</span>: <span class="string">&quot;./dist/blog.js&quot;</span>, <span class="attr">instances</span>: <span class="number">1</span>, <span class="attr">exec_mode</span>: <span class="string">&quot;cluster&quot;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;daum&quot;</span>, <span class="attr">script</span>: <span class="string">&quot;./dist/daum.js&quot;</span>, <span class="attr">instances</span>: <span class="number">1</span>, <span class="attr">exec_mode</span>: <span class="string">&quot;cluster&quot;</span> &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-빌드하기"><a href="#3-빌드하기" class="headerlink" title="3. 빌드하기"></a>3. 빌드하기</h3><blockquote>
+<p>타입스크립트 파일들이 js로 빌드된다.</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-클러스터-가동"><a href="#4-클러스터-가동" class="headerlink" title="4. 클러스터 가동"></a>4. 클러스터 가동</h3><blockquote>
+<p>package.json에서 선제 명령어 설정을 해줘야 함</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run start:cluster</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-이후-디버깅은-pm2-에서-할-수-있음"><a href="#5-이후-디버깅은-pm2-에서-할-수-있음" class="headerlink" title="5. 이후 디버깅은 pm2 에서 할 수 있음"></a>5. 이후 디버깅은 pm2 에서 할 수 있음</h3><blockquote>
+<p>가동되고 있는 클러스터 확인</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 list</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>클러스터 상세내역 확인(방향키로 조정)</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 monit</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>클러스터 가동 취소</p>
+</blockquote>
+<p>npm run start:cluster 명령어를 쳤던 커맨드창 ctrl+c </p>
+<p>이렇게 취소하면 pm2 list 했을 때 생성되었던 클러스터들이 사라진 것을 볼 수 있다.</p>
 
     </div>
     
@@ -306,7 +311,7 @@
                 
         <script src="https://utteranc.es/client.js"
         repo="tazarem/tazarem.github.io"
-        issue-term="post/cl7a33yyj000p7c5o987j7db4/"
+        issue-term="post/cl7a3uv0t000ofr5oenoiashq/"
         theme="github-light"
         crossorigin="anonymous"
         async>

@@ -235,13 +235,13 @@
     </div>
     <div class="post-list">
         
-              <a href="/post/cl7a33yyi000j7c5o8yyibakk/">Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</a>
+              <a href="/post/cl7a3uv0u000tfr5oeez8avsm/">Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</a>
           
-              <a href="/post/cl7a33yyh000h7c5o6t19d2i8/">Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</a>
+              <a href="/post/cl7a3uv0r000efr5o12ij5z4u/">Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</a>
           
-              <a href="/post/cl7a33yyf00077c5o257171n5/">Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</a>
+              <a href="/post/cl7a3uv0p0007fr5o98xv6cxa/">Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</a>
           
-              <a href="/post/cl7a33yyg00087c5o1jarbq6n/">Github Page에 커스텀 도메인 연결하기</a>
+              <a href="/post/cl7a3uv0q0008fr5o1ppp9gtw/">Github Page에 커스텀 도메인 연결하기</a>
           
     </div>
 </div>
@@ -251,20 +251,36 @@
 
     <div class="post-header">
         <div class="post-category">
-            <a class="category-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a>
+            <a class="category-link" href="/categories/Framework/">Framework</a>  >  <a class="category-link" href="/categories/Framework/Hexo/">Hexo</a>
         </div>
-        <div class="post-title">블로그 새단장</div>
+        <div class="post-title">Hexo 테마 블로그 적용기</div>
         <div class="post-date">
             <!-- 작성됨 -->
-            <div class="post-date-write">2022-01-21 16:40:37</div>
+            <div class="post-date-write">2021-02-09 12:19:02</div>
         </div>
         <div class="post-tag">
-            <a class="tag-none-link" href="/tags/%EC%9E%A1%EB%8B%B4/" rel="tag">잡담</a>
+            <a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>
         </div>
     </div>
     <div class="post-content">
-        <p>기존 블로그 레이아웃과 테마를 새로 리뉴얼했다!<br>깔끔해서 마음에 든다.</p>
-<p>이번에 새 테마를 만들면서, 기존 Hexo 공식 문서를 많이 파악해 보는 시간을 가졌다.<br>조만간 레이아웃 만들기도 정리해서 포스팅할 예정.</p>
+        <p>블로그의 첫 게시물은 도커가 장식했지만, 그래도 명색이 헥소로 기껏 만든 블로그인데 적용기를 써보자~<br>다른 블로그를 봐도 헥소 테마 레이아웃을 만드는 방법은 잘 나와있지 않아서, 이왕 하는 김에 테마 만드는 법도 같이 기술하련다.<br>헥소 프레임워크를 좀 만져봤는데, 작동원리는 쪼끔 알겠고 헥소 기반 테마 만드는법을 모르는 사람에게 추천한다. 헥소 공식 사이트에도 만드는 방법이 어렴풋하게나마 나와있으니 참조해도 좋다(그리 자세히 나와있진 않지만..)</p>
+<h3 id="1-레이아웃-폴더-만들기"><a href="#1-레이아웃-폴더-만들기" class="headerlink" title="1. 레이아웃 폴더 만들기"></a>1. 레이아웃 폴더 만들기</h3><p>우선… 블로그 폴더 구조는 다음과 같다.</p>
+<p><img src="/img/postimg/blog_structure.png" alt="blog_structure"></p>
+<p>먼저  프로젝트 루트 폴더에 themes 폴더를 만들고, 내부에 자기가 만들 테마의 이름을 짓자.<br>이 안에 블로그 틀이 들어갈 📁layout 폴더와 img/js/font처럼 정적 소스들이 들어갈 📁source 폴더를 만든다.<br>블로그 테마에 적용시킬 변수들을 모아 관리하는 <code>_config.yml</code>파일도 만든다.</p>
+<h3 id="3-렌더링할-템플릿-엔진-선택"><a href="#3-렌더링할-템플릿-엔진-선택" class="headerlink" title="3. 렌더링할 템플릿 엔진 선택"></a>3. 렌더링할 템플릿 엔진 선택</h3><p>필자는 Express를 사용해와서.. 상대적으로 익숙한 ejs로 작성할 것이다.<br>블로그의 전체 레이아웃을 담당하는 <code>layout.ejs</code> 파일을 📁layout 폴더 안에 만들어준다.<br>이 <code>layout.ejs</code> 파일이 블로그의 뼈대 역할을 해줄 것이다.</p>
+<h3 id="4-부분-렌더링-파츠별로-작성"><a href="#4-부분-렌더링-파츠별로-작성" class="headerlink" title="4. 부분 렌더링 파츠별로 작성"></a>4. 부분 렌더링 파츠별로 작성</h3><p>📁layout 폴더 안에 각 부분별 파츠가 들어갈📁_partial 폴더를 만들어주고, <code>layout.ejs</code> 파일을 한번 보자.</p>
+<h3 id="5-레이아웃-변수를-담당할-config-yml-파일-작성"><a href="#5-레이아웃-변수를-담당할-config-yml-파일-작성" class="headerlink" title="5. 레이아웃 변수를 담당할 _config.yml 파일 작성"></a>5. 레이아웃 변수를 담당할 _config.yml 파일 작성</h3><p>ejs 문법 속에 동적으로 들어갈 변수들을 yml 로 작성한다.</p>
+<h3 id="6-부가적인-것"><a href="#6-부가적인-것" class="headerlink" title="6. 부가적인 것"></a>6. 부가적인 것</h3><blockquote>
+<p>서버 통신이 필요한 무언가를 만들고 싶다.. 가령 댓글이라거나..</p>
+</blockquote>
+<p>Hexo가 직접 댓글서비스를 지원하진 않지만, 관련 플러그인을 지원한다.<br>댓글을 붙이고 싶다면, 상세한 커스터마이징 없이 <a target="_blank" rel="noopener" href="https://utteranc.es/">Utterances</a>나 <a target="_blank" rel="noopener" href="https://help.disqus.com/en/">Disqus</a>처럼 댓글 위젯을 서비스받는 방법도 있다. Hexo 에서 직접 추천하는 방법이며, 공식 메뉴얼도 있다!</p>
+<p>직접 만들고 싶다면, 아쉽게도 Hexo는 정적 서비스를 중점적으로 빠르게 작성하기 위한 프레임워크이기 때문에, 서버통신이 필요한 무언가를 작성할 때 그렇게 용이하지는 않다. 이렇게 되면.. 정적 소스 폴더 안의 js로 직접 서버 API로 ajax를 날리는 방법을 택해야💦..</p>
+<p>이럴 바에야 차라리 서버사이드 렌더링(SSR) 방식으로 만드는 게 더 낫지 않은가 고민해보길 바란다. </p>
+<p>그래도 Hexo 블로그에 서버 API를 이용하는 덧글 위젯을 직접 만들고 싶다면… <a href="#">[링크]:Hexo 와 API 서버 간의 통신</a></p>
+<blockquote>
+<p>iframe 으로 위젯 만들기?</p>
+</blockquote>
+<p>iframe 내부에 들어갈 위젯이 고정 높이폭과 너비를 가진다면 가능하다!<br>혹은 position: absolute; 로 동동 떠 있으면 iframe으로 위젯을 만들어도 좋다.</p>
 
     </div>
     
@@ -273,7 +289,7 @@
                 
         <script src="https://utteranc.es/client.js"
         repo="tazarem/tazarem.github.io"
-        issue-term="post/cl7a33yyk000u7c5ogcci40jk/"
+        issue-term="post/cl7a3uv0r000dfr5o3wind6k3/"
         theme="github-light"
         crossorigin="anonymous"
         async>

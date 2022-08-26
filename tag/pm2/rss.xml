@@ -7,9 +7,9 @@
         <language>ko</language>
         <pubDate>Fri, 20 May 2022 16:51:12 +0900</pubDate>
         <lastBuildDate>Fri, 20 May 2022 16:51:12 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>certbot</category>
         <category>issue</category>
         <category>github_page</category>
         <category>custom_domain</category>
@@ -20,65 +20,27 @@
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>error</category>
-        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>잡담</category>
         <category>스크랩</category>
+        <category>pm2</category>
+        <category>error</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyj000n7c5o2iqc6lsk/</guid>
+            <guid>cl7a3uv0t000ofr5oenoiashq</guid>
             <title>pm2와 클러스터화</title>
-            <link>https://coding-coconut.com/post/cl7a33yyj000n7c5o2iqc6lsk/</link>
+            <link>https://coding-coconut.com/post/cl7a3uv0t000ofr5oenoiashq/</link>
             <category>pm2</category>
             <pubDate>Fri, 20 May 2022 16:51:12 +0900</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;클러스터화-가동-설정-및-디버깅&#34;&gt;&lt;a href=&#34;#클러스터화-가동-설정-및-디버깅&#34; class=&#34;headerlink&#34; title=&#34;클러스터화 가동 설정 및 디버깅&#34;&gt;&lt;/a&gt;클러스터화 가동 설정 및 디버깅&lt;/h2&gt;&lt;p&gt;Node.js의 루트 바로 아래에 있는 인덱스 파일들은 package.json 설정 등을 통하면 멀티스레드로 실행할 수 있다.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;package.json 파일 설정과 pm2를 이용하여 별개의 프로그램을 클러스터화 가동한다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;1-pm2-npm-모듈-글로벌-옵션으로-깔기-클러스터-작동-확인을-위한-도구&#34;&gt;&lt;a href=&#34;#1-pm2-npm-모듈-글로벌-옵션으로-깔기-클러스터-작동-확인을-위한-도구&#34; class=&#34;headerlink&#34; title=&#34;1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구)&#34;&gt;&lt;/a&gt;1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구)&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install pm2 -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;2-클러스터화-파일-작성&#34;&gt;&lt;a href=&#34;#2-클러스터화-파일-작성&#34; class=&#34;headerlink&#34; title=&#34;2. 클러스터화 파일 작성&#34;&gt;&lt;/a&gt;2. 클러스터화 파일 작성&lt;/h3&gt;&lt;p&gt;  각 클러스터의 dev 실행 명령어 지정 및 클러스터화 시동 명령어 지정(package.json)&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;package.json 작성 예제. daum/blog/post는 각기 실행할 별개의 index.ts파일이라고 보면 됨.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&#34;highlight&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;scripts&amp;quot;:&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;start:cluster&amp;quot;: &amp;quot;pm2-runtime pm2.config.js&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;dev:post&amp;quot;: &amp;quot;nodemon --legacy-watch --watch ./ --exec &amp;#x27;npx&amp;#x27; ts-node -r tsconfig-paths/register ./src/post.ts&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;dev:blog&amp;quot;: &amp;quot;nodemon --legacy-watch --watch ./ --exec &amp;#x27;npx&amp;#x27; ts-node -r tsconfig-paths/register ./src/blog.ts&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;dev:daum&amp;quot;: &amp;quot;nodemon --legacy-watch --watch ./ --exec &amp;#x27;npx&amp;#x27; ts-node -r tsconfig-paths/register ./src/daum.ts&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;dev&amp;quot;: &amp;quot;npm run dev:blog &amp;amp; npm run dev:daum &amp;amp; npm run dev:post&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;quot;build&amp;quot;: &amp;quot;tsc -p tsconfig.json &amp;amp;&amp;amp; tsc-alias&amp;quot;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;blockquote&gt;
-&lt;p&gt;pm2.config.js 작성 예제. 클러스터화를 할 설정파일들을 지정한다. 인스턴스 갯수만큼 생성이 됨.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&#34;highlight javascript&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;module&lt;/span&gt;.exports=&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    apps:[&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;post&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;script&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;./dist/post.js&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;instances&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;exec_mode&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;cluster&amp;quot;&lt;/span&gt; &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;blog&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;script&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;./dist/blog.js&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;instances&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;exec_mode&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;cluster&amp;quot;&lt;/span&gt; &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#123; &lt;span class=&#34;attr&#34;&gt;name&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;daum&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;script&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;./dist/daum.js&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;instances&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;exec_mode&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;cluster&amp;quot;&lt;/span&gt; &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;3-빌드하기&#34;&gt;&lt;a href=&#34;#3-빌드하기&#34; class=&#34;headerlink&#34; title=&#34;3. 빌드하기&#34;&gt;&lt;/a&gt;3. 빌드하기&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;타입스크립트 파일들이 js로 빌드된다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm run build&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;4-클러스터-가동&#34;&gt;&lt;a href=&#34;#4-클러스터-가동&#34; class=&#34;headerlink&#34; title=&#34;4. 클러스터 가동&#34;&gt;&lt;/a&gt;4. 클러스터 가동&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;package.json에서 선제 명령어 설정을 해줘야 함&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm run start:cluster&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;5-이후-디버깅은-pm2-에서-할-수-있음&#34;&gt;&lt;a href=&#34;#5-이후-디버깅은-pm2-에서-할-수-있음&#34; class=&#34;headerlink&#34; title=&#34;5. 이후 디버깅은 pm2 에서 할 수 있음&#34;&gt;&lt;/a&gt;5. 이후 디버깅은 pm2 에서 할 수 있음&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;가동되고 있는 클러스터 확인&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pm2 list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;클러스터 상세내역 확인(방향키로 조정)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pm2 monit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;클러스터 가동 취소&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;npm run start:cluster 명령어를 쳤던 커맨드창 ctrl+c &lt;/p&gt;
-&lt;p&gt;이렇게 취소하면 pm2 list 했을 때 생성되었던 클러스터들이 사라진 것을 볼 수 있다.&lt;/p&gt;
- ]]></description>
+            <description>
+                클러스터화 가동 설정 및 디버깅 Node.js의 루트 바로 아래에 있는 인덱스 파일들은 package.json 설정 등을 통하면 멀티스레드로 실행할 수 있다.  package.json 파일 설정과 pm2를 이용하여 별개의 프로그램을 클러스터화 가동한다.  1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구) 1npm install pm2 -g  2. 클러스터화 파일 작성   각 클러스터의 dev 실행 명령어 지정 및 클러스터화 시동 명령어 지정(package.json)  package.json 작성 예제....
+            </description>
         </item>
     </channel>
 </rss>

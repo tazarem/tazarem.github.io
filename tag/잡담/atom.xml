@@ -4,9 +4,9 @@
     <title>Coding Coconut • Posts by &#34;잡담&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-01-21T07:40:37.000Z</updated>
+    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="certbot" />
     <category term="issue" />
     <category term="github_page" />
     <category term="custom_domain" />
@@ -17,22 +17,22 @@
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="error" />
-    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="잡담" />
     <category term="스크랩" />
+    <category term="pm2" />
+    <category term="error" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cl7a33yyk000u7c5ogcci40jk/</id>
+        <id>https://coding-coconut.com/post/cl7a3uv0u000ufr5ocm8ueg0k/</id>
         <title>블로그 새단장</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cl7a33yyk000u7c5ogcci40jk/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a3uv0u000ufr5ocm8ueg0k/"/>
         <content type="html">&lt;p&gt;기존 블로그 레이아웃과 테마를 새로 리뉴얼했다!&lt;br&gt;깔끔해서 마음에 든다.&lt;/p&gt;
 &lt;p&gt;이번에 새 테마를 만들면서, 기존 Hexo 공식 문서를 많이 파악해 보는 시간을 가졌다.&lt;br&gt;조만간 레이아웃 만들기도 정리해서 포스팅할 예정.&lt;/p&gt;
 </content>
