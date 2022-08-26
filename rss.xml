@@ -5,14 +5,15 @@
         <link>https://coding-coconut.com</link>
         <description>주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? </description>
         <language>ko</language>
-        <pubDate>Wed, 24 Aug 2022 18:14:09 +0900</pubDate>
-        <lastBuildDate>Wed, 24 Aug 2022 18:14:09 +0900</lastBuildDate>
+        <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
+        <lastBuildDate>Thu, 25 Aug 2022 12:35:55 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>certbot</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
@@ -24,13 +25,25 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>잡담</category>
-        <category>스크랩</category>
         <category>pm2</category>
+        <category>스크랩</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <item>
+            <guid isPermalink="true">https://coding-coconut.com/2022/08/25/Hexo-tag-%EC%98%81%EB%AC%B8%ED%83%9C%EA%B7%B8-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95-%EC%8B%9C-%EB%B0%98%EC%98%81%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A4%EB%A5%98/</guid>
+            <title>Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</title>
+            <link>https://coding-coconut.com/2022/08/25/Hexo-tag-%EC%98%81%EB%AC%B8%ED%83%9C%EA%B7%B8-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95-%EC%8B%9C-%EB%B0%98%EC%98%81%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A4%EB%A5%98/</link>
+            <category>hexo</category>
+            <category>error</category>
+            <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
+            <description><![CDATA[ &lt;p&gt;태그 영문 대소문자를 수정했을 때 링크 오류가 발생했다&lt;/p&gt;
+&lt;p&gt;원인은 github에서 영문대소문자 수정 시 커밋사항에 반영되지 않기 때문이다.&lt;br&gt;태그를 아예 다른 문자로 수정하고 hexo deploy 로 재배포하면 된다.&lt;/p&gt;
+&lt;p&gt;참조 링크&lt;br&gt;&lt;a href=&#34;https://github.com/hexojs/hexo/issues/2600&#34;&gt;https://github.com/hexojs/hexo/issues/2600&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</guid>
             <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>

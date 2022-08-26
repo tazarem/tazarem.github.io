@@ -7,12 +7,13 @@
         <language>ko</language>
         <pubDate>Fri, 20 May 2022 17:44:10 +0900</pubDate>
         <lastBuildDate>Fri, 20 May 2022 17:44:10 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>certbot</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
@@ -24,9 +25,9 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>잡담</category>
-        <category>스크랩</category>
         <category>pm2</category>
+        <category>스크랩</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
