@@ -13,11 +13,11 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
+        <category>error</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>

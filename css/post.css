@@ -15,8 +15,12 @@
     max-width: -webkit-fill-available;
 }
 .post p a::before {
-    content: '🔗';
-    text-decoration:none;
+    content: '\f0c1';
+    font-family: 'Font Awesome 5 Free';
+    text-decoration: none;
+    margin-right: 0.3rem;
+    /* content: '🔗';
+    text-decoration:none; */
 }
 .post-header{
     /* padding: 1.5rem 0.5rem 0 0.5rem; */
