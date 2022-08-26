@@ -7,13 +7,13 @@
     <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="issue" />
+    <category term="dns" />
     <category term="github_page" />
+    <category term="domain" />
+    <category term="issue" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="dns" />
-    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -23,16 +23,16 @@
     <category term="bash" />
     <category term="스크랩" />
     <category term="pm2" />
-    <category term="error" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
+    <category term="error" />
     <entry>
-        <id>https://coding-coconut.com/post/cl7a3uv0q0008fr5o1ppp9gtw/</id>
+        <id>https://coding-coconut.com/post/cl7a59fp90007k35od0z6cckk/</id>
         <title>Github Page에 커스텀 도메인 연결하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cl7a3uv0q0008fr5o1ppp9gtw/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a59fp90007k35od0z6cckk/"/>
         <content type="html">&lt;h1 id=&#34;Github-Page에-커스텀-도메인-연결하기&#34;&gt;&lt;a href=&#34;#Github-Page에-커스텀-도메인-연결하기&#34; class=&#34;headerlink&#34; title=&#34;Github Page에 커스텀 도메인 연결하기&#34;&gt;&lt;/a&gt;Github Page에 커스텀 도메인 연결하기&lt;/h1&gt;&lt;p&gt;방법은 다음과 같다.&lt;/p&gt;
 &lt;h3 id=&#34;도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기&#34;&gt;&lt;a href=&#34;#도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기&#34; class=&#34;headerlink&#34; title=&#34;도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기&#34;&gt;&lt;/a&gt;도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기&lt;/h3&gt;&lt;p&gt;도메인을 구입한 사이트에서 있어야 할 레코드는 다음과 같다.&lt;/p&gt;
 &lt;table&gt;
@@ -75,8 +75,8 @@
 &lt;p&gt;아래 체크박스를 보면 알 수 있지만 GithubPage 특성상 https 옵션을 활성화할 수 있다.&lt;/p&gt;
 &lt;p&gt;도메인으로 접속했을 때 깃허브 페이지가 뜨면 성공!&lt;/p&gt;
 </content>
-        <category term="github_page" />
         <category term="dns" />
+        <category term="github_page" />
         <category term="domain" />
         <updated>2022-07-21T08:20:52.000Z</updated>
     </entry>

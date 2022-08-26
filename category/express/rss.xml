@@ -10,13 +10,13 @@
         <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>issue</category>
+        <category>dns</category>
         <category>github_page</category>
+        <category>domain</category>
+        <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>dns</category>
-        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -26,16 +26,16 @@
         <category>bash</category>
         <category>스크랩</category>
         <category>pm2</category>
-        <category>error</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>error</category>
         <item>
-            <guid>cl7a3uv0m0001fr5oevfdci1i</guid>
+            <guid>cl7a59fp60001k35ocjuu9ve2</guid>
             <title>Certbot으로 https 서브도메인 등록하기</title>
-            <link>https://coding-coconut.com/post/cl7a3uv0m0001fr5oevfdci1i/</link>
+            <link>https://coding-coconut.com/post/cl7a59fp60001k35ocjuu9ve2/</link>
             <category>certbot</category>
             <pubDate>Fri, 13 Aug 2021 08:55:12 +0900</pubDate>
             <description>

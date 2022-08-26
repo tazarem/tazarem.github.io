@@ -10,13 +10,13 @@
         <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>issue</category>
+        <category>dns</category>
         <category>github_page</category>
+        <category>domain</category>
+        <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>dns</category>
-        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -26,16 +26,16 @@
         <category>bash</category>
         <category>스크랩</category>
         <category>pm2</category>
-        <category>error</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>error</category>
         <item>
-            <guid>cl7a3uv0u000ufr5ocm8ueg0k</guid>
+            <guid>cl7a59fpd000nk35o59qh8zdg</guid>
             <title>블로그 새단장</title>
-            <link>https://coding-coconut.com/post/cl7a3uv0u000ufr5ocm8ueg0k/</link>
+            <link>https://coding-coconut.com/post/cl7a59fpd000nk35o59qh8zdg/</link>
             <category>잡담</category>
             <pubDate>Fri, 21 Jan 2022 16:40:37 +0900</pubDate>
             <description>

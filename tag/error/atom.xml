@@ -7,13 +7,13 @@
     <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="issue" />
+    <category term="dns" />
     <category term="github_page" />
+    <category term="domain" />
+    <category term="issue" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="dns" />
-    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -23,16 +23,16 @@
     <category term="bash" />
     <category term="스크랩" />
     <category term="pm2" />
-    <category term="error" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
+    <category term="error" />
     <entry>
-        <id>https://coding-coconut.com/post/cl7a3uv0u000tfr5oeez8avsm/</id>
+        <id>https://coding-coconut.com/post/cl7a59fpf000uk35of7m3bnxd/</id>
         <title>Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cl7a3uv0u000tfr5oeez8avsm/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a59fpf000uk35of7m3bnxd/"/>
         <content type="html">&lt;p&gt;태그 영문 대소문자를 수정했을 때 링크 오류가 발생했다&lt;/p&gt;
 &lt;p&gt;원인은 github에서 영문대소문자 수정 시 커밋사항에 반영되지 않기 때문이다.&lt;br&gt;태그를 아예 다른 문자로 수정하고 hexo deploy 로 재배포하면 된다.&lt;/p&gt;
 &lt;p&gt;참조 링크&lt;br&gt;&lt;a href=&#34;https://github.com/hexojs/hexo/issues/2600&#34;&gt;https://github.com/hexojs/hexo/issues/2600&lt;/a&gt;&lt;/p&gt;

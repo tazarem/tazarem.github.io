@@ -7,13 +7,13 @@
     <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="issue" />
+    <category term="dns" />
     <category term="github_page" />
+    <category term="domain" />
+    <category term="issue" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="dns" />
-    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -23,16 +23,16 @@
     <category term="bash" />
     <category term="스크랩" />
     <category term="pm2" />
-    <category term="error" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
+    <category term="error" />
     <entry>
-        <id>https://coding-coconut.com/post/cl7a3uv0m0001fr5oevfdci1i/</id>
+        <id>https://coding-coconut.com/post/cl7a59fp60001k35ocjuu9ve2/</id>
         <title>Certbot으로 https 서브도메인 등록하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cl7a3uv0m0001fr5oevfdci1i/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a59fp60001k35ocjuu9ve2/"/>
         <content type="html">&lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
 &lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
 &lt;p&gt;AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)&lt;/p&gt;
