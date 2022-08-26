@@ -7,35 +7,35 @@
         <language>ko</language>
         <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
         <lastBuildDate>Thu, 25 Aug 2022 12:35:55 +0900</lastBuildDate>
-        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>dns</category>
-        <category>github_page</category>
-        <category>domain</category>
+        <category>certbot</category>
         <category>issue</category>
+        <category>github_page</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>error</category>
+        <category>dns</category>
+        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
+        <category>error</category>
+        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>스크랩</category>
-        <category>pm2</category>
         <category>잡담</category>
+        <category>스크랩</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2022/08/25/Hexo-tag-%EC%98%81%EB%AC%B8%ED%83%9C%EA%B7%B8-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95-%EC%8B%9C-%EB%B0%98%EC%98%81%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A4%EB%A5%98/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyi000j7c5o8yyibakk/</guid>
             <title>Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</title>
-            <link>https://coding-coconut.com/2022/08/25/Hexo-tag-%EC%98%81%EB%AC%B8%ED%83%9C%EA%B7%B8-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95-%EC%8B%9C-%EB%B0%98%EC%98%81%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A4%EB%A5%98/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyi000j7c5o8yyibakk/</link>
             <category>hexo</category>
             <category>error</category>
             <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>

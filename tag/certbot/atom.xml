@@ -4,35 +4,35 @@
     <title>Coding Coconut • Posts by &#34;certbot&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-08-24T09:14:09.000Z</updated>
-    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="dns" />
-    <category term="github_page" />
-    <category term="domain" />
+    <category term="certbot" />
     <category term="issue" />
+    <category term="github_page" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="error" />
+    <category term="dns" />
+    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
+    <category term="error" />
+    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="스크랩" />
-    <category term="pm2" />
     <category term="잡담" />
+    <category term="스크랩" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/</id>
+        <id>https://coding-coconut.com/post/cl7a33yyh000h7c5o6t19d2i8/</id>
         <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/2022/08/24/Linux-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-https-%EC%9D%B8%EC%A6%9D%EA%B3%BC-Apache2-%ED%94%84%EB%A1%9D%EC%8B%9C%ED%8C%A8%EC%8A%A4-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a33yyh000h7c5o6t19d2i8/"/>
         <content type="html">&lt;h3 id=&#34;들어가며&#34;&gt;&lt;a href=&#34;#들어가며&#34; class=&#34;headerlink&#34; title=&#34;들어가며&#34;&gt;&lt;/a&gt;들어가며&lt;/h3&gt;&lt;p&gt;인증서 발급방법은 기존에 알고있어서 문제가 되지 않았는데 아파치 설정파일 만지는 법을 까먹어서 한동안 설정파일과 씨름했다.. -.-;;&lt;br&gt;로그인한 유저가 관리자 권한일 경우 굳이 sudo를 입력하지 않아도 된다!&lt;/p&gt;
 &lt;h3 id=&#34;0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요&#34;&gt;&lt;a href=&#34;#0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요&#34; class=&#34;headerlink&#34; title=&#34;0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요&#34;&gt;&lt;/a&gt;0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
@@ -72,9 +72,9 @@
         <updated>2022-08-24T09:14:09.000Z</updated>
     </entry>
     <entry>
-        <id>https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/</id>
+        <id>https://coding-coconut.com/post/cl7a33yyd00037c5o6f9qf8kj/</id>
         <title>Certbot으로 https 서브도메인 등록하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/2021/08/13/Certbot%EC%9C%BC%EB%A1%9C-https-%EC%84%9C%EB%B8%8C%EB%8F%84%EB%A9%94%EC%9D%B8-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a33yyd00037c5o6f9qf8kj/"/>
         <content type="html">&lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
 &lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
 &lt;p&gt;AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)&lt;/p&gt;

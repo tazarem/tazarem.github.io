@@ -4,35 +4,35 @@
     <title>Coding Coconut • Posts by &#34;스크랩&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2021-09-17T00:30:08.000Z</updated>
-    <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="dns" />
-    <category term="github_page" />
-    <category term="domain" />
+    <category term="certbot" />
     <category term="issue" />
+    <category term="github_page" />
     <category term="custom_domain" />
     <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="error" />
+    <category term="dns" />
+    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
+    <category term="error" />
+    <category term="pm2" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="스크랩" />
-    <category term="pm2" />
     <category term="잡담" />
+    <category term="스크랩" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/2021/09/17/%EB%A7%81%ED%81%AC-%EC%8A%A4%ED%81%AC%EB%9E%A9-%EB%B0%8F-%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/</id>
+        <id>https://coding-coconut.com/post/cl7a33yyk000w7c5o3nd62pmx/</id>
         <title>링크 스크랩 및 참고자료</title>
-        <link rel="alternate" href="https://coding-coconut.com/2021/09/17/%EB%A7%81%ED%81%AC-%EC%8A%A4%ED%81%AC%EB%9E%A9-%EB%B0%8F-%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cl7a33yyk000w7c5o3nd62pmx/"/>
         <content type="html">&lt;h3 id=&#34;리눅스-명령어들&#34;&gt;&lt;a href=&#34;#리눅스-명령어들&#34; class=&#34;headerlink&#34; title=&#34;리눅스 명령어들&#34;&gt;&lt;/a&gt;리눅스 명령어들&lt;/h3&gt;&lt;p&gt;&lt;code&gt;sudo grep -ir &amp;#39;bind-address&amp;#39; /etc/mysql/&lt;/code&gt;&lt;br&gt;해당 위치에 원하는 텍스트가 있는 파일을 찾는 명령어&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;iptables -I INPUT -s 1.1.1.1 -j DROP&lt;/code&gt;&lt;br&gt;특정 IP막기&lt;/p&gt;
 &lt;blockquote&gt;

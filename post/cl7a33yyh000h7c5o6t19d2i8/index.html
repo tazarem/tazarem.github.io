@@ -1,0 +1,341 @@
+<html lang="ko">
+    <!-- head -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      Coding Coconut
+    </title>
+    <!-- 스크립트들 쓰기~ -->
+    <link rel="alternate" type="application/rss+xml" title="Coding Coconut" href="https://coding-coconut.com/rss.xml" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/icon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/libs/fontawesome5/all.css">
+    <link rel="stylesheet" href="/css/nanumgothic_coding.css">
+    <link rel="stylesheet" href="/css/nanumsquare_round.css">
+    
+    <link rel="stylesheet" href="/css/generic.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/widget.css">
+    <link rel="stylesheet" href="/css/prologue.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/archives.css">
+    <link rel="stylesheet" href="/css/guest.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/tracker.js"></script>
+    <script src="/js/imgoverlay.js"></script>
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4CP2SXC8S"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          let tracking_id = 'G-G4CP2SXC8S'
+          gtag('config', tracking_id);
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="/css/searcher.css">
+      <script src="/js/search.js"></script>
+      <script type="text/javascript">      
+        var search_path = "search.json";
+        if (search_path.length == 0) {
+          search_path = "search.json";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      </script>
+   
+
+   <link rel="stylesheet" href="/css/mobile.css">
+   <link rel="stylesheet" href="/css/hide.css">
+
+   <script src="/js/attacher.js"></script>
+
+   <script>
+    $(function(){
+        draw_tracker()
+    })
+   </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <!-- head -->
+    <body class="scroll">
+    <div class="header-wrap">
+    <div class="header">
+        <div class="mobile-logo" >
+            <!-- Coding Coconut -->
+
+            <div class="header-btn" onclick="toTheTop()">
+                <i class="fas fa-level-up-alt"
+                ></i>
+            </div>
+            
+                <div class="header-btn active" id="searchToggler" onclick="toggleSearcher(this)">
+                    <i class="fas fa-search"></i>
+                </div>
+            
+        </div>
+        <div class="menus">
+            
+                <a href="/prologue" class="header-btn ">
+                    <i class="header-icon fas fa-user-astronaut"></i>
+                    <div class="header-name">Prologue
+                    </div>
+                </a>
+            
+                <a href="/" class="header-btn ">
+                    <i class="header-icon fas fa-satellite"></i>
+                    <div class="header-name">Blog
+                    </div>
+                </a>
+            
+                <a href="/archives" class="header-btn ">
+                    <i class="header-icon fas fa-meteor"></i>
+                    <div class="header-name">Archives
+                    </div>
+                </a>
+            
+                <a href="/guest" class="header-btn ">
+                    <i class="header-icon fas fa-rocket"></i>
+                    <div class="header-name">Guest
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+    
+    <div class="header-display">
+        <!-- 슬라이더나 위젯 넣어도 되고.. 헤더 이미지 넣어도 됨 -->
+        <div class="header-title-zone" onclick="goToMain()">
+            <div class="blog-title">
+                Coding Coconut
+            </div>
+            <div class="blog-subtitle">
+                개발 블로그
+            </div>
+        </div>
+    </div>
+    
+        <!-- 검색 위젯 -->
+
+<div class="search-widget active">
+    <div class="form-group">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" 
+        id="local-search-input" 
+        name="q" results="0"
+        placeholder="Search Posts"
+        class="st-search-input st-default-search-input form-control"
+        />
+    </div>  
+    <div id="local-search-result"></div>
+</div>
+
+    
+</div>
+
+
+    <div class="contents">
+        
+
+    <!-- 단일 게시물 -->
+    <div class="post">
+    <!-- 토픽 트래커. 작성할 것-->
+<div class="left-widget">
+        <div class="left-component category">
+    <div class="title">
+        <i class="fas fa-bookmark"></i>
+        Category
+    </div>
+    <div class="category-zone">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/">CI/CD</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/Docker/">Docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Express/">Express</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Hexo/">Hexo</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a><span class="category-list-count">3</span></li></ul>
+    </div>
+</div>
+
+        
+    <div class="left-component topic-tracker">
+        <div class="title">
+            <i class="fas fa-thumbtack"></i>
+            Topic Tracker
+        </div>
+        <div class="track-list scroll">
+    
+        </div>
+    </div>
+
+    
+        <div class="left-component tags">
+    <div class="title">
+        <i class="fas fa-tags"></i>
+        Tags</div>
+    <div class="tag-zone scroll">
+        <a href="/tags/apache/" style="font-size: 10px; color: #d17def">apache</a> <a href="/tags/asyncawait/" style="font-size: 10px; color: #d17def">asyncawait</a> <a href="/tags/bash/" style="font-size: 10px; color: #d17def">bash</a> <a href="/tags/certbot/" style="font-size: 15px; color: #a481e4">certbot</a> <a href="/tags/cmd/" style="font-size: 10px; color: #d17def">cmd</a> <a href="/tags/custom-domain/" style="font-size: 10px; color: #d17def">custom_domain</a> <a href="/tags/dns/" style="font-size: 10px; color: #d17def">dns</a> <a href="/tags/docker/" style="font-size: 10px; color: #d17def">docker</a> <a href="/tags/domain/" style="font-size: 10px; color: #d17def">domain</a> <a href="/tags/error/" style="font-size: 10px; color: #d17def">error</a> <a href="/tags/github-page/" style="font-size: 15px; color: #a481e4">github_page</a> <a href="/tags/hexo/" style="font-size: 20px; color: #7685d8">hexo</a> <a href="/tags/hexo-deploy/" style="font-size: 10px; color: #d17def">hexo_deploy</a> <a href="/tags/https/" style="font-size: 10px; color: #d17def">https</a> <a href="/tags/issue/" style="font-size: 10px; color: #d17def">issue</a> <a href="/tags/pm2/" style="font-size: 10px; color: #d17def">pm2</a> <a href="/tags/postman/" style="font-size: 10px; color: #d17def">postman</a> <a href="/tags/ssh/" style="font-size: 10px; color: #d17def">ssh</a> <a href="/tags/terminal/" style="font-size: 10px; color: #d17def">terminal</a> <a href="/tags/%EB%B0%B0%ED%8F%AC/" style="font-size: 15px; color: #a481e4">배포</a> <a href="/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/" style="font-size: 10px; color: #d17def">비동기</a> <a href="/tags/%EC%86%8D%EB%8F%84-%EA%B0%9C%EC%84%A0/" style="font-size: 10px; color: #d17def">속도 개선</a> <a href="/tags/%EC%8A%A4%ED%81%AC%EB%9E%A9/" style="font-size: 10px; color: #d17def">스크랩</a> <a href="/tags/%EC%9D%B8%EC%A6%9D%EC%84%9C/" style="font-size: 10px; color: #d17def">인증서</a> <a href="/tags/%EC%9E%A1%EB%8B%B4/" style="font-size: 10px; color: #d17def">잡담</a>
+    </div>
+</div>
+
+    <div class="left-component tothetop">
+        <a class="title" onclick="toTheTop()">
+            <i class="fas fa-chevron-up"></i>
+            To the top
+        </a>
+    </div>
+</div>
+
+
+    <div class="right-widget">
+    <!-- 스티커 어태쳐 -->
+
+<div class="right-component sticker-attacher">
+    <div class="title">
+        <i class="fas fa-disease"></i>
+        Stricker Attacher
+    </div>
+    <div class="sticker-list scroll">
+        
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/cocona.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/ggyul.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/pinkwhale.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/sunnysideup.png">
+                </div>
+            
+        
+    </div>
+    <div class="attacher-btn remove"
+    onclick="attacher.toggleDeleteMode(this)">
+        스티커 떼기
+    </div>
+    <div class="attacher-btn deleteAll"
+    onclick="attacher.deleteAllSticker()">
+        이 페이지의 스티커 전부 삭제
+    </div>
+</div>
+
+
+    <div class="right-component recent-post">
+    <div class="title">
+        <i class="fas fa-bolt"></i>
+        Recent Post
+    </div>
+    <div class="post-list">
+        
+              <a href="/post/cl7a33yyi000j7c5o8yyibakk/">Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</a>
+          
+              <a href="/post/cl7a33yyh000h7c5o6t19d2i8/">Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</a>
+          
+              <a href="/post/cl7a33yyf00077c5o257171n5/">Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</a>
+          
+              <a href="/post/cl7a33yyg00087c5o1jarbq6n/">Github Page에 커스텀 도메인 연결하기</a>
+          
+    </div>
+</div>
+    <div class=""></div>
+</div>
+
+
+    <div class="post-header">
+        <div class="post-category">
+            <a class="category-link" href="/categories/linux/">linux</a>
+        </div>
+        <div class="post-title">Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</div>
+        <div class="post-date">
+            <!-- 작성됨 -->
+            <div class="post-date-write">2022-08-24 18:14:09</div>
+        </div>
+        <div class="post-tag">
+            <a class="tag-none-link" href="/tags/apache/" rel="tag">apache</a><a class="tag-none-link" href="/tags/certbot/" rel="tag">certbot</a><a class="tag-none-link" href="/tags/https/" rel="tag">https</a><a class="tag-none-link" href="/tags/%EB%B0%B0%ED%8F%AC/" rel="tag">배포</a><a class="tag-none-link" href="/tags/%EC%9D%B8%EC%A6%9D%EC%84%9C/" rel="tag">인증서</a>
+        </div>
+    </div>
+    <div class="post-content">
+        <h3 id="들어가며"><a href="#들어가며" class="headerlink" title="들어가며"></a>들어가며</h3><p>인증서 발급방법은 기존에 알고있어서 문제가 되지 않았는데 아파치 설정파일 만지는 법을 까먹어서 한동안 설정파일과 씨름했다.. -.-;;<br>로그인한 유저가 관리자 권한일 경우 굳이 sudo를 입력하지 않아도 된다!</p>
+<h3 id="0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요"><a href="#0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요" class="headerlink" title="0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요"></a>0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-linux-전용-apache2-설치"><a href="#1-linux-전용-apache2-설치" class="headerlink" title="1. linux 전용 apache2 설치"></a>1. linux 전용 apache2 설치</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install apache2</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-000-default-conf-편집"><a href="#2-000-default-conf-편집" class="headerlink" title="2. 000-default.conf 편집"></a>2. 000-default.conf 편집</h3><p>위치는 리눅스 우분투 서버18 기준 맨~ 위 디렉토리 /etc/apache2/site-available/000-default.conf 이다<br>vi 로 편집하거나 (apache2 를 처음 설치하게 되면 기본으로 파일설정 권한이 읽기전용이다 -.-;;;)</p>
+<blockquote>
+<p>파일 권한 수정(읽기 쓰기 실행 다 허용)</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod 777 000-default.conf[혹은 디렉토리]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>000-default.conf 를 아래처럼 편집한 후 저장<br>vi 명령어를 사용해서 즉석으로 편집해도 되고 파일질라같은 ftp 응용프로그램을 이용해서 로컬에서 작성하고 덮어쓰기해도 좋다.<br>vi 명령어일 경우 저장하고 나가기는 esc + :wq!이다</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#LoadModule 구문을 써 줘야 ProxyPass가 작동한다. 이거 미리 설정하면 아래 파일을 실행시키는 스크립트 작성할 필요 x</span></span><br><span class="line">LoadModule proxy_module modules/mod_proxy.so</span><br><span class="line">LoadModule proxy_http_module modules/mod_proxy_http.so</span><br><span class="line"></span><br><span class="line">&lt;VirtualHost *:80&gt;</span><br><span class="line">	ServerAdmin webmaster@localhost</span><br><span class="line">	DocumentRoot /var/www/html</span><br><span class="line"></span><br><span class="line">	ServerName yourdomain.com</span><br><span class="line">	ServerAlias yourdomain.com</span><br><span class="line"></span><br><span class="line">	ProxyRequests Off</span><br><span class="line">	ProxyPreserveHost On</span><br><span class="line">    <span class="comment"># 80으로 받으면 아래 주소로 넘긴다. 여기서의 로컬호스트는 apache가 돌아가는 컴퓨터의 로컬호스트.</span></span><br><span class="line">	<span class="comment">#주소창에서 보여지는 주소도 서버네임으로 바뀌어서 보여진다.</span></span><br><span class="line">  	ProxyPass / http://localhost:8080/</span><br><span class="line">  	ProxyPassReverse / http://localhost:8080/</span><br><span class="line"></span><br><span class="line">	ErrorLog <span class="variable">$&#123;APACHE_LOG_DIR&#125;</span>/error.log</span><br><span class="line">	CustomLog <span class="variable">$&#123;APACHE_LOG_DIR&#125;</span>/access.log combined</span><br><span class="line"></span><br><span class="line">    RewriteEngine on</span><br><span class="line">    RewriteCond %&#123;SERVER_NAME&#125; =content-ad-dev.fastview.co.kr</span><br><span class="line">    RewriteRule ^ https://%&#123;SERVER_NAME&#125;%&#123;REQUEST_URI&#125; [END,NE,R=permanent]</span><br><span class="line">&lt;/VirtualHost&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-Apache2-서비스-재가동"><a href="#3-Apache2-서비스-재가동" class="headerlink" title="3. Apache2 서비스 재가동"></a>3. Apache2 서비스 재가동</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service apache2 restart</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-Snap-설치-이미-깔려-있으면-생략"><a href="#4-Snap-설치-이미-깔려-있으면-생략" class="headerlink" title="4. Snap 설치(이미 깔려 있으면 생략)"></a>4. Snap 설치(이미 깔려 있으면 생략)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install core; sudo snap refresh core</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-Snap으로-Certbot-설치"><a href="#5-Snap으로-Certbot-설치" class="headerlink" title="5. Snap으로 Certbot 설치"></a>5. Snap으로 Certbot 설치</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap install --classic certbot</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-Apache-사양으로-인증서-발급-apache2-서비스가-가동-중이고-80포트가-뜷려있어야-함"><a href="#6-Apache-사양으로-인증서-발급-apache2-서비스가-가동-중이고-80포트가-뜷려있어야-함" class="headerlink" title="6. Apache 사양으로 인증서 발급(apache2 서비스가 가동 중이고 80포트가 뜷려있어야 함)"></a>6. Apache 사양으로 인증서 발급(apache2 서비스가 가동 중이고 80포트가 뜷려있어야 함)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo certbot --apache</span><br></pre></td></tr></table></figure>
+<p>머라머라 나오는데 읽어보면 도메인 입력해달라는것과 인증서 만료 시 발송할 이메일좀 설정해달라는 내용<br>그리고.. 뭔가를 보낸다는 내용인데 이 항목은 생략해도 됨</p>
+<p>만약 과정이 꼬여서 000-default.conf를 다시 수정해야 하면, 인증서파일 재설정을 하면 된다.</p>
+<p>인증서가 이미 존재할 때 위 명령어를 입력하면 인증서 목록이 뜨는데 원하는 도메인의 번호를 입력한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1: Attempt to reinstall this existing certificate</span><br></pre></td></tr></table></figure>
+
+<p>해당 항목을 선택하면 Certbot의 인증서 파일(000-default-le-ssl.conf)이 다시 갱신된다.</p>
+<h3 id="7-확인"><a href="#7-확인" class="headerlink" title="7. 확인"></a>7. 확인</h3><p>웹페이지에 접속해서 자물쇠 표시가 뜨면 성공!</p>
+
+    </div>
+    
+    
+        <div class="reply">
+                
+        <script src="https://utteranc.es/client.js"
+        repo="tazarem/tazarem.github.io"
+        issue-term="post/cl7a33yyh000h7c5o6t19d2i8/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    
+        </div>
+    
+</div>
+
+
+
+    </div>
+    <div class="overlay hide">
+    <div class="img-zone">
+        <div class="title"></div>
+        <div class="content"></div>
+    </div>
+    <!-- <div class="btn-banner">
+        <div class="btn close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="btn img-closer">
+            <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="btn img-wider">
+            <i class="fas fa-search-minus"></i>
+        </div>
+    </div> -->
+</div>
+    <div class="footer">
+    <div class="footer-contents">
+        <div>Copyright 2021 코딩코코넛 All rights reserved.</div>
+        <div>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></div>
+    </div>
+</div>
+    </body>
+</html>

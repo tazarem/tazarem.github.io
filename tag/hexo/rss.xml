@@ -7,35 +7,35 @@
         <language>ko</language>
         <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
         <lastBuildDate>Thu, 25 Aug 2022 12:35:55 +0900</lastBuildDate>
-        <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>dns</category>
-        <category>github_page</category>
-        <category>domain</category>
+        <category>certbot</category>
         <category>issue</category>
+        <category>github_page</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>error</category>
+        <category>dns</category>
+        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
+        <category>error</category>
+        <category>pm2</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>스크랩</category>
-        <category>pm2</category>
         <category>잡담</category>
+        <category>스크랩</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2022/08/25/Hexo-tag-%EC%98%81%EB%AC%B8%ED%83%9C%EA%B7%B8-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95-%EC%8B%9C-%EB%B0%98%EC%98%81%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A4%EB%A5%98/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyi000j7c5o8yyibakk/</guid>
             <title>Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</title>
-            <link>https://coding-coconut.com/2022/08/25/Hexo-tag-%EC%98%81%EB%AC%B8%ED%83%9C%EA%B7%B8-%EB%8C%80%EC%86%8C%EB%AC%B8%EC%9E%90-%EC%88%98%EC%A0%95-%EC%8B%9C-%EB%B0%98%EC%98%81%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94-%EC%98%A4%EB%A5%98/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyi000j7c5o8yyibakk/</link>
             <category>hexo</category>
             <category>error</category>
             <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
@@ -45,12 +45,12 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2022/07/28/Hexo-%EB%B0%B0%ED%8F%AC-%EC%BB%A4%EB%A7%A8%EB%93%9C%EC%99%80-%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90-%EA%B4%80%ED%95%9C-%EC%9D%B4%EC%8A%88/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyf00077c5o257171n5/</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/2022/07/28/Hexo-%EB%B0%B0%ED%8F%AC-%EC%BB%A4%EB%A7%A8%EB%93%9C%EC%99%80-%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90-%EA%B4%80%ED%95%9C-%EC%9D%B4%EC%8A%88/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyf00077c5o257171n5/</link>
             <category>hexo</category>
-            <category>github_page</category>
             <category>issue</category>
+            <category>github_page</category>
             <category>custom_domain</category>
             <category>배포</category>
             <category>hexo_deploy</category>
@@ -62,9 +62,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2022/06/10/Hexo-%ED%85%8C%EB%A7%88-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyg00097c5o3rendffe/</guid>
             <title>Hexo 테마 만들기</title>
-            <link>https://coding-coconut.com/2022/06/10/Hexo-%ED%85%8C%EB%A7%88-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyg00097c5o3rendffe/</link>
             <category>hexo</category>
             <pubDate>Fri, 10 Jun 2022 17:03:21 +0900</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;Hexo-테마-구축하기&#34;&gt;&lt;a href=&#34;#Hexo-테마-구축하기&#34; class=&#34;headerlink&#34; title=&#34;Hexo 테마 구축하기&#34;&gt;&lt;/a&gt;Hexo 테마 구축하기&lt;/h1&gt;&lt;h4 id=&#34;들어가며&#34;&gt;&lt;a href=&#34;#들어가며&#34; class=&#34;headerlink&#34; title=&#34;들어가며&#34;&gt;&lt;/a&gt;들어가며&lt;/h4&gt;&lt;p&gt;Hexo 에서 기본적으로 제공하는 기본값 레이아웃 icarus의 소스가 많이 도움이 되었다.&lt;br&gt;&lt;br&gt;Hexo 는 블로그 ‘프레임워크’ 이며, 공식 문서에서는 helper라는 이름으로 렌더링 스크립트도 제공한다. 용어가 생소해서 많이 헤맸던 기억이 난다.&lt;br&gt;헬퍼에서 제공하는 스크립트는 서버사이드 혹은 클라이언트 사이드 렌더링처럼 뷰 엔진 파일 위에서 사용할 수 있다. 해외에서 안내하는 방법대로 테마를 만들어보고, 정리해보고자 이렇게 게시물을 작성하게 되었다.&lt;br&gt;&lt;/p&gt;
@@ -141,9 +141,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2021/03/08/Hexo%EC%99%80-API%EC%84%9C%EB%B2%84-%EA%B0%84%EC%9D%98-%ED%86%B5%EC%8B%A0/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyh000d7c5ohbl3g9m2/</guid>
             <title>Hexo와 API 서버 간의 통신</title>
-            <link>https://coding-coconut.com/2021/03/08/Hexo%EC%99%80-API%EC%84%9C%EB%B2%84-%EA%B0%84%EC%9D%98-%ED%86%B5%EC%8B%A0/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyh000d7c5ohbl3g9m2/</link>
             <category>hexo</category>
             <pubDate>Mon, 08 Mar 2021 16:46:45 +0900</pubDate>
             <description><![CDATA[ &lt;p&gt;Hexo 블로그에 서버 API를 이용하는 덧글 위젯을 직접 만들고 싶다면 참조할 수 있는 포스팅이다.&lt;br&gt;Hexo는 정적 웹 블로그를 빠르게 작성할 수 있도록 하는 데에 주요 목적이 있기 때문에, 쿼리를 통해 데이터를 가져오고 서버통신을 통해 html dom을 렌더링하는 로직에 대한 지원은 그다지 좋지 않다.&lt;br&gt; Hexo 공식 사이트에서 지원하는 플러그인, 또는 Disqus나 Utterances 와 같은 덧글 위젯이 있지만.. 이런 위젯은 커스터마이징이나 데이터 저장 방식이 유연하지 못하다는 게 사실이다.&lt;/p&gt;
@@ -190,9 +190,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2021/02/09/Hexo-%ED%85%8C%EB%A7%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%81%EC%9A%A9%EA%B8%B0/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyh000c7c5o35m7fsiu/</guid>
             <title>Hexo 테마 블로그 적용기</title>
-            <link>https://coding-coconut.com/2021/02/09/Hexo-%ED%85%8C%EB%A7%88-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EC%A0%81%EC%9A%A9%EA%B8%B0/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyh000c7c5o35m7fsiu/</link>
             <category>hexo</category>
             <pubDate>Tue, 09 Feb 2021 12:19:02 +0900</pubDate>
             <description><![CDATA[ &lt;p&gt;블로그의 첫 게시물은 도커가 장식했지만, 그래도 명색이 헥소로 기껏 만든 블로그인데 적용기를 써보자~&lt;br&gt;다른 블로그를 봐도 헥소 테마 레이아웃을 만드는 방법은 잘 나와있지 않아서, 이왕 하는 김에 테마 만드는 법도 같이 기술하련다.&lt;br&gt;헥소 프레임워크를 좀 만져봤는데, 작동원리는 쪼끔 알겠고 헥소 기반 테마 만드는법을 모르는 사람에게 추천한다. 헥소 공식 사이트에도 만드는 방법이 어렴풋하게나마 나와있으니 참조해도 좋다(그리 자세히 나와있진 않지만..)&lt;/p&gt;
@@ -216,9 +216,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://coding-coconut.com/2021/02/05/Docker-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</guid>
+            <guid isPermalink="true">https://coding-coconut.com/post/cl7a33yyc00017c5ohzq34uhm/</guid>
             <title>Docker 명령어 정리</title>
-            <link>https://coding-coconut.com/2021/02/05/Docker-%EB%AA%85%EB%A0%B9%EC%96%B4-%EC%A0%95%EB%A6%AC/</link>
+            <link>https://coding-coconut.com/post/cl7a33yyc00017c5ohzq34uhm/</link>
             <category>docker</category>
             <category>hexo</category>
             <pubDate>Fri, 05 Feb 2021 09:00:04 +0900</pubDate>
