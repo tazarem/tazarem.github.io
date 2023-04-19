@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://coding-coconut.com</id>
+    <title>Coding Coconut • Posts by &#34;modding&#34; tag</title>
+    <link href="https://coding-coconut.com" />
+    <updated>2023-01-15T07:19:15.000Z</updated>
+    <category term="certbot" />
+    <category term="docker" />
+    <category term="hexo" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="error" />
+    <category term="issue" />
+    <category term="custom_domain" />
+    <category term="배포" />
+    <category term="hexo_deploy" />
+    <category term="aws" />
+    <category term="ssh" />
+    <category term="terminal" />
+    <category term="cmd" />
+    <category term="bash" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
+    <category term="스크랩" />
+    <category term="pm2" />
+    <category term="비동기" />
+    <category term="asyncawait" />
+    <category term="postman" />
+    <category term="속도 개선" />
+    <category term="잡담" />
+    <entry>
+        <id>https://coding-coconut.com/post/clgn38xhc000owe5oftrb75sj/</id>
+        <title>굶지마 캐릭터 모드 만드는 과정 정리</title>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgn38xhc000owe5oftrb75sj/"/>
+        <content type="html">&lt;h1 id=&#34;굶지마-캐릭터-모드-만드는-과정-정리&#34;&gt;&lt;a href=&#34;#굶지마-캐릭터-모드-만드는-과정-정리&#34; class=&#34;headerlink&#34; title=&#34;굶지마 캐릭터 모드 만드는 과정 정리&#34;&gt;&lt;/a&gt;굶지마 캐릭터 모드 만드는 과정 정리&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://forums.kleientertainment.com/forums/topic/28021-getting-started-guides-tutorials-and-examples/&#34;&gt;참조 : 클레이 포럼 모딩 종합 튜토리얼&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;1-캐릭터-샘플-다운받기&#34;&gt;&lt;a href=&#34;#1-캐릭터-샘플-다운받기&#34; class=&#34;headerlink&#34; title=&#34;1.캐릭터 샘플 다운받기&#34;&gt;&lt;/a&gt;1.캐릭터 샘플 다운받기&lt;/h3&gt;&lt;p&gt;굶지마 캐릭터 빌드 템플릿을 다운받아 준다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Deowolf의 extended character template 다운로드 받기&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DragonWolfLeo/extendedsamplecharacter-dontstarvetogether&#34;&gt;깃허브&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forums.kleientertainment.com/files/file/950-extended-sample-character/&#34;&gt;굶지마 포럼&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;둘 다 동일한 파일이니 버전만 잘 확인하면 된다. 굶지마 포럼의 경우 다운받는데 클레이 로그인이 필요할 수 있다.&lt;/p&gt;
+&lt;p&gt;포럼에는 튜토리얼 영상도 있으니 참조.&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;2-vsCode-또는-Notepad-로-이름-바꾸기-대소문자-구분&#34;&gt;&lt;a href=&#34;#2-vsCode-또는-Notepad-로-이름-바꾸기-대소문자-구분&#34; class=&#34;headerlink&#34; title=&#34;2.vsCode 또는 Notepad++로 이름 바꾸기(대소문자 구분)&#34;&gt;&lt;/a&gt;2.vsCode 또는 Notepad++로 이름 바꾸기(대소문자 구분)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;vsCode&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://notepad-plus-plus.org/downloads/&#34;&gt;Notepad++&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;다운받은 프로젝트 파일의 폴더명으로 압축을 푼다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;vsCode 또는 Notepad++ 처럼 전체파일 내부의 텍스트 바꾸기와 같은 특수한 기능이 있는 코드 편집기로 프로젝트 폴더를 연다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/project_open.png&#34; alt=&#34;프로젝트 열기&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;대소문자 구분에 유의하여 캐릭터의 이름을 수정해준다. ( ctrl + f 키를 누르면 탐색 창이 열린다. )&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;*샘플 캐릭터의 이름은 esctemplate로, &lt;b&gt;반드시 대소문자를 구분&lt;/b&gt;하여 바꾸려는 캐릭터의 이름으로 바꿔준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/save_as_project_othername.png&#34; alt=&#34;이름 바꾸기(소문자)&#34;&gt;&lt;br&gt;&lt;img src=&#34;/img/postimg2/save_as_project_othername2.png&#34; alt=&#34;이름 바꾸기(대문자)&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;esctemplate, ESCTEMPLATE =&amp;gt; 바꾸려는 캐릭터 소문자명, 바꾸려는 캐릭터 대문자명&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;.lua 내부 파일들은 물론이고, exported안에 있는 프리팹 폴더명과 .scml파일, .png파일의 이름들도 수정해주어야한다.&lt;/p&gt;
+&lt;p&gt;.xml 파일은 지우게 되니 신경쓰지 않아도 상관없다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/save_as_project_othername3.png&#34; alt=&#34;이름 바꾸기(대문자)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;👉 클레이 포럼 외부 링크: &lt;a href=&#34;https://forums.kleientertainment.com/forums/topic/73055-font-what-is-the-font-for-together/?do=findComment&amp;comment=855020&#34;&gt;캐릭터 초상화의 이름을 수정할 수 있는 굶지마 폰트(이미지)&lt;/a&gt;&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;3-exported-images-의-png-파일-편집하기&#34;&gt;&lt;a href=&#34;#3-exported-images-의-png-파일-편집하기&#34; class=&#34;headerlink&#34; title=&#34;3.exported, images 의 png 파일 편집하기&#34;&gt;&lt;/a&gt;3.exported, images 의 png 파일 편집하기&lt;/h3&gt;&lt;p&gt;프로젝트 폴더의 exported와 images 폴더 안에 있는 png들을 모드캐릭터에 맞게 이미지를 수정해준다.&lt;/p&gt;
+&lt;p&gt;*png파일의 픽셀 크기 및 해상도는 건드리지 않는 것이 모드 템플릿에 권고되어있다.&lt;/p&gt;
+&lt;p&gt;굶지마 애니메이션 빌드 파일을 만들기가 까다롭기 때문이다..&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;png이미지를 바꾼 건 좋은데, 바꾼 이미지가 비뚤어지지 않았는지 어떻게 확인할까?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mod_tools2.png&#34; alt=&#34;굶지마 모드 툴&#34;&gt;&lt;/p&gt;
+&lt;p&gt;스팀을 켜고, 라이브러리에 들어가서 검색 탭 바로 위쪽에 있는 필터링 바를 클릭해준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mod_tools.png&#34; alt=&#34;굶지마 모드 툴&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Don’t starve mod tools 프로그램이 보일텐데, 미설치인 경우 설치해주자.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mod_tools3.png&#34; alt=&#34;굶지마 모드 툴&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mod tools를 우클릭하여 실행하면, 위와 같은 창이 뜬다.&lt;/p&gt;
+&lt;p&gt;Launch Spriter를 체크하고 실행한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/show_spriter0.png&#34; alt=&#34;굶지마 모드 툴&#34;&gt;&lt;/p&gt;
+&lt;p&gt;File &amp;gt; Open Project 로 캐릭터 exported 폴더에 있는 .scml 파일을 다음처럼 열어볼 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/show_spriter.png&#34; alt=&#34;굶지마 모드 툴&#34;&gt;&lt;/p&gt;
+&lt;p&gt;.scml은 게임을 켜지 않고도 캐릭터의 모습을 미리 볼 수 있게 해준다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;*주의: png 파일만 편집. scml은 새로 저장하거나 건드리지 않기.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;모습이 잘 적용된 것 같다면 &lt;b&gt;.scml을 저장하지 말고&lt;/b&gt; 4번으로 넘어가자.&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;4-anim폴더-내부-xml-tex-파일-지우고-로컬-mods-폴더-안에-복사-붙여넣기&#34;&gt;&lt;a href=&#34;#4-anim폴더-내부-xml-tex-파일-지우고-로컬-mods-폴더-안에-복사-붙여넣기&#34; class=&#34;headerlink&#34; title=&#34;4 anim폴더 내부, .xml, .tex 파일 지우고 로컬 mods 폴더 안에 복사, 붙여넣기&#34;&gt;&lt;/a&gt;4 anim폴더 내부, .xml, .tex 파일 지우고 로컬 mods 폴더 안에 복사, 붙여넣기&lt;/h3&gt;&lt;p&gt;굶지마는 압축된 .xml과 .tex 파일로 이미지를 불러온다.&lt;/p&gt;
+&lt;p&gt;컴퓨터가 읽을 수 있는 파일로 변환시키기 위해 프로젝트 폴더 내부의&lt;br&gt;modicon(모드 아이콘)의 tex,xml. portraits(초상화)의 tex, xml. images 폴더 안에 있는 .tex와 .xml 파일들을 모두 제거해준다.&lt;br&gt;또한 컴파일러가 애니메이션 빌드를 다시 생성해야 하기 때문에, 캐릭터 모드 폴더 안에 있는 anim폴더 내부의 zip도 없애준다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;anim폴더 내부의 zip이 없어야 컴파일러가 .scml을 다시 변환하고, xml파일이 없어야 tex파일과 xml파일을 생성한다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/remove_anim_tex_xml_etc.png&#34; alt=&#34;필요 없는 파일을 제거한 모습&#34;&gt;&lt;/p&gt;
+&lt;p&gt;anim 폴더 안의 .zip파일들과 .tex와 .xml을 다 제거해주었다면, 다음 경로로 가서 폴더를 열어준다.&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;#굶지마 투게더 모드폴더 경로&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;C:\Program Files (x86)\Steam\steamapps\common\Don&amp;#39;t Starve Together\mods&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mods_folder.png&#34; alt=&#34;굶지마 모드 폴더&#34;&gt;&lt;/p&gt;
+&lt;p&gt;로컬 모드를 적용시키기 위해&lt;br&gt;mods 폴더에다 여태껏 만든 프로젝트 폴더를 &lt;b&gt;드래그하지 말고&lt;/b&gt;, 원본을 ctrl+c , ctrl+v 한다.&lt;/p&gt;
+&lt;p&gt;굳이 드래그해서 옮기지 않는 이유는 원본을 보존하기 위함이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mods_folder2.png&#34; alt=&#34;굶지마 모드 폴더&#34;&gt;&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;5-Don’t-starve-게임을-켜서-컴파일러-작동시키기&#34;&gt;&lt;a href=&#34;#5-Don’t-starve-게임을-켜서-컴파일러-작동시키기&#34; class=&#34;headerlink&#34; title=&#34;5.Don’t starve 게임을 켜서 컴파일러 작동시키기&#34;&gt;&lt;/a&gt;5.Don’t starve 게임을 켜서 컴파일러 작동시키기&lt;/h3&gt;&lt;p&gt;Don’t starve mod tools 를 다운받은 이후 게임을 켜면,&lt;br&gt;까만 콘솔창이 뜨게 되는데 이는 컴파일러이다.&lt;/p&gt;
+&lt;p&gt;컴파일러가 미변환 모드를 체크하고 .scml =&amp;gt; .anim 또는 .zip으로, .png는 tex와 xml로 변환한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mods_compiler.png&#34; alt=&#34;굶지마 모드 폴더&#34;&gt;&lt;/p&gt;
+&lt;p&gt;컴파일러가 저절로 꺼질 때까지 기다리면, 컴파일러가 변환을 완료하고 굶지마 게임이 자동으로 실행된다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/test_world_in_mod.png&#34; alt=&#34;인게임 확인&#34;&gt;&lt;/p&gt;
+&lt;p&gt;게임이 켜진 김에 모드를 적용하고 월드를 생성해 본다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/test_world_in_mod2.png&#34; alt=&#34;인게임 확인&#34;&gt;&lt;/p&gt;
+&lt;p&gt;여기까지 잘 따라왔다면 캐릭터의 초상화도 잘 나올 텐데, 정작 캐릭터의 이름이 보이질 않는다.&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;6-tex-파일-생성-확인&#34;&gt;&lt;a href=&#34;#6-tex-파일-생성-확인&#34; class=&#34;headerlink&#34; title=&#34;6.tex 파일 생성 확인&#34;&gt;&lt;/a&gt;6.tex 파일 생성 확인&lt;/h3&gt;&lt;p&gt;steam의 mods 폴더를 열고 만든 모드 폴더에 들어가보자.&lt;/p&gt;
+&lt;p&gt;modicon을 제외하고 각 .png마다 tex와 xml 파일이 생성된 것을 확인할 수 있을 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/tex_and_xml.png&#34; alt=&#34;tex와 xml생성 확인&#34;&gt;&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;7-캐릭터-이름-지정-xml-내부의-tex파일-지정-구문-수정하기&#34;&gt;&lt;a href=&#34;#7-캐릭터-이름-지정-xml-내부의-tex파일-지정-구문-수정하기&#34; class=&#34;headerlink&#34; title=&#34;7.캐릭터 이름 지정 xml 내부의 tex파일 지정 구문 수정하기&#34;&gt;&lt;/a&gt;7.캐릭터 이름 지정 xml 내부의 tex파일 지정 구문 수정하기&lt;/h3&gt;&lt;p&gt;파일도 정상적으로 생성되었는데, 왜 캐릭터의 이름이 보이지 않는 것일까?&lt;/p&gt;
+&lt;p&gt;템플릿 파일을 주의깊게 봤다면 이름 png 옆에 조그맣게 안내문 txt 파일이 있는 것을 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;내용을 읽어보면, xml 파일을 열어 tex이름을 지정하는 구문을 수정해주어야 이름 텍스트가 적용된다는 말이다.&lt;/p&gt;
+&lt;p&gt;mods 폴더를 열고 만든 모드 폴더를 코드 에디터로 열어준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/edit_name.png&#34; alt=&#34;names와 names_gold 파일 수정&#34;&gt;&lt;/p&gt;
+&lt;p&gt;names와 names_gold.xml파일을 열고, 다음처럼 수정하고 저장한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/edit_name2.png&#34; alt=&#34;names와 names_gold 파일 수정&#34;&gt;&lt;/p&gt;
+&lt;p&gt;그리고 자동으로 tex와 xml을 생성하지 않는 modicon.png도 잠깐 images 폴더에 복사해 준다.&lt;/p&gt;
+&lt;p&gt;컴파일러를 다시 실행시키면, modicon의 tex와 xml이 생성되는 걸 볼 수 있다.&lt;br&gt;&lt;img src=&#34;/img/postimg2/modicon_convert.png&#34; alt=&#34;모드아이콘 변환&#34;&gt;&lt;br&gt;변환된 모드아이콘은 tex, xml과 같이 modmain.lua가 있는 위치에 넣어주자.&lt;br&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3 id=&#34;8-작동-확인&#34;&gt;&lt;a href=&#34;#8-작동-확인&#34; class=&#34;headerlink&#34; title=&#34;8. 작동 확인&#34;&gt;&lt;/a&gt;8. 작동 확인&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/img/postimg2/test_world_in_mod3.png&#34; alt=&#34;초상화 이름텍스트 확인&#34;&gt;&lt;/p&gt;
+&lt;p&gt;초상화와 이름도 잘 출력된다.&lt;/p&gt;
+&lt;p&gt;인게임에서 테스트하며 모드가 잘 작동되는지 확인한다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/img/postimg2/mod_example1.png&#34; alt=&#34;모드 동작 확인하기1&#34;&gt;&lt;br&gt;&lt;img src=&#34;/img/postimg2/mod_example2.png&#34; alt=&#34;모드 동작 확인하기2&#34;&gt;&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h2 id=&#34;그-외&#34;&gt;&lt;a href=&#34;#그-외&#34; class=&#34;headerlink&#34; title=&#34;그 외&#34;&gt;&lt;/a&gt;그 외&lt;/h2&gt;&lt;h3 id=&#34;심화&#34;&gt;&lt;a href=&#34;#심화&#34; class=&#34;headerlink&#34; title=&#34;심화&#34;&gt;&lt;/a&gt;심화&lt;/h3&gt;&lt;h4 id=&#34;손으로-들-수-있는-간단한-물건-만들기&#34;&gt;&lt;a href=&#34;#손으로-들-수-있는-간단한-물건-만들기&#34; class=&#34;headerlink&#34; title=&#34;손으로 들 수 있는 간단한 물건 만들기&#34;&gt;&lt;/a&gt;손으로 들 수 있는 간단한 물건 만들기&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://forums.kleientertainment.com/forums/topic/29427-tutorial-creating-a-handslot-equippable-item-from-scratch/&#34;&gt;클레이 포럼 링크 참조&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br/&gt;
+
+&lt;h4 id=&#34;캐릭터-자체음성-만들기&#34;&gt;&lt;a href=&#34;#캐릭터-자체음성-만들기&#34; class=&#34;headerlink&#34; title=&#34;캐릭터 자체음성 만들기&#34;&gt;&lt;/a&gt;캐릭터 자체음성 만들기&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://forums.kleientertainment.com/forums/topic/27803-tutorial-adding-custom-sound-to-your-custom-character/&#34;&gt;클레이 포럼 링크 참조&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br/&gt;
+
+&lt;h4 id=&#34;모드-업로드하는-법&#34;&gt;&lt;a href=&#34;#모드-업로드하는-법&#34; class=&#34;headerlink&#34; title=&#34;모드 업로드하는 법&#34;&gt;&lt;/a&gt;모드 업로드하는 법&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;추후 게시 예정..&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br/&gt;
+&lt;br/&gt;
+
+&lt;h3 id=&#34;간단한-디버깅&#34;&gt;&lt;a href=&#34;#간단한-디버깅&#34; class=&#34;headerlink&#34; title=&#34;간단한 디버깅&#34;&gt;&lt;/a&gt;간단한 디버깅&lt;/h3&gt;&lt;h4 id=&#34;로컬에서-모드-적용하기&#34;&gt;&lt;a href=&#34;#로컬에서-모드-적용하기&#34; class=&#34;headerlink&#34; title=&#34;로컬에서 모드 적용하기&#34;&gt;&lt;/a&gt;로컬에서 모드 적용하기&lt;/h4&gt;&lt;p&gt;만들어둔 모드 프로젝트 폴더를 mods 아래에 두고 게임을 실행한다.&lt;br&gt;프로젝트 폴더의 바로 아래에는 modmain.lua와 modicon.png 또는 tex가 있어야 한다.&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h4 id=&#34;모드-작동-시-어디서-오류가-나는지-보기&#34;&gt;&lt;a href=&#34;#모드-작동-시-어디서-오류가-나는지-보기&#34; class=&#34;headerlink&#34; title=&#34;모드 작동 시 어디서 오류가 나는지 보기&#34;&gt;&lt;/a&gt;모드 작동 시 어디서 오류가 나는지 보기&lt;/h4&gt;&lt;p&gt;기존 게임에서는 모드 오류 시 오류 메세지를 반환하고 그대로 게임이 멈추었으나, 모더가 아닌 일반 사용자들의 이용을 고려한 탓인지 오류 메세지를 master로그에 숨기고,&lt;br&gt;사용자들이 모드를 배제하고 게임을 플레이할 수 있도록 업데이트되었다.&lt;br&gt;덕분에 모드 디버깅이 좀 까다로워졌다.&lt;/p&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;#투게더 로그파일 경로&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;C:\Users\user\Documents\Klei\DoNotStarveTogether\master_server_log&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;해당 파일에서 LUA ERROR 구문을 찾으면 된다. 무슨 오류이며 몇번째 줄에서 오류가 났는지 상세하다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;모드 파일에 문제가 없다면 대부분 resolve path, 경로를 찾지 못하는 오류이다.&lt;br&gt;asset등에서 참조하는 경로에 오탈자가 있거나, 어느 한 구문을 빼먹었거나,&lt;br&gt;tex파일이 생성되지 않아서 파일을 찾을 수 없는 경우, 파일 누락 등이 원인이다.&lt;/p&gt;
+&lt;br/&gt;
+
+&lt;h4 id=&#34;아이템-소환하기&#34;&gt;&lt;a href=&#34;#아이템-소환하기&#34; class=&#34;headerlink&#34; title=&#34;아이템 소환하기&#34;&gt;&lt;/a&gt;아이템 소환하기&lt;/h4&gt;&lt;p&gt;모드로 만들어둔 아이템을 바로 테스트해보고싶을 수 있다.&lt;br&gt;아이템을 prefab으로 등록해두었다면 /c_give(“아이템 프리팹명”,갯수) 로 캐릭터 인벤토리에 들어오게 할 수 있다.&lt;/p&gt;
+&lt;figure class=&#34;highlight cmd&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;#아이템 인벤토리에 넣기&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;c_give(&amp;quot;cutgrass&amp;quot;,&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;#아이템 소환하기&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;c_spawn(&amp;quot;twigs&amp;quot;,3)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://dontstarve.fandom.com/wiki/Console/Don%27t_Starve_Together_Commands&#34;&gt;참조링크: 굶지마 콘솔 커맨드 모음&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br/&gt;
+
+&lt;h2 id=&#34;해결되지-않은-이슈&#34;&gt;&lt;a href=&#34;#해결되지-않은-이슈&#34; class=&#34;headerlink&#34; title=&#34;해결되지 않은 이슈&#34;&gt;&lt;/a&gt;해결되지 않은 이슈&lt;/h2&gt;&lt;h4 id=&#34;Together-saveslot-초상화에-대한-이슈&#34;&gt;&lt;a href=&#34;#Together-saveslot-초상화에-대한-이슈&#34; class=&#34;headerlink&#34; title=&#34;Together: saveslot 초상화에 대한 이슈&#34;&gt;&lt;/a&gt;Together: saveslot 초상화에 대한 이슈&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;서버 리스트를 뿌려주는 화면에서 모드를 불러오지 못하기 때문에, 세이브파일 캐릭터 초상화에 항상 종이 윌슨이 그려지는 이슈. 포럼에서도 해결하기 까다로운 문제인 듯.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;dyn-파일에-관한-것&#34;&gt;&lt;a href=&#34;#dyn-파일에-관한-것&#34; class=&#34;headerlink&#34; title=&#34;.dyn 파일에 관한 것&#34;&gt;&lt;/a&gt;.dyn 파일에 관한 것&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;워톡스 등 클레이가 유료로 판매하는 아이템 또는 캐릭터의 애니메이션이 들어있는 파일이다. 이는 상업적 이용과도 연관되어 있다. 공식에서도 뜯지 말라고 하고, 무엇보다 암호화되어있다.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="dontstarve" />
+        <category term="modding" />
+        <updated>2023-01-15T07:19:15.000Z</updated>
+    </entry>
+</feed>

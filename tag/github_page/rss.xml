@@ -13,29 +13,32 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
+        <category>aws</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
         <category>스크랩</category>
         <category>pm2</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>error</category>
+        <category>잡담</category>
         <item>
-            <guid>cl7a59fpa0009k35ohonk8urx</guid>
+            <guid>clgn38xha000dwe5og1uxgsyv</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/cl7a59fpa0009k35ohonk8urx/</link>
+            <link>https://coding-coconut.com/post/clgn38xha000dwe5og1uxgsyv/</link>
             <category>hexo</category>
             <category>github_page</category>
             <category>issue</category>
@@ -48,9 +51,9 @@
             </description>
         </item>
         <item>
-            <guid>cl7a59fp90007k35od0z6cckk</guid>
+            <guid>clgn38xh90007we5oc1x0b512</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>
-            <link>https://coding-coconut.com/post/cl7a59fp90007k35od0z6cckk/</link>
+            <link>https://coding-coconut.com/post/clgn38xh90007we5oc1x0b512/</link>
             <category>dns</category>
             <category>github_page</category>
             <category>domain</category>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Coding Coconut • Posts by &#34;modding&#34; tag</title>
+        <link>https://coding-coconut.com</link>
+        <description>주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? </description>
+        <language>ko</language>
+        <pubDate>Sun, 15 Jan 2023 16:19:15 +0900</pubDate>
+        <lastBuildDate>Sun, 15 Jan 2023 16:19:15 +0900</lastBuildDate>
+        <category>certbot</category>
+        <category>docker</category>
+        <category>hexo</category>
+        <category>dns</category>
+        <category>github_page</category>
+        <category>domain</category>
+        <category>error</category>
+        <category>issue</category>
+        <category>custom_domain</category>
+        <category>배포</category>
+        <category>hexo_deploy</category>
+        <category>aws</category>
+        <category>ssh</category>
+        <category>terminal</category>
+        <category>cmd</category>
+        <category>bash</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
+        <category>스크랩</category>
+        <category>pm2</category>
+        <category>비동기</category>
+        <category>asyncawait</category>
+        <category>postman</category>
+        <category>속도 개선</category>
+        <category>잡담</category>
+        <item>
+            <guid>clgn38xhc000owe5oftrb75sj</guid>
+            <title>굶지마 캐릭터 모드 만드는 과정 정리</title>
+            <link>https://coding-coconut.com/post/clgn38xhc000owe5oftrb75sj/</link>
+            <category>dontstarve</category>
+            <category>modding</category>
+            <pubDate>Sun, 15 Jan 2023 16:19:15 +0900</pubDate>
+            <description>
+                굶지마 캐릭터 모드 만드는 과정 정리  참조 : 클레이 포럼 모딩 종합 튜토리얼  1.캐릭터 샘플 다운받기 굶지마 캐릭터 빌드 템플릿을 다운받아 준다.  Deowolf의 extended character template 다운로드 받기   깃허브 굶지마 포럼  둘 다 동일한 파일이니 버전만 잘 확인하면 된다. 굶지마 포럼의 경우 다운받는데 클레이 로그인이 필요할 수 있다. 포럼에는 튜토리얼 영상도 있으니 참조.   2.vsCode 또는 Notepad++로 이름 바꾸기(대소문자 구분)  vsCode Notepad++   다운받은 프로젝...
+            </description>
+        </item>
+    </channel>
+</rss>

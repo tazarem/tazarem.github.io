@@ -13,29 +13,32 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>배포</category>
         <category>hexo_deploy</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
+        <category>aws</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
         <category>스크랩</category>
         <category>pm2</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>error</category>
+        <category>잡담</category>
         <item>
-            <guid>cl7a59fp60001k35ocjuu9ve2</guid>
+            <guid>clgn38xh60001we5obw4eby3u</guid>
             <title>Certbot으로 https 서브도메인 등록하기</title>
-            <link>https://coding-coconut.com/post/cl7a59fp60001k35ocjuu9ve2/</link>
+            <link>https://coding-coconut.com/post/clgn38xh60001we5obw4eby3u/</link>
             <category>certbot</category>
             <pubDate>Fri, 13 Aug 2021 08:55:12 +0900</pubDate>
             <description>
