@@ -10,32 +10,34 @@
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="error" />
     <category term="issue" />
     <category term="custom_domain" />
-    <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="aws" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="dontstarve" />
-    <category term="modding" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="스크랩" />
     <category term="pm2" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="스크랩" />
+    <category term="ubuntu" />
+    <category term="podman" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="잡담" />
     <entry>
-        <id>https://coding-coconut.com/post/clgn38xhc000owe5oftrb75sj/</id>
+        <id>https://coding-coconut.com/post/clgxg0wbq002ttu5og6ms18s0/</id>
         <title>굶지마 캐릭터 모드 만드는 과정 정리</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgn38xhc000owe5oftrb75sj/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgxg0wbq002ttu5og6ms18s0/"/>
         <content type="html">&lt;h1 id=&#34;굶지마-캐릭터-모드-만드는-과정-정리&#34;&gt;&lt;a href=&#34;#굶지마-캐릭터-모드-만드는-과정-정리&#34; class=&#34;headerlink&#34; title=&#34;굶지마 캐릭터 모드 만드는 과정 정리&#34;&gt;&lt;/a&gt;굶지마 캐릭터 모드 만드는 과정 정리&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://forums.kleientertainment.com/forums/topic/28021-getting-started-guides-tutorials-and-examples/&#34;&gt;참조 : 클레이 포럼 모딩 종합 튜토리얼&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;

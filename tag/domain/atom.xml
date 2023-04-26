@@ -10,32 +10,34 @@
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="error" />
     <category term="issue" />
     <category term="custom_domain" />
-    <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="aws" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="dontstarve" />
-    <category term="modding" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="스크랩" />
     <category term="pm2" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="스크랩" />
+    <category term="ubuntu" />
+    <category term="podman" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="잡담" />
     <entry>
-        <id>https://coding-coconut.com/post/clgn38xh90007we5oc1x0b512/</id>
+        <id>https://coding-coconut.com/post/clgxg0wbg0007tu5o5zog1orn/</id>
         <title>Github Page에 커스텀 도메인 연결하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgn38xh90007we5oc1x0b512/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgxg0wbg0007tu5o5zog1orn/"/>
         <content type="html">&lt;h1 id=&#34;Github-Page에-커스텀-도메인-연결하기&#34;&gt;&lt;a href=&#34;#Github-Page에-커스텀-도메인-연결하기&#34; class=&#34;headerlink&#34; title=&#34;Github Page에 커스텀 도메인 연결하기&#34;&gt;&lt;/a&gt;Github Page에 커스텀 도메인 연결하기&lt;/h1&gt;&lt;p&gt;방법은 다음과 같다.&lt;/p&gt;
 &lt;h3 id=&#34;도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기&#34;&gt;&lt;a href=&#34;#도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기&#34; class=&#34;headerlink&#34; title=&#34;도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기&#34;&gt;&lt;/a&gt;도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기&lt;/h3&gt;&lt;p&gt;도메인을 구입한 사이트에서 있어야 할 레코드는 다음과 같다.&lt;/p&gt;
 &lt;table&gt;

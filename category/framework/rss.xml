@@ -13,32 +13,34 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
-        <category>배포</category>
         <category>hexo_deploy</category>
-        <category>aws</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>스크랩</category>
         <category>pm2</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>스크랩</category>
+        <category>ubuntu</category>
+        <category>podman</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>잡담</category>
         <item>
-            <guid>clgn38xh90008we5o0f212nv7</guid>
+            <guid>clgxg0wbi000etu5oc0233s3x</guid>
             <title>Hexo 테마 만들기</title>
-            <link>https://coding-coconut.com/post/clgn38xh90008we5o0f212nv7/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbi000etu5oc0233s3x/</link>
             <category>hexo</category>
             <pubDate>Fri, 10 Jun 2022 17:03:21 +0900</pubDate>
             <description>
@@ -46,9 +48,9 @@
             </description>
         </item>
         <item>
-            <guid>clgn38xh60001we5obw4eby3u</guid>
+            <guid>clgxg0wbd0001tu5o14jg3pql</guid>
             <title>Certbot으로 https 서브도메인 등록하기</title>
-            <link>https://coding-coconut.com/post/clgn38xh60001we5obw4eby3u/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbd0001tu5o14jg3pql/</link>
             <category>certbot</category>
             <pubDate>Fri, 13 Aug 2021 08:55:12 +0900</pubDate>
             <description>
@@ -56,9 +58,9 @@
             </description>
         </item>
         <item>
-            <guid>clgn38xhc000mwe5o42ct4jdh</guid>
+            <guid>clgxg0wbj000itu5oas62gt8y</guid>
             <title>Hexo와 API 서버 간의 통신</title>
-            <link>https://coding-coconut.com/post/clgn38xhc000mwe5o42ct4jdh/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbj000itu5oas62gt8y/</link>
             <category>hexo</category>
             <pubDate>Mon, 08 Mar 2021 16:46:45 +0900</pubDate>
             <description>
@@ -66,9 +68,9 @@
             </description>
         </item>
         <item>
-            <guid>clgn38xhb000hwe5ogqdra9rz</guid>
+            <guid>clgxg0wbj000htu5oeicug6ki</guid>
             <title>Hexo 테마 블로그 적용기</title>
-            <link>https://coding-coconut.com/post/clgn38xhb000hwe5ogqdra9rz/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbj000htu5oeicug6ki/</link>
             <category>hexo</category>
             <pubDate>Tue, 09 Feb 2021 12:19:02 +0900</pubDate>
             <description>

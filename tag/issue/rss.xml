@@ -13,37 +13,39 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
-        <category>배포</category>
         <category>hexo_deploy</category>
-        <category>aws</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>스크랩</category>
         <category>pm2</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>스크랩</category>
+        <category>ubuntu</category>
+        <category>podman</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>잡담</category>
         <item>
-            <guid>clgn38xha000dwe5og1uxgsyv</guid>
+            <guid>clgxg0wbi000dtu5o5d0mfcdl</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/clgn38xha000dwe5og1uxgsyv/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbi000dtu5o5d0mfcdl/</link>
             <category>hexo</category>
             <category>github_page</category>
+            <category>배포</category>
             <category>issue</category>
             <category>custom_domain</category>
-            <category>배포</category>
             <category>hexo_deploy</category>
             <pubDate>Thu, 28 Jul 2022 09:56:12 +0900</pubDate>
             <description>

@@ -13,32 +13,34 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
-        <category>배포</category>
         <category>hexo_deploy</category>
-        <category>aws</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>스크랩</category>
         <category>pm2</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>스크랩</category>
+        <category>ubuntu</category>
+        <category>podman</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>잡담</category>
         <item>
-            <guid>clgn38xhd000vwe5o6e0j3a1y</guid>
+            <guid>clgxg0wbq002utu5o3u3z6d78</guid>
             <title>링크 스크랩 및 참고자료</title>
-            <link>https://coding-coconut.com/post/clgn38xhd000vwe5o6e0j3a1y/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbq002utu5o3u3z6d78/</link>
             <category>스크랩</category>
             <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
             <description>

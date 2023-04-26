@@ -10,32 +10,34 @@
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="error" />
     <category term="issue" />
     <category term="custom_domain" />
-    <category term="배포" />
     <category term="hexo_deploy" />
-    <category term="aws" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="dontstarve" />
-    <category term="modding" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
-    <category term="스크랩" />
     <category term="pm2" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="스크랩" />
+    <category term="ubuntu" />
+    <category term="podman" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="잡담" />
     <entry>
-        <id>https://coding-coconut.com/post/clgn38xhb000ewe5oahgg1hf0/</id>
+        <id>https://coding-coconut.com/post/clgxg0wbh0008tu5o4bmu3hcy/</id>
         <title>EC2에 도메인 바인딩하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgn38xhb000ewe5oahgg1hf0/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgxg0wbh0008tu5o4bmu3hcy/"/>
         <content type="html">&lt;h2 id=&#34;도메인-로드밸런서-대상그룹-보안규칙-EC2-설정하기&#34;&gt;&lt;a href=&#34;#도메인-로드밸런서-대상그룹-보안규칙-EC2-설정하기&#34; class=&#34;headerlink&#34; title=&#34;도메인-로드밸런서-대상그룹-보안규칙-EC2 설정하기&#34;&gt;&lt;/a&gt;도메인-로드밸런서-대상그룹-보안규칙-EC2 설정하기&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;도메인 접근 -&amp;gt; 내부 포트 접근&lt;br&gt;80|443 -&amp;gt; 8102&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -54,8 +56,8 @@
 &lt;li&gt;기존에 묶인 80리스너를 443리디렉션에 301 응답으로 바꾸기&lt;/li&gt;
 &lt;/ol&gt;
 </content>
-        <category term="배포" />
         <category term="aws" />
+        <category term="배포" />
         <updated>2023-04-19T02:41:06.000Z</updated>
     </entry>
 </feed>

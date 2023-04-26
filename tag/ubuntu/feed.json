@@ -1,0 +1,19 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Coding Coconut • All posts by \"ubuntu\" tag",
+    "description": "주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? ",
+    "home_page_url": "https://coding-coconut.com",
+    "items": [
+        {
+            "id": "https://coding-coconut.com/post/clgxg0wbq002wtu5o58944rmx/",
+            "url": "https://coding-coconut.com/post/clgxg0wbq002wtu5o58944rmx/",
+            "title": "Ubuntu 20.10 이하 버전에서 podman 설치하기",
+            "date_published": "2023-04-26T08:25:10.000Z",
+            "content_html": "<h1 id=\"ubuntu-20-10-이하-버전에서-podman-설치하기\"><a href=\"#ubuntu-20-10-이하-버전에서-podman-설치하기\" class=\"headerlink\" title=\"ubuntu 20.10 이하 버전에서 podman 설치하기\"></a>ubuntu 20.10 이하 버전에서 podman 설치하기</h1><p>AWS EC2 <code>Ubuntu 20.04 LTS</code> 에 설치하였다.</p>\n<h3 id=\"1-쿠빅-리포지토리-추가\"><a href=\"#1-쿠빅-리포지토리-추가\" class=\"headerlink\" title=\"1. 쿠빅 리포지토리 추가\"></a>1. 쿠빅 리포지토리 추가</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo sh -c <span class=\"string\">&quot;echo &#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&#x27; &gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&quot;</span></span><br></pre></td></tr></table></figure>\n<blockquote>\n<p>입력하고 커맨드해도 아무것도 출력되지 않는데 정상적으로 추가된 것이다.</p>\n</blockquote>\n<h3 id=\"2-리포지토리-키-추가\"><a href=\"#2-리포지토리-키-추가\" class=\"headerlink\" title=\"2. 리포지토리 키 추가\"></a>2. 리포지토리 키 추가</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_20.04/Release.key -O- | sudo apt-key add -</span><br></pre></td></tr></table></figure>\n\n<blockquote>\n<p>OK 가 뜨면 성공</p>\n</blockquote>\n<h3 id=\"3-쿠빅-리포-추가-후-apt-업데이트\"><a href=\"#3-쿠빅-리포-추가-후-apt-업데이트\" class=\"headerlink\" title=\"3. 쿠빅 리포 추가 후 apt 업데이트\"></a>3. 쿠빅 리포 추가 후 apt 업데이트</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo apt update</span><br></pre></td></tr></table></figure>\n\n<h3 id=\"4-포드맨-설치\"><a href=\"#4-포드맨-설치\" class=\"headerlink\" title=\"4. 포드맨 설치\"></a>4. 포드맨 설치</h3><figure class=\"highlight bash\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br></pre></td><td class=\"code\"><pre><span class=\"line\">sudo apt -y install podman</span><br></pre></td></tr></table></figure>\n\n<p>4번 과정까지 마치고 나면 커맨드에서 podman 을 인식할 수 있게 된다.</p>\n",
+            "tags": [
+                "ubuntu",
+                "podman"
+            ]
+        }
+    ]
+}

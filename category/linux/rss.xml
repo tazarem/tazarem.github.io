@@ -13,32 +13,34 @@
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>error</category>
         <category>issue</category>
         <category>custom_domain</category>
-        <category>배포</category>
         <category>hexo_deploy</category>
-        <category>aws</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
-        <category>스크랩</category>
         <category>pm2</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>스크랩</category>
+        <category>ubuntu</category>
+        <category>podman</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>잡담</category>
         <item>
-            <guid>clgn38xhd000twe5o1p82f1vs</guid>
+            <guid>clgxg0wbk000otu5o0bio6cg9</guid>
             <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-            <link>https://coding-coconut.com/post/clgn38xhd000twe5o1p82f1vs/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbk000otu5o0bio6cg9/</link>
             <category>certbot</category>
             <category>배포</category>
             <category>https</category>
@@ -50,9 +52,9 @@
             </description>
         </item>
         <item>
-            <guid>clgn38xhb000iwe5o46cebdx9</guid>
+            <guid>clgxg0wbj000mtu5o2kvfhttc</guid>
             <title>SSH키로 로그인하는 법</title>
-            <link>https://coding-coconut.com/post/clgn38xhb000iwe5o46cebdx9/</link>
+            <link>https://coding-coconut.com/post/clgxg0wbj000mtu5o2kvfhttc/</link>
             <category>ssh</category>
             <category>terminal</category>
             <category>cmd</category>
