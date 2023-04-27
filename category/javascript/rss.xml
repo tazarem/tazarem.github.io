@@ -10,12 +10,12 @@
         <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
+        <category>docker</category>
+        <category>hexo</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
         <category>error</category>
-        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -32,15 +32,15 @@
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>잡담</category>
         <item>
-            <guid>clgyf00n8000t685ocpdu5c6i</guid>
+            <guid>clgyf2h2s002fpe5ob5lce6b6</guid>
             <title>pm2와 클러스터화</title>
-            <link>https://coding-coconut.com/post/clgyf00n8000t685ocpdu5c6i/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2s002fpe5ob5lce6b6/</link>
             <category>pm2</category>
             <pubDate>Fri, 20 May 2022 16:51:12 +0900</pubDate>
             <description>
@@ -48,9 +48,9 @@
             </description>
         </item>
         <item>
-            <guid>clgyf00nf003i685o0cbk8ar2</guid>
+            <guid>clgyf2h2t002npe5o0iwx78z2</guid>
             <title>함수의 비동기화와 async 키워드</title>
-            <link>https://coding-coconut.com/post/clgyf00nf003i685o0cbk8ar2/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2t002npe5o0iwx78z2/</link>
             <category>비동기</category>
             <category>asyncawait</category>
             <category>postman</category>

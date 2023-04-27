@@ -10,12 +10,12 @@
         <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
+        <category>docker</category>
+        <category>hexo</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
         <category>error</category>
-        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -32,17 +32,17 @@
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>잡담</category>
         <item>
-            <guid>clgyf00n50009685o6vo748i9</guid>
+            <guid>clgyf2h2j0007pe5obqyv537g</guid>
             <title>Docker 명령어 정리</title>
-            <link>https://coding-coconut.com/post/clgyf00n50009685o6vo748i9/</link>
-            <category>hexo</category>
+            <link>https://coding-coconut.com/post/clgyf2h2j0007pe5obqyv537g/</link>
             <category>docker</category>
+            <category>hexo</category>
             <pubDate>Fri, 05 Feb 2021 09:00:04 +0900</pubDate>
             <description>
                  도커를 한번 써 보니 생각보다 서버를 운영하는 데 편리하고 컨테이너 단위 관리가 용이해서, 이를 잊어버리는 일이 없도록 실행부터 가동 중지까지, 방법을 정리하려고 한다. 1. 서버 이미지 만들기 서버 구축 후, 프로젝트 폴더를 Shift + 우클릭하여 cmd(명령 프롬프트 창) 실행 Docker Desktop 이 설치되어있고, 가동시켜서 현재 서비스가 돌아가고 있다는 전제 하에 아래의 명령어를 입력 1docker build -t [생성할 이미지명] .  생성할 이미지명 예시 : ex) MyContainer 온점까지 제대로 입력해야...

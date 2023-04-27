@@ -10,12 +10,12 @@
         <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
+        <category>docker</category>
+        <category>hexo</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
         <category>error</category>
-        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -32,15 +32,15 @@
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>잡담</category>
         <item>
-            <guid>clgyf00n8000o685oa5yvbh37</guid>
+            <guid>clgyf2h2r002epe5o2whu982z</guid>
             <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-            <link>https://coding-coconut.com/post/clgyf00n8000o685oa5yvbh37/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2r002epe5o2whu982z/</link>
             <category>certbot</category>
             <category>배포</category>
             <category>https</category>
@@ -52,9 +52,9 @@
             </description>
         </item>
         <item>
-            <guid>clgyf00n7000m685of33c30xn</guid>
+            <guid>clgyf2h2m000mpe5o5oks5865</guid>
             <title>SSH키로 로그인하는 법</title>
-            <link>https://coding-coconut.com/post/clgyf00n7000m685of33c30xn/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2m000mpe5o5oks5865/</link>
             <category>ssh</category>
             <category>terminal</category>
             <category>cmd</category>

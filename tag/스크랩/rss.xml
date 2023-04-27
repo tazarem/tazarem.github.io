@@ -10,12 +10,12 @@
         <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
+        <category>docker</category>
+        <category>hexo</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
         <category>error</category>
-        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -32,15 +32,15 @@
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>잡담</category>
         <item>
-            <guid>clgyf00n9000z685oco643r66</guid>
+            <guid>clgyf2h2s002lpe5o67038bd9</guid>
             <title>링크 스크랩 및 참고자료</title>
-            <link>https://coding-coconut.com/post/clgyf00n9000z685oco643r66/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2s002lpe5o67038bd9/</link>
             <category>스크랩</category>
             <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
             <description>

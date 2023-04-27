@@ -5,8 +5,8 @@
     "home_page_url": "https://coding-coconut.com",
     "items": [
         {
-            "id": "https://coding-coconut.com/post/clgyf00n50008685ohw7u38oi/",
-            "url": "https://coding-coconut.com/post/clgyf00n50008685ohw7u38oi/",
+            "id": "https://coding-coconut.com/post/clgyf2h2k0009pe5oeswp9onj/",
+            "url": "https://coding-coconut.com/post/clgyf2h2k0009pe5oeswp9onj/",
             "title": "Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류",
             "date_published": "2022-08-25T03:35:55.000Z",
             "content_html": "<p>태그 영문 대소문자를 수정했을 때 링크 오류가 발생했다</p>\n<p>원인은 github에서 영문대소문자 수정 시 커밋사항에 반영되지 않기 때문이다.<br>태그를 아예 다른 문자로 수정하고 hexo deploy 로 재배포하면 된다.</p>\n<p>참조 링크<br><a href=\"https://github.com/hexojs/hexo/issues/2600\">https://github.com/hexojs/hexo/issues/2600</a></p>\n",

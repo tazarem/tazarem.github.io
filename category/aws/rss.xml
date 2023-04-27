@@ -10,12 +10,12 @@
         <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
+        <category>docker</category>
+        <category>hexo</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
         <category>error</category>
-        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -32,15 +32,15 @@
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
+        <category>잡담</category>
         <item>
-            <guid>clgyf00n8000u685ogeyncd1f</guid>
+            <guid>clgyf2h2s002hpe5ogvad4su0</guid>
             <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-            <link>https://coding-coconut.com/post/clgyf00n8000u685ogeyncd1f/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2s002hpe5ogvad4su0/</link>
             <category>ubuntu</category>
             <category>podman</category>
             <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
@@ -49,9 +49,9 @@
             </description>
         </item>
         <item>
-            <guid>clgyf00n30003685o4sig54cs</guid>
+            <guid>clgyf2h2h0003pe5o1k7vgh6h</guid>
             <title>EC2에 도메인 바인딩하기</title>
-            <link>https://coding-coconut.com/post/clgyf00n30003685o4sig54cs/</link>
+            <link>https://coding-coconut.com/post/clgyf2h2h0003pe5o1k7vgh6h/</link>
             <category>aws</category>
             <category>배포</category>
             <pubDate>Wed, 19 Apr 2023 11:41:06 +0900</pubDate>
