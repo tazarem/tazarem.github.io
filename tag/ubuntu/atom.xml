@@ -5,40 +5,40 @@
     <link href="https://coding-coconut.com" />
     <updated>2023-04-26T08:25:10.000Z</updated>
     <category term="certbot" />
-    <category term="aws" />
-    <category term="배포" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="dns" />
-    <category term="github_page" />
-    <category term="domain" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="error" />
     <category term="issue" />
+    <category term="github_page" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
+    <category term="dns" />
+    <category term="domain" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="https" />
-    <category term="인증서" />
-    <category term="apache" />
-    <category term="pm2" />
     <category term="ubuntu" />
     <category term="podman" />
+    <category term="pm2" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="잡담" />
     <entry>
-        <id>https://coding-coconut.com/post/clgyf2h2s002hpe5ogvad4su0/</id>
+        <id>https://coding-coconut.com/post/clgyf4wf5002o665o65iycz1v/</id>
         <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgyf2h2s002hpe5ogvad4su0/"/>
-        <content type="html">&lt;h1 id=&#34;ubuntu-20-10-이하-버전에서-podman-설치하기&#34;&gt;&lt;a href=&#34;#ubuntu-20-10-이하-버전에서-podman-설치하기&#34; class=&#34;headerlink&#34; title=&#34;ubuntu 20.10 이하 버전에서 podman 설치하기&#34;&gt;&lt;/a&gt;ubuntu 20.10 이하 버전에서 podman 설치하기&lt;/h1&gt;&lt;p&gt;AWS EC2 &lt;code&gt;Ubuntu 20.04 LTS&lt;/code&gt; 에 설치하였다.&lt;/p&gt;
+        <link rel="alternate" href="https://coding-coconut.com/post/clgyf4wf5002o665o65iycz1v/"/>
+        <content type="html">&lt;h1 id=&#34;ubuntu-20-10-이하-버전에서-podman-설치하기&#34;&gt;&lt;a href=&#34;#ubuntu-20-10-이하-버전에서-podman-설치하기&#34; class=&#34;headerlink&#34; title=&#34;ubuntu 20.10 이하 버전에서 podman 설치하기&#34;&gt;&lt;/a&gt;ubuntu 20.10 이하 버전에서 podman 설치하기&lt;/h1&gt;&lt;p&gt;배포기준 AWS EC2 &lt;code&gt;Ubuntu 20.04 LTS&lt;/code&gt; 에 설치하였다.&lt;/p&gt;
 &lt;h3 id=&#34;1-쿠빅-리포지토리-추가&#34;&gt;&lt;a href=&#34;#1-쿠빅-리포지토리-추가&#34; class=&#34;headerlink&#34; title=&#34;1. 쿠빅 리포지토리 추가&#34;&gt;&lt;/a&gt;1. 쿠빅 리포지토리 추가&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo sh -c &lt;span class=&#34;string&#34;&gt;&amp;quot;echo &amp;#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&amp;#x27; &amp;gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;입력하고 커맨드해도 아무것도 출력되지 않는데 정상적으로 추가된 것이다.&lt;/p&gt;
@@ -54,6 +54,7 @@
 
 &lt;p&gt;4번 과정까지 마치고 나면 커맨드에서 podman 을 인식할 수 있게 된다.&lt;/p&gt;
 </content>
+        <category term="배포" />
         <category term="ubuntu" />
         <category term="podman" />
         <updated>2023-04-26T08:25:10.000Z</updated>

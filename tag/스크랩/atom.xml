@@ -5,39 +5,39 @@
     <link href="https://coding-coconut.com" />
     <updated>2021-09-17T00:30:08.000Z</updated>
     <category term="certbot" />
-    <category term="aws" />
-    <category term="배포" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="dns" />
-    <category term="github_page" />
-    <category term="domain" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="error" />
     <category term="issue" />
+    <category term="github_page" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
+    <category term="dns" />
+    <category term="domain" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="https" />
-    <category term="인증서" />
-    <category term="apache" />
-    <category term="pm2" />
     <category term="ubuntu" />
     <category term="podman" />
+    <category term="pm2" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="잡담" />
     <entry>
-        <id>https://coding-coconut.com/post/clgyf2h2s002lpe5o67038bd9/</id>
+        <id>https://coding-coconut.com/post/clgyf4wf6002t665ohf6sbgtf/</id>
         <title>링크 스크랩 및 참고자료</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgyf2h2s002lpe5o67038bd9/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgyf4wf6002t665ohf6sbgtf/"/>
         <content type="html">&lt;h3 id=&#34;리눅스-명령어들&#34;&gt;&lt;a href=&#34;#리눅스-명령어들&#34; class=&#34;headerlink&#34; title=&#34;리눅스 명령어들&#34;&gt;&lt;/a&gt;리눅스 명령어들&lt;/h3&gt;&lt;p&gt;&lt;code&gt;sudo grep -ir &amp;#39;bind-address&amp;#39; /etc/mysql/&lt;/code&gt;&lt;br&gt;해당 위치에 원하는 텍스트가 있는 파일을 찾는 명령어&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;iptables -I INPUT -s 1.1.1.1 -j DROP&lt;/code&gt;&lt;br&gt;특정 IP막기&lt;/p&gt;
 &lt;blockquote&gt;

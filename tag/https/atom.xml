@@ -5,39 +5,39 @@
     <link href="https://coding-coconut.com" />
     <updated>2022-08-24T09:14:09.000Z</updated>
     <category term="certbot" />
-    <category term="aws" />
-    <category term="배포" />
     <category term="docker" />
     <category term="hexo" />
-    <category term="dns" />
-    <category term="github_page" />
-    <category term="domain" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="error" />
     <category term="issue" />
+    <category term="github_page" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
+    <category term="dns" />
+    <category term="domain" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="https" />
-    <category term="인증서" />
-    <category term="apache" />
-    <category term="pm2" />
     <category term="ubuntu" />
     <category term="podman" />
+    <category term="pm2" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
+    <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
-    <category term="잡담" />
     <entry>
-        <id>https://coding-coconut.com/post/clgyf2h2r002epe5o2whu982z/</id>
+        <id>https://coding-coconut.com/post/clgyf4wez000i665o5qpsao24/</id>
         <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgyf2h2r002epe5o2whu982z/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgyf4wez000i665o5qpsao24/"/>
         <content type="html">&lt;h3 id=&#34;들어가며&#34;&gt;&lt;a href=&#34;#들어가며&#34; class=&#34;headerlink&#34; title=&#34;들어가며&#34;&gt;&lt;/a&gt;들어가며&lt;/h3&gt;&lt;p&gt;인증서 발급방법은 기존에 알고있어서 문제가 되지 않았는데 아파치 설정파일 만지는 법을 까먹어서 한동안 설정파일과 씨름했다.. -.-;;&lt;br&gt;로그인한 유저가 관리자 권한일 경우 굳이 sudo를 입력하지 않아도 된다!&lt;/p&gt;
 &lt;h3 id=&#34;0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요&#34;&gt;&lt;a href=&#34;#0-apache2-를-깔려면-apt를-사용해야-하므로-업데이트가-필요&#34; class=&#34;headerlink&#34; title=&#34;0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요&#34;&gt;&lt;/a&gt;0. apache2 를 깔려면 apt를 사용해야 하므로 업데이트가 필요&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 

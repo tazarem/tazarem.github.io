@@ -8,41 +8,41 @@
         <pubDate>Thu, 21 Jul 2022 17:20:52 +0900</pubDate>
         <lastBuildDate>Thu, 21 Jul 2022 17:20:52 +0900</lastBuildDate>
         <category>certbot</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>docker</category>
         <category>hexo</category>
-        <category>dns</category>
-        <category>github_page</category>
-        <category>domain</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>error</category>
         <category>issue</category>
+        <category>github_page</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
+        <category>dns</category>
+        <category>domain</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
-        <category>pm2</category>
         <category>ubuntu</category>
         <category>podman</category>
+        <category>pm2</category>
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
-        <category>잡담</category>
         <item>
-            <guid>clgyf2h2j0008pe5o9wpvhvqk</guid>
+            <guid>clgyf4wey000d665o2zz4ainq</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>
-            <link>https://coding-coconut.com/post/clgyf2h2j0008pe5o9wpvhvqk/</link>
-            <category>dns</category>
+            <link>https://coding-coconut.com/post/clgyf4wey000d665o2zz4ainq/</link>
             <category>github_page</category>
+            <category>dns</category>
             <category>domain</category>
             <pubDate>Thu, 21 Jul 2022 17:20:52 +0900</pubDate>
             <description>
