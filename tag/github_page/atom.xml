@@ -5,14 +5,14 @@
     <link href="https://coding-coconut.com" />
     <updated>2022-07-28T00:56:12.000Z</updated>
     <category term="certbot" />
-    <category term="docker" />
-    <category term="hexo" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="aws" />
-    <category term="배포" />
+    <category term="hexo" />
     <category term="error" />
+    <category term="docker" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
@@ -24,37 +24,37 @@
     <category term="인증서" />
     <category term="apache" />
     <category term="pm2" />
+    <category term="ubuntu" />
+    <category term="podman" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
-    <category term="ubuntu" />
-    <category term="podman" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/clgxg0wbi000dtu5o5d0mfcdl/</id>
+        <id>https://coding-coconut.com/post/clgyf00n6000d685o7y8x5pdc/</id>
         <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgxg0wbi000dtu5o5d0mfcdl/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgyf00n6000d685o7y8x5pdc/"/>
         <content type="html">&lt;h3 id=&#34;문제점&#34;&gt;&lt;a href=&#34;#문제점&#34; class=&#34;headerlink&#34; title=&#34;문제점&#34;&gt;&lt;/a&gt;문제점&lt;/h3&gt;&lt;p&gt; 기존 도메인에서 블로그 전용 도메인을 구매하고, 깃허브 페이지에 연결해 놓았었는데&lt;br&gt;Hexo로 만든 블로그 프로젝트에서 &lt;code&gt;hexo deploy&lt;/code&gt; 커맨드를 이용해 배포하면&lt;br&gt;깃허브 페이지의 퍼블리싱된 커스텀 도메인이 초기화가 되는 이슈가 발생했다.&lt;/p&gt;
 &lt;h3 id=&#34;해결&#34;&gt;&lt;a href=&#34;#해결&#34; class=&#34;headerlink&#34; title=&#34;해결&#34;&gt;&lt;/a&gt;해결&lt;/h3&gt;&lt;p&gt;이를 해결하려면 hexo 의 블로그 프로젝트 source 폴더에&lt;br&gt;CNAME 파일을 생성하고, 안에 퍼블리싱할 커스텀 도메인을 입력한다.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/img/postimg/cname_file.png&#34; alt=&#34;cname_file&#34;&gt;&lt;/p&gt;
 &lt;p&gt;이후 &lt;code&gt;hexo deploy&lt;/code&gt; 커맨드를 입력하여 배포해도 깃허브 페이지의 커스텀 도메인이 해제되지 않는다.&lt;/p&gt;
 </content>
-        <category term="hexo" />
-        <category term="github_page" />
         <category term="배포" />
+        <category term="github_page" />
+        <category term="hexo" />
         <category term="issue" />
         <category term="custom_domain" />
         <category term="hexo_deploy" />
         <updated>2022-07-28T00:56:12.000Z</updated>
     </entry>
     <entry>
-        <id>https://coding-coconut.com/post/clgxg0wbg0007tu5o5zog1orn/</id>
+        <id>https://coding-coconut.com/post/clgyf00n40007685o4bpf129j/</id>
         <title>Github Page에 커스텀 도메인 연결하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgxg0wbg0007tu5o5zog1orn/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgyf00n40007685o4bpf129j/"/>
         <content type="html">&lt;h1 id=&#34;Github-Page에-커스텀-도메인-연결하기&#34;&gt;&lt;a href=&#34;#Github-Page에-커스텀-도메인-연결하기&#34; class=&#34;headerlink&#34; title=&#34;Github Page에 커스텀 도메인 연결하기&#34;&gt;&lt;/a&gt;Github Page에 커스텀 도메인 연결하기&lt;/h1&gt;&lt;p&gt;방법은 다음과 같다.&lt;/p&gt;
 &lt;h3 id=&#34;도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기&#34;&gt;&lt;a href=&#34;#도메인을-구입한-사이트에서-깃허브-리포지토리-주소를-CNAME으로-추가-또는-변경해주기&#34; class=&#34;headerlink&#34; title=&#34;도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기&#34;&gt;&lt;/a&gt;도메인을 구입한 사이트에서 깃허브 리포지토리 주소를 CNAME으로 추가 또는 변경해주기&lt;/h3&gt;&lt;p&gt;도메인을 구입한 사이트에서 있어야 할 레코드는 다음과 같다.&lt;/p&gt;
 &lt;table&gt;

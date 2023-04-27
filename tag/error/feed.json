@@ -1,12 +1,12 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "Coding Coconut • All posts by \"error\" tag",
-    "description": "주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? ",
+    "description": "주니어 웹 프론트엔드/백엔드 개발자. \\n  공부하는 것도, 노는 것도 그만큼 좋아합니다. \\n 현 직장에서는 AWS Lambda 와 Typscript 를 접목한 서드파티 모듈 개발을 하고 있습니다.",
     "home_page_url": "https://coding-coconut.com",
     "items": [
         {
-            "id": "https://coding-coconut.com/post/clgxg0wbh0009tu5ofep1bjbt/",
-            "url": "https://coding-coconut.com/post/clgxg0wbh0009tu5ofep1bjbt/",
+            "id": "https://coding-coconut.com/post/clgyf00n50008685ohw7u38oi/",
+            "url": "https://coding-coconut.com/post/clgyf00n50008685ohw7u38oi/",
             "title": "Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류",
             "date_published": "2022-08-25T03:35:55.000Z",
             "content_html": "<p>태그 영문 대소문자를 수정했을 때 링크 오류가 발생했다</p>\n<p>원인은 github에서 영문대소문자 수정 시 커밋사항에 반영되지 않기 때문이다.<br>태그를 아예 다른 문자로 수정하고 hexo deploy 로 재배포하면 된다.</p>\n<p>참조 링크<br><a href=\"https://github.com/hexojs/hexo/issues/2600\">https://github.com/hexojs/hexo/issues/2600</a></p>\n",

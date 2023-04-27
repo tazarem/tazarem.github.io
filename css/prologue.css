@@ -39,7 +39,7 @@
     margin-bottom: 2rem;
 }
 .profile-descript{
-    max-width: 18rem;
+    max-width: 20rem;
     word-break: keep-all;
 }
 
@@ -47,6 +47,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    max-width: 28rem;
     /* color: var(--sublink-color); */
 }
 .skill-kind{
@@ -89,4 +90,34 @@
     margin: var(--tag-margin);
     padding: var(--tag-padding);
     border-radius: var(--tag-radius);
+    padding: 0.5rem 0.7rem 0.5rem 0.8rem;
+    transition: all ease-in-out .3s;
+}
+
+.skill-tag:hover{
+    backdrop-filter:brightness(.96);
+    transition: all ease-in .3s;
+    cursor: pointer;
+}
+
+.skill-tag.color1:hover{
+    background-color: #3f51b5;
+}
+.skill-tag.color2:hover{
+    background-color: #7685d8;
+}
+.skill-tag.color3:hover{
+    background-color: #88c4f3;
+}
+.skill-tag.color4:hover{
+    background-color: #ff9800;
+}
+.skill-tag.color5:hover{
+    background-color: #7fd590;
+}
+.skill-tag.color6:hover{
+    background-color: #d17def;
+}
+.skill-tag.color7:hover{
+    background-color: #f74cb2;
 }

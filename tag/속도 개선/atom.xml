@@ -5,14 +5,14 @@
     <link href="https://coding-coconut.com" />
     <updated>2022-01-27T00:56:15.000Z</updated>
     <category term="certbot" />
-    <category term="docker" />
-    <category term="hexo" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="aws" />
-    <category term="배포" />
+    <category term="hexo" />
     <category term="error" />
+    <category term="docker" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
@@ -24,20 +24,20 @@
     <category term="인증서" />
     <category term="apache" />
     <category term="pm2" />
+    <category term="ubuntu" />
+    <category term="podman" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
-    <category term="ubuntu" />
-    <category term="podman" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/clgxg0wbr002ztu5of7ev008w/</id>
+        <id>https://coding-coconut.com/post/clgyf00nf003i685o0cbk8ar2/</id>
         <title>함수의 비동기화와 async 키워드</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgxg0wbr002ztu5of7ev008w/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clgyf00nf003i685o0cbk8ar2/"/>
         <content type="html">&lt;h1 id=&#34;함수의-비동기화&#34;&gt;&lt;a href=&#34;#함수의-비동기화&#34; class=&#34;headerlink&#34; title=&#34;함수의 비동기화&#34;&gt;&lt;/a&gt;함수의 비동기화&lt;/h1&gt;&lt;p&gt;기존 async await 를 단순히 비동기를 순차적으로 처리하는 데에만 이용하다가,&lt;br&gt;실무상 비동기로 함수를 처리해야 할 일이 생겼다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;일반적인 자바스크립트 함수&lt;/p&gt;

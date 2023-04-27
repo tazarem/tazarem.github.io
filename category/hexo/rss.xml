@@ -3,19 +3,19 @@
     <channel>
         <title>Coding Coconut • Posts by &#34;hexo&#34; category</title>
         <link>https://coding-coconut.com</link>
-        <description>주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? </description>
+        <description>주니어 웹 프론트엔드/백엔드 개발자. \n  공부하는 것도, 노는 것도 그만큼 좋아합니다. \n 현 직장에서는 AWS Lambda 와 Typscript 를 접목한 서드파티 모듈 개발을 하고 있습니다.</description>
         <language>ko</language>
         <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
         <lastBuildDate>Thu, 25 Aug 2022 12:35:55 +0900</lastBuildDate>
         <category>certbot</category>
-        <category>docker</category>
-        <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>aws</category>
-        <category>배포</category>
+        <category>hexo</category>
         <category>error</category>
+        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -27,20 +27,20 @@
         <category>인증서</category>
         <category>apache</category>
         <category>pm2</category>
+        <category>ubuntu</category>
+        <category>podman</category>
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>ubuntu</category>
-        <category>podman</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clgxg0wbh0009tu5ofep1bjbt</guid>
+            <guid>clgyf00n50008685ohw7u38oi</guid>
             <title>Hexo tag 영문태그 대소문자 수정 시 반영되지 않는 오류</title>
-            <link>https://coding-coconut.com/post/clgxg0wbh0009tu5ofep1bjbt/</link>
+            <link>https://coding-coconut.com/post/clgyf00n50008685ohw7u38oi/</link>
             <category>hexo</category>
             <category>error</category>
             <pubDate>Thu, 25 Aug 2022 12:35:55 +0900</pubDate>
@@ -49,12 +49,12 @@
             </description>
         </item>
         <item>
-            <guid>clgxg0wbi000dtu5o5d0mfcdl</guid>
+            <guid>clgyf00n6000d685o7y8x5pdc</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/clgxg0wbi000dtu5o5d0mfcdl/</link>
-            <category>hexo</category>
-            <category>github_page</category>
+            <link>https://coding-coconut.com/post/clgyf00n6000d685o7y8x5pdc/</link>
             <category>배포</category>
+            <category>github_page</category>
+            <category>hexo</category>
             <category>issue</category>
             <category>custom_domain</category>
             <category>hexo_deploy</category>
@@ -64,9 +64,9 @@
             </description>
         </item>
         <item>
-            <guid>clgxg0wbi000etu5oc0233s3x</guid>
+            <guid>clgyf00n6000h685o7zpxa950</guid>
             <title>Hexo 테마 만들기</title>
-            <link>https://coding-coconut.com/post/clgxg0wbi000etu5oc0233s3x/</link>
+            <link>https://coding-coconut.com/post/clgyf00n6000h685o7zpxa950/</link>
             <category>hexo</category>
             <pubDate>Fri, 10 Jun 2022 17:03:21 +0900</pubDate>
             <description>
@@ -74,9 +74,9 @@
             </description>
         </item>
         <item>
-            <guid>clgxg0wbj000itu5oas62gt8y</guid>
+            <guid>clgyf00n6000e685o9oem1x8n</guid>
             <title>Hexo와 API 서버 간의 통신</title>
-            <link>https://coding-coconut.com/post/clgxg0wbj000itu5oas62gt8y/</link>
+            <link>https://coding-coconut.com/post/clgyf00n6000e685o9oem1x8n/</link>
             <category>hexo</category>
             <pubDate>Mon, 08 Mar 2021 16:46:45 +0900</pubDate>
             <description>
@@ -84,9 +84,9 @@
             </description>
         </item>
         <item>
-            <guid>clgxg0wbj000htu5oeicug6ki</guid>
+            <guid>clgyf00n7000i685oe8ui018p</guid>
             <title>Hexo 테마 블로그 적용기</title>
-            <link>https://coding-coconut.com/post/clgxg0wbj000htu5oeicug6ki/</link>
+            <link>https://coding-coconut.com/post/clgyf00n7000i685oe8ui018p/</link>
             <category>hexo</category>
             <pubDate>Tue, 09 Feb 2021 12:19:02 +0900</pubDate>
             <description>

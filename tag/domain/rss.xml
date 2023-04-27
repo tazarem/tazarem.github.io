@@ -3,19 +3,19 @@
     <channel>
         <title>Coding Coconut • Posts by &#34;domain&#34; tag</title>
         <link>https://coding-coconut.com</link>
-        <description>주니어 웹 프론트엔드/백엔드 개발자. 공부하는 것도, 노는 것도 그만큼 좋아합니다. 덕질 없으면 어떻게 살아? </description>
+        <description>주니어 웹 프론트엔드/백엔드 개발자. \n  공부하는 것도, 노는 것도 그만큼 좋아합니다. \n 현 직장에서는 AWS Lambda 와 Typscript 를 접목한 서드파티 모듈 개발을 하고 있습니다.</description>
         <language>ko</language>
         <pubDate>Thu, 21 Jul 2022 17:20:52 +0900</pubDate>
         <lastBuildDate>Thu, 21 Jul 2022 17:20:52 +0900</lastBuildDate>
         <category>certbot</category>
-        <category>docker</category>
-        <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>aws</category>
-        <category>배포</category>
+        <category>hexo</category>
         <category>error</category>
+        <category>docker</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -27,20 +27,20 @@
         <category>인증서</category>
         <category>apache</category>
         <category>pm2</category>
+        <category>ubuntu</category>
+        <category>podman</category>
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
-        <category>ubuntu</category>
-        <category>podman</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clgxg0wbg0007tu5o5zog1orn</guid>
+            <guid>clgyf00n40007685o4bpf129j</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>
-            <link>https://coding-coconut.com/post/clgxg0wbg0007tu5o5zog1orn/</link>
+            <link>https://coding-coconut.com/post/clgyf00n40007685o4bpf129j/</link>
             <category>dns</category>
             <category>github_page</category>
             <category>domain</category>
