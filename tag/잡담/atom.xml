@@ -7,15 +7,15 @@
     <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="error" />
     <category term="aws" />
     <category term="배포" />
-    <category term="error" />
     <category term="issue" />
-    <category term="github_page" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
-    <category term="dns" />
-    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -23,9 +23,12 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="ubuntu" />
-    <category term="podman" />
     <category term="pm2" />
+    <category term="문제" />
+    <category term="이슈" />
+    <category term="podman" />
+    <category term="cluster" />
+    <category term="ubuntu" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
@@ -35,9 +38,9 @@
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/clgyf4wf6002u665obgsz9zie/</id>
+        <id>https://coding-coconut.com/post/clhu8ccpg003tb05o0i2m9zlo/</id>
         <title>블로그 새단장</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgyf4wf6002u665obgsz9zie/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clhu8ccpg003tb05o0i2m9zlo/"/>
         <content type="html">&lt;p&gt;기존 블로그 레이아웃과 테마를 새로 리뉴얼했다!&lt;br&gt;깔끔해서 마음에 든다.&lt;/p&gt;
 &lt;p&gt;이번에 새 테마를 만들면서, 기존 Hexo 공식 문서를 많이 파악해 보는 시간을 가졌다.&lt;br&gt;조만간 레이아웃 만들기도 정리해서 포스팅할 예정.&lt;/p&gt;
 </content>

@@ -7,15 +7,15 @@
     <category term="certbot" />
     <category term="docker" />
     <category term="hexo" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="error" />
     <category term="aws" />
     <category term="배포" />
-    <category term="error" />
     <category term="issue" />
-    <category term="github_page" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
-    <category term="dns" />
-    <category term="domain" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -23,9 +23,12 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="ubuntu" />
-    <category term="podman" />
     <category term="pm2" />
+    <category term="문제" />
+    <category term="이슈" />
+    <category term="podman" />
+    <category term="cluster" />
+    <category term="ubuntu" />
     <category term="dontstarve" />
     <category term="modding" />
     <category term="스크랩" />
@@ -35,9 +38,9 @@
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/clgyf4wew0003665oa5o5ek5i/</id>
+        <id>https://coding-coconut.com/post/clhu8ccp30003b05og1fh3h8f/</id>
         <title>Docker 명령어 정리</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clgyf4wew0003665oa5o5ek5i/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clhu8ccp30003b05og1fh3h8f/"/>
         <content type="html">&lt;p&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/1200px-Docker_%28container_engine%29_logo.svg.png&#34; alt=&#34;titleimg&#34;&gt;&lt;/p&gt;
 &lt;p&gt;도커를 한번 써 보니 생각보다 서버를 운영하는 데 편리하고 컨테이너 단위 관리가 용이해서, 이를 잊어버리는 일이 없도록 실행부터 가동 중지까지, 방법을 정리하려고 한다.&lt;/p&gt;
 &lt;h3 id=&#34;1-서버-이미지-만들기&#34;&gt;&lt;a href=&#34;#1-서버-이미지-만들기&#34; class=&#34;headerlink&#34; title=&#34;1. 서버 이미지 만들기&#34;&gt;&lt;/a&gt;1. 서버 이미지 만들기&lt;/h3&gt;&lt;p&gt;서버 구축 후, 프로젝트 폴더를 Shift + 우클릭하여 cmd(명령 프롬프트 창) 실행&lt;/p&gt;

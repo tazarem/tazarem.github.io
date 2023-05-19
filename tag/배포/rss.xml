@@ -10,15 +10,15 @@
         <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
+        <category>dns</category>
+        <category>github_page</category>
+        <category>domain</category>
+        <category>error</category>
         <category>aws</category>
         <category>배포</category>
-        <category>error</category>
         <category>issue</category>
-        <category>github_page</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
-        <category>dns</category>
-        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -26,9 +26,12 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>ubuntu</category>
-        <category>podman</category>
         <category>pm2</category>
+        <category>문제</category>
+        <category>이슈</category>
+        <category>podman</category>
+        <category>cluster</category>
+        <category>ubuntu</category>
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
@@ -38,21 +41,21 @@
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clgyf4wf5002o665o65iycz1v</guid>
+            <guid>clhu8ccp9000xb05o3mrsf1pg</guid>
             <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-            <link>https://coding-coconut.com/post/clgyf4wf5002o665o65iycz1v/</link>
+            <link>https://coding-coconut.com/post/clhu8ccp9000xb05o3mrsf1pg/</link>
             <category>배포</category>
-            <category>ubuntu</category>
             <category>podman</category>
+            <category>ubuntu</category>
             <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
             <description>
                 ubuntu 20.10 이하 버전에서 podman 설치하기 배포기준 AWS EC2 Ubuntu 20.04 LTS 에 설치하였다. 1. 쿠빅 리포지토리 추가 1sudo sh -c &amp;quot;echo &amp;#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&amp;#x27; &amp;gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&amp;quot;  입력하고 ...
             </description>
         </item>
         <item>
-            <guid>clgyf4wex0007665o6is9125i</guid>
+            <guid>clhu8ccp60009b05o8kc146oa</guid>
             <title>EC2에 도메인 바인딩하기</title>
-            <link>https://coding-coconut.com/post/clgyf4wex0007665o6is9125i/</link>
+            <link>https://coding-coconut.com/post/clhu8ccp60009b05o8kc146oa/</link>
             <category>aws</category>
             <category>배포</category>
             <pubDate>Wed, 19 Apr 2023 11:41:06 +0900</pubDate>
@@ -61,9 +64,9 @@
             </description>
         </item>
         <item>
-            <guid>clgyf4wez000i665o5qpsao24</guid>
+            <guid>clhu8ccp8000mb05o8sirdxxj</guid>
             <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-            <link>https://coding-coconut.com/post/clgyf4wez000i665o5qpsao24/</link>
+            <link>https://coding-coconut.com/post/clhu8ccp8000mb05o8sirdxxj/</link>
             <category>certbot</category>
             <category>배포</category>
             <category>https</category>
@@ -75,13 +78,13 @@
             </description>
         </item>
         <item>
-            <guid>clgyf4wey0009665o79sxgj1w</guid>
+            <guid>clhu8ccp7000db05o1xmdbvrb</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/clgyf4wey0009665o79sxgj1w/</link>
+            <link>https://coding-coconut.com/post/clhu8ccp7000db05o1xmdbvrb/</link>
             <category>hexo</category>
+            <category>github_page</category>
             <category>배포</category>
             <category>issue</category>
-            <category>github_page</category>
             <category>custom_domain</category>
             <category>hexo_deploy</category>
             <pubDate>Thu, 28 Jul 2022 09:56:12 +0900</pubDate>

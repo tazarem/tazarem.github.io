@@ -10,15 +10,15 @@
         <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
+        <category>dns</category>
+        <category>github_page</category>
+        <category>domain</category>
+        <category>error</category>
         <category>aws</category>
         <category>배포</category>
-        <category>error</category>
         <category>issue</category>
-        <category>github_page</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
-        <category>dns</category>
-        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -26,9 +26,12 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>ubuntu</category>
-        <category>podman</category>
         <category>pm2</category>
+        <category>문제</category>
+        <category>이슈</category>
+        <category>podman</category>
+        <category>cluster</category>
+        <category>ubuntu</category>
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
@@ -38,11 +41,11 @@
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clgyf4wey000d665o2zz4ainq</guid>
+            <guid>clhu8ccp50007b05odfpc9q13</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>
-            <link>https://coding-coconut.com/post/clgyf4wey000d665o2zz4ainq/</link>
-            <category>github_page</category>
+            <link>https://coding-coconut.com/post/clhu8ccp50007b05odfpc9q13/</link>
             <category>dns</category>
+            <category>github_page</category>
             <category>domain</category>
             <pubDate>Thu, 21 Jul 2022 17:20:52 +0900</pubDate>
             <description>

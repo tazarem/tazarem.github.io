@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://coding-coconut.com</id>
+    <title>Coding Coconut • Posts by &#34;cluster&#34; tag</title>
+    <link href="https://coding-coconut.com" />
+    <updated>2023-05-19T07:18:52.000Z</updated>
+    <category term="certbot" />
+    <category term="docker" />
+    <category term="hexo" />
+    <category term="dns" />
+    <category term="github_page" />
+    <category term="domain" />
+    <category term="error" />
+    <category term="aws" />
+    <category term="배포" />
+    <category term="issue" />
+    <category term="custom_domain" />
+    <category term="hexo_deploy" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
+    <category term="ssh" />
+    <category term="terminal" />
+    <category term="cmd" />
+    <category term="bash" />
+    <category term="pm2" />
+    <category term="문제" />
+    <category term="이슈" />
+    <category term="podman" />
+    <category term="cluster" />
+    <category term="ubuntu" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="스크랩" />
+    <category term="잡담" />
+    <category term="비동기" />
+    <category term="asyncawait" />
+    <category term="postman" />
+    <category term="속도 개선" />
+    <entry>
+        <id>https://coding-coconut.com/post/clhu8ccp9000vb05odi7xa05t/</id>
+        <title>podman 컨테이너 내부 pm2 강제 종료 현상</title>
+        <link rel="alternate" href="https://coding-coconut.com/post/clhu8ccp9000vb05odi7xa05t/"/>
+        <content type="html">&lt;p&gt;podman 컨테이너가 자꾸 강제 종료되길래 컨테이너를 재가동하고 로그를 찍어봤다.&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 컨테이너 가동&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman start [컨테이너 명]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 가동중인 컨테이너 확인&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman ps&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 컨테이너 내부의 로그를 확인&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; [컨테이너 명]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+&lt;p&gt;콘솔 확인 결과, 아래의 스택오버플로우 포스트처럼 pm2에서 코드 0 으로 종료된다는 문구가 출력됐다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/58947629/node-js-pm2-log-app-server0-exited-with-code-0-via-signal-sigkill&#34;&gt;https://stackoverflow.com/questions/58947629/node-js-pm2-log-app-server0-exited-with-code-0-via-signal-sigkill&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[RSS]Time 60min Call Complete.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;RSS Timer::60 call complete.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  generation_event: &lt;span class=&#34;string&#34;&gt;&amp;#x27;sitemap&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  origin_commander: &lt;span class=&#34;string&#34;&gt;&amp;#x27;timer&amp;#x27;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  is_timer: 30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[Sitemap]Time 30min Call Complete.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Sitemap Timer::30 call complete.&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt;: App name:app id:0 disconnected&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt;: App [app:0] exited with code [0] via signal [SIGTERM]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 error: Error caught &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; calling pidusage&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 error: Error: ESRCH: no such process, &lt;span class=&#34;built_in&#34;&gt;read&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 error: Error caught &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; calling pidusage&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 error: Error: ESRCH: no such process, &lt;span class=&#34;built_in&#34;&gt;read&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 error: 0 : id unknown&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 error: Trace: Error: 0 : id unknown&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at God.logAndGenerateError (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/Methods.js:39:12)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at God.stopProcessId (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/ActionMethods.js:289:21)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at God.deleteProcessId (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/ActionMethods.js:366:9)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Server.onmessage (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/node_modules/pm2-axon-rpc/lib/server.js:104:6)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at RepSocket.emit (node:events:513:28)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at RepSocket.emit (node:domain:489:12)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser.&amp;lt;anonymous&amp;gt; (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/node_modules/pm2-axon/lib/sockets/rep.js:51:15)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser.emit (node:events:513:28)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser.emit (node:domain:489:12)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser._write (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/node_modules/amp/lib/stream.js:91:16)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at God.logAndGenerateError (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/Methods.js:34:15)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at /usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/ActionMethods.js:367:30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at God.stopProcessId (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/ActionMethods.js:289:14)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at God.deleteProcessId (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/lib/God/ActionMethods.js:366:9)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Server.onmessage (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/node_modules/pm2-axon-rpc/lib/server.js:104:6)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at RepSocket.emit (node:events:513:28)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at RepSocket.emit (node:domain:489:12)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser.&amp;lt;anonymous&amp;gt; (/usr/&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;/lib/node_modules/pm2/node_modules/pm2-axon/lib/sockets/rep.js:51:15)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser.emit (node:events:513:28)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    at Parser.emit (node:domain:489:12)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2023-05-18T05:59:41: PM2 &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt;: PM2 successfully stopped&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;컨테이너 위에서 돌아가고 있는 프로그램은 Express API 서버였고, 스케쥴러처럼 특정 시간대에 트리거를 하는 로직을 수행하고 있었다.&lt;/p&gt;
+&lt;p&gt;동일한 작동 방식으로 짜인 다른 컨테이너도 해당 오류가 일어나지 않았는데 왜 이 컨테이너만 이런 문제가 일어났을까?&lt;/p&gt;
+&lt;p&gt;컨테이너의 Express 서버는 AWS의 Lambda를 호출하고 있었는데, 이 Lambda는 파일 생성이라는 다소 무거운 작업을 수행한다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;axios 요청에서 타임아웃을 내지 않더라도, 요청 시간이 너무 길어지면 프로세스가 죽은 것임으로 간주하고 pm2가 강제 종료를 수행한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;해당 내역때문에 lamdba의 헤비한 로직을 비동기로 처리하고, 응답을 먼저 돌려주는 방식으로 바꾸었다.&lt;/p&gt;
+</content>
+        <category term="pm2" />
+        <category term="문제" />
+        <category term="이슈" />
+        <category term="podman" />
+        <category term="cluster" />
+        <updated>2023-05-19T07:18:52.000Z</updated>
+    </entry>
+</feed>

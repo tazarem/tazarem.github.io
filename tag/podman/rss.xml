@@ -5,20 +5,20 @@
         <link>https://coding-coconut.com</link>
         <description>주니어 웹 프론트엔드/백엔드 개발자. \n  공부하는 것도, 노는 것도 그만큼 좋아합니다. \n 현 직장에서는 AWS Lambda 와 Typscript 를 접목한 서드파티 모듈 개발을 하고 있습니다.</description>
         <language>ko</language>
-        <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
-        <lastBuildDate>Wed, 26 Apr 2023 17:25:10 +0900</lastBuildDate>
+        <pubDate>Fri, 19 May 2023 16:18:52 +0900</pubDate>
+        <lastBuildDate>Fri, 19 May 2023 16:18:52 +0900</lastBuildDate>
         <category>certbot</category>
         <category>docker</category>
         <category>hexo</category>
+        <category>dns</category>
+        <category>github_page</category>
+        <category>domain</category>
+        <category>error</category>
         <category>aws</category>
         <category>배포</category>
-        <category>error</category>
         <category>issue</category>
-        <category>github_page</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
-        <category>dns</category>
-        <category>domain</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -26,9 +26,12 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>ubuntu</category>
-        <category>podman</category>
         <category>pm2</category>
+        <category>문제</category>
+        <category>이슈</category>
+        <category>podman</category>
+        <category>cluster</category>
+        <category>ubuntu</category>
         <category>dontstarve</category>
         <category>modding</category>
         <category>스크랩</category>
@@ -38,12 +41,26 @@
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clgyf4wf5002o665o65iycz1v</guid>
-            <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-            <link>https://coding-coconut.com/post/clgyf4wf5002o665o65iycz1v/</link>
-            <category>배포</category>
-            <category>ubuntu</category>
+            <guid>clhu8ccp9000vb05odi7xa05t</guid>
+            <title>podman 컨테이너 내부 pm2 강제 종료 현상</title>
+            <link>https://coding-coconut.com/post/clhu8ccp9000vb05odi7xa05t/</link>
+            <category>pm2</category>
+            <category>문제</category>
+            <category>이슈</category>
             <category>podman</category>
+            <category>cluster</category>
+            <pubDate>Fri, 19 May 2023 16:18:52 +0900</pubDate>
+            <description>
+                podman 컨테이너가 자꾸 강제 종료되길래 컨테이너를 재가동하고 로그를 찍어봤다. 12345678# 컨테이너 가동podman start [컨테이너 명]# 가동중인 컨테이너 확인podman ps# 컨테이너 내부의 로그를 확인podman log [컨테이너 명]   콘솔 확인 결과, 아래의 스택오버플로우 포스트처럼 pm2에서 코드 0 으로 종료된다는 문구가 출력됐다. https://stackoverflow.com/questions/58947629/node-js-pm2-log-app-server0-exited-with-code-0-via...
+            </description>
+        </item>
+        <item>
+            <guid>clhu8ccp9000xb05o3mrsf1pg</guid>
+            <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
+            <link>https://coding-coconut.com/post/clhu8ccp9000xb05o3mrsf1pg/</link>
+            <category>배포</category>
+            <category>podman</category>
+            <category>ubuntu</category>
             <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
             <description>
                 ubuntu 20.10 이하 버전에서 podman 설치하기 배포기준 AWS EC2 Ubuntu 20.04 LTS 에 설치하였다. 1. 쿠빅 리포지토리 추가 1sudo sh -c &amp;quot;echo &amp;#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&amp;#x27; &amp;gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&amp;quot;  입력하고 ...
