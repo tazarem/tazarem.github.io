@@ -4,6 +4,7 @@
     <title>Coding Coconut • Posts by &#34;aws&#34; category</title>
     <link href="https://coding-coconut.com" />
     <updated>2023-04-26T08:25:10.000Z</updated>
+    <category term="certbot" />
     <category term="cluster" />
     <category term="docker" />
     <category term="podman" />
@@ -15,7 +16,6 @@
     <category term="문제해결" />
     <category term="이슈" />
     <category term="error" />
-    <category term="certbot" />
     <category term="aws" />
     <category term="배포" />
     <category term="dns" />
@@ -25,26 +25,26 @@
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
+    <category term="문제" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="https" />
-    <category term="인증서" />
-    <category term="apache" />
-    <category term="문제" />
+    <category term="스크랩" />
     <category term="dontstarve" />
     <category term="modding" />
-    <category term="스크랩" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cluwfj5nc000twc5oblyx86po/</id>
+        <id>https://coding-coconut.com/post/cluwfwnxl003t2j5o53lfaz5c/</id>
         <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfj5nc000twc5oblyx86po/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnxl003t2j5o53lfaz5c/"/>
         <content type="html">&lt;h1 id=&#34;ubuntu-20-10-이하-버전에서-podman-설치하기&#34;&gt;&lt;a href=&#34;#ubuntu-20-10-이하-버전에서-podman-설치하기&#34; class=&#34;headerlink&#34; title=&#34;ubuntu 20.10 이하 버전에서 podman 설치하기&#34;&gt;&lt;/a&gt;ubuntu 20.10 이하 버전에서 podman 설치하기&lt;/h1&gt;&lt;p&gt;배포기준 AWS EC2 &lt;code&gt;Ubuntu 20.04 LTS&lt;/code&gt; 에 설치하였다.&lt;/p&gt;
 &lt;h3 id=&#34;1-쿠빅-리포지토리-추가&#34;&gt;&lt;a href=&#34;#1-쿠빅-리포지토리-추가&#34; class=&#34;headerlink&#34; title=&#34;1. 쿠빅 리포지토리 추가&#34;&gt;&lt;/a&gt;1. 쿠빅 리포지토리 추가&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo sh -c &lt;span class=&#34;string&#34;&gt;&amp;quot;echo &amp;#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&amp;#x27; &amp;gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
@@ -67,9 +67,9 @@
         <updated>2023-04-26T08:25:10.000Z</updated>
     </entry>
     <entry>
-        <id>https://coding-coconut.com/post/cluwfj5n40006wc5og8324geb/</id>
+        <id>https://coding-coconut.com/post/cluwfwnx500072j5obk9fhr74/</id>
         <title>EC2에 도메인 바인딩하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfj5n40006wc5og8324geb/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnx500072j5obk9fhr74/"/>
         <content type="html">&lt;h2 id=&#34;도메인-로드밸런서-대상그룹-보안규칙-EC2-설정하기&#34;&gt;&lt;a href=&#34;#도메인-로드밸런서-대상그룹-보안규칙-EC2-설정하기&#34; class=&#34;headerlink&#34; title=&#34;도메인-로드밸런서-대상그룹-보안규칙-EC2 설정하기&#34;&gt;&lt;/a&gt;도메인-로드밸런서-대상그룹-보안규칙-EC2 설정하기&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;도메인 접근 -&amp;gt; 내부 포트 접근&lt;br&gt;80|443 -&amp;gt; 8102&lt;/p&gt;
 &lt;/blockquote&gt;

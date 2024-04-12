@@ -7,6 +7,7 @@
         <language>ko</language>
         <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
         <lastBuildDate>Wed, 26 Apr 2023 17:25:10 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>cluster</category>
         <category>docker</category>
         <category>podman</category>
@@ -18,7 +19,6 @@
         <category>문제해결</category>
         <category>이슈</category>
         <category>error</category>
-        <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
         <category>dns</category>
@@ -28,26 +28,26 @@
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
+        <category>문제</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
-        <category>문제</category>
+        <category>스크랩</category>
         <category>dontstarve</category>
         <category>modding</category>
-        <category>스크랩</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>cluwfj5nc000twc5oblyx86po</guid>
+            <guid>cluwfwnxl003t2j5o53lfaz5c</guid>
             <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-            <link>https://coding-coconut.com/post/cluwfj5nc000twc5oblyx86po/</link>
+            <link>https://coding-coconut.com/post/cluwfwnxl003t2j5o53lfaz5c/</link>
             <category>podman</category>
             <category>ubuntu</category>
             <category>배포</category>

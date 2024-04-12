@@ -1,0 +1,320 @@
+<html lang="ko">
+    <!-- head -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      Coding Coconut
+    </title>
+    <!-- 스크립트들 쓰기~ -->
+    <link rel="alternate" type="application/rss+xml" title="Coding Coconut" href="https://coding-coconut.com/rss.xml" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/icon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/libs/fontawesome5/all.css">
+    <link rel="stylesheet" href="/css/nanumgothic_coding.css">
+    <link rel="stylesheet" href="/css/nanumsquare_round.css">
+    
+    <link rel="stylesheet" href="/css/generic.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/widget.css">
+    <link rel="stylesheet" href="/css/prologue.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/archives.css">
+    <link rel="stylesheet" href="/css/guest.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/tracker.js"></script>
+    <script src="/js/imgoverlay.js"></script>
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4CP2SXC8S"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          let tracking_id = 'G-G4CP2SXC8S'
+          gtag('config', tracking_id);
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="/css/searcher.css">
+      <script src="/js/search.js"></script>
+      <script type="text/javascript">      
+        var search_path = "search.json";
+        if (search_path.length == 0) {
+          search_path = "search.json";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      </script>
+   
+
+   <link rel="stylesheet" href="/css/mobile.css">
+   <link rel="stylesheet" href="/css/hide.css">
+
+   <script src="/js/attacher.js"></script>
+
+   <script>
+    $(function(){
+        draw_tracker()
+    })
+   </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <!-- head -->
+    <body class="scroll">
+    <div class="header-wrap">
+    <div class="header">
+        <div class="mobile-logo" >
+            <!-- Coding Coconut -->
+
+            <div class="header-btn" onclick="toTheTop()">
+                <i class="fas fa-level-up-alt"
+                ></i>
+            </div>
+            
+                <div class="header-btn" id="searchToggler" onclick="toggleSearcher(this)">
+                    <i class="fas fa-search"></i>
+                </div>
+            
+        </div>
+        <div class="menus">
+            
+                <a href="/prologue" class="header-btn ">
+                    <i class="header-icon fas fa-user-astronaut"></i>
+                    <div class="header-name">Prologue
+                    </div>
+                </a>
+            
+                <a href="/" class="header-btn ">
+                    <i class="header-icon fas fa-satellite"></i>
+                    <div class="header-name">Blog
+                    </div>
+                </a>
+            
+                <a href="/archives" class="header-btn ">
+                    <i class="header-icon fas fa-meteor"></i>
+                    <div class="header-name">Archives
+                    </div>
+                </a>
+            
+                <a href="/guest" class="header-btn ">
+                    <i class="header-icon fas fa-rocket"></i>
+                    <div class="header-name">Guest
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+    
+    <div class="header-display">
+        <!-- 슬라이더나 위젯 넣어도 되고.. 헤더 이미지 넣어도 됨 -->
+        <div class="header-title-zone" onclick="goToMain()">
+            <div class="blog-title">
+                Coding Coconut
+            </div>
+            <div class="blog-subtitle">
+                개발 블로그
+            </div>
+        </div>
+    </div>
+    
+        <!-- 검색 위젯 -->
+
+<div class="search-widget">
+    <div class="form-group">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" 
+        id="local-search-input" 
+        name="q" results="0"
+        placeholder="Search Posts"
+        class="st-search-input st-default-search-input form-control"
+        />
+    </div>  
+    <div id="local-search-result"></div>
+</div>
+
+    
+</div>
+
+
+    <div class="contents">
+        
+
+    <!-- 단일 게시물 -->
+    <div class="post">
+    <!-- 토픽 트래커. 작성할 것-->
+<div class="left-widget">
+        <div class="left-component category">
+    <div class="title">
+        <i class="fas fa-bookmark"></i>
+        Category
+    </div>
+    <div class="category-zone">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AWS/">AWS</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AWS/EC2/">EC2</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/">CI/CD</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/Docker/">Docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Express/">Express</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Hexo/">Hexo</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/%EC%B7%A8%EB%AF%B8-%EB%AA%A8%EB%94%A9/">취미&모딩</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EB%B0%B0%ED%8F%AC/">배포</a><span class="category-list-count">1</span></li></ul>
+    </div>
+</div>
+
+        
+    <div class="left-component topic-tracker">
+        <div class="title">
+            <i class="fas fa-thumbtack"></i>
+            Topic Tracker
+        </div>
+        <div class="track-list scroll">
+    
+        </div>
+    </div>
+
+    
+        <div class="left-component tags">
+    <div class="title">
+        <i class="fas fa-tags"></i>
+        Tags</div>
+    <div class="tag-zone scroll">
+        <a href="/tags/apache/" style="font-size: 10px; color: #d17def">apache</a> <a href="/tags/asyncawait/" style="font-size: 10px; color: #d17def">asyncawait</a> <a href="/tags/aws/" style="font-size: 10px; color: #d17def">aws</a> <a href="/tags/bash/" style="font-size: 10px; color: #d17def">bash</a> <a href="/tags/certbot/" style="font-size: 12.5px; color: #ba7fe9">certbot</a> <a href="/tags/chrome/" style="font-size: 10px; color: #d17def">chrome</a> <a href="/tags/cluster/" style="font-size: 12.5px; color: #ba7fe9">cluster</a> <a href="/tags/cmd/" style="font-size: 10px; color: #d17def">cmd</a> <a href="/tags/custom-domain/" style="font-size: 10px; color: #d17def">custom_domain</a> <a href="/tags/dns/" style="font-size: 10px; color: #d17def">dns</a> <a href="/tags/docker/" style="font-size: 12.5px; color: #ba7fe9">docker</a> <a href="/tags/domain/" style="font-size: 10px; color: #d17def">domain</a> <a href="/tags/dontstarve/" style="font-size: 10px; color: #d17def">dontstarve</a> <a href="/tags/error/" style="font-size: 12.5px; color: #ba7fe9">error</a> <a href="/tags/github-page/" style="font-size: 12.5px; color: #ba7fe9">github_page</a> <a href="/tags/hexo/" style="font-size: 20px; color: #7685d8">hexo</a> <a href="/tags/hexo-deploy/" style="font-size: 10px; color: #d17def">hexo_deploy</a> <a href="/tags/https/" style="font-size: 10px; color: #d17def">https</a> <a href="/tags/issue/" style="font-size: 10px; color: #d17def">issue</a> <a href="/tags/modding/" style="font-size: 10px; color: #d17def">modding</a> <a href="/tags/pm2/" style="font-size: 15px; color: #a481e4">pm2</a> <a href="/tags/podman/" style="font-size: 15px; color: #a481e4">podman</a> <a href="/tags/postman/" style="font-size: 10px; color: #d17def">postman</a> <a href="/tags/selenium/" style="font-size: 10px; color: #d17def">selenium</a> <a href="/tags/ssh/" style="font-size: 10px; color: #d17def">ssh</a> <a href="/tags/terminal/" style="font-size: 10px; color: #d17def">terminal</a> <a href="/tags/ubuntu/" style="font-size: 12.5px; color: #ba7fe9">ubuntu</a> <a href="/tags/web-crawling/" style="font-size: 10px; color: #d17def">web_crawling</a> <a href="/tags/%EB%AC%B8%EC%A0%9C/" style="font-size: 10px; color: #d17def">문제</a> <a href="/tags/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/" style="font-size: 10px; color: #d17def">문제해결</a> <a href="/tags/%EB%B0%B0%ED%8F%AC/" style="font-size: 17.5px; color: #8d83de">배포</a> <a href="/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/" style="font-size: 10px; color: #d17def">비동기</a> <a href="/tags/%EC%86%8D%EB%8F%84-%EA%B0%9C%EC%84%A0/" style="font-size: 10px; color: #d17def">속도 개선</a> <a href="/tags/%EC%8A%A4%ED%81%AC%EB%9E%A9/" style="font-size: 10px; color: #d17def">스크랩</a> <a href="/tags/%EC%9D%B4%EC%8A%88/" style="font-size: 12.5px; color: #ba7fe9">이슈</a> <a href="/tags/%EC%9D%B8%EC%A6%9D%EC%84%9C/" style="font-size: 10px; color: #d17def">인증서</a> <a href="/tags/%EC%9E%A1%EB%8B%B4/" style="font-size: 10px; color: #d17def">잡담</a>
+    </div>
+</div>
+
+    <div class="left-component tothetop">
+        <a class="title" onclick="toTheTop()">
+            <i class="fas fa-chevron-up"></i>
+            To the top
+        </a>
+    </div>
+</div>
+
+
+    <div class="right-widget">
+    <!-- 스티커 어태쳐 -->
+
+<div class="right-component sticker-attacher">
+    <div class="title">
+        <i class="fas fa-disease"></i>
+        Stricker Attacher
+    </div>
+    <div class="sticker-list scroll">
+        
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/cocona.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/ggyul.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/pinkwhale.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/sunnysideup.png">
+                </div>
+            
+        
+    </div>
+    <div class="attacher-btn remove"
+    onclick="attacher.toggleDeleteMode(this)">
+        스티커 떼기
+    </div>
+    <div class="attacher-btn deleteAll"
+    onclick="attacher.deleteAllSticker()">
+        이 페이지의 스티커 전부 삭제
+    </div>
+</div>
+
+
+    <div class="right-component recent-post">
+    <div class="title">
+        <i class="fas fa-bolt"></i>
+        Recent Post
+    </div>
+    <div class="post-list">
+        
+              <a href="/post/cluwfwnx300032j5oa1gu6ehj/">Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</a>
+          
+              <a href="/post/cluwfwnxa000n2j5o2juma63x/">podman 컨테이너 내부 pm2 강제 종료 현상</a>
+          
+              <a href="/post/cluwfwnxl003t2j5o53lfaz5c/">Ubuntu 20.10 이하 버전에서 podman 설치하기</a>
+          
+              <a href="/post/cluwfwnx500072j5obk9fhr74/">EC2에 도메인 바인딩하기</a>
+          
+    </div>
+</div>
+    <div class=""></div>
+</div>
+
+
+    <div class="post-header">
+        <div class="post-category">
+            
+        </div>
+        <div class="post-title">Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</div>
+        <div class="post-date">
+            <!-- 작성됨 -->
+            <div class="post-date-write">2024-04-12 17:16:08</div>
+        </div>
+        <div class="post-tag">
+            <a class="tag-none-link" href="/tags/chrome/" rel="tag">chrome</a><a class="tag-none-link" href="/tags/cluster/" rel="tag">cluster</a><a class="tag-none-link" href="/tags/docker/" rel="tag">docker</a><a class="tag-none-link" href="/tags/error/" rel="tag">error</a><a class="tag-none-link" href="/tags/pm2/" rel="tag">pm2</a><a class="tag-none-link" href="/tags/podman/" rel="tag">podman</a><a class="tag-none-link" href="/tags/selenium/" rel="tag">selenium</a><a class="tag-none-link" href="/tags/ubuntu/" rel="tag">ubuntu</a><a class="tag-none-link" href="/tags/web-crawling/" rel="tag">web_crawling</a><a class="tag-none-link" href="/tags/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/" rel="tag">문제해결</a><a class="tag-none-link" href="/tags/%EC%9D%B4%EC%8A%88/" rel="tag">이슈</a>
+        </div>
+    </div>
+    <div class="post-content">
+        <p>이전에 selenium 프로젝트를 했다고 안일했었는지 크롤링 프로젝트를 만들고 배포하자마자 오류가 났다.</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Timed out receiving message from renderer: 600.000</span><br></pre></td></tr></table></figure>
+<p>원인이 뭔지 도통 모르겠어서 이것저것 찾아봤는데 결국 해결하긴 했음.</p>
+<h3 id="오류-고치는-과정"><a href="#오류-고치는-과정" class="headerlink" title="오류 고치는 과정"></a>오류 고치는 과정</h3><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Ubuntu 20.04 LTS</span></span><br><span class="line"><span class="comment">// Podman Container Build</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 프로젝트 이미지 생성용 Dockerfile</span></span><br><span class="line">FROM selenium/node-chrome:<span class="number">123.0</span><span class="number">.6312</span><span class="number">.86</span>-chromedriver-<span class="number">123.0</span><span class="number">.6312</span><span class="number">.86</span>-<span class="number">20240402</span></span><br><span class="line">(이후 Node.js 설치 과정)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 프로젝트 가동 후 셀레늄이 크롬을 띄우는 타이밍에서 타임아웃 메시지 확인</span></span><br><span class="line">Timed out receiving message <span class="keyword">from</span> renderer: <span class="number">600.000</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 혹여 버전이 서로 안맞나 싶어서 컨테이너 내부 sh명령어로 버전 확인</span></span><br><span class="line">podman exec -it [프로젝트명] sh</span><br><span class="line"></span><br><span class="line">google-chrome --version</span><br><span class="line">&gt; Google Chrome <span class="number">123.0</span><span class="number">.6312</span><span class="number">.86</span> </span><br><span class="line"></span><br><span class="line">chromedriver --version</span><br><span class="line">&gt; ChromeDriver <span class="number">123.0</span><span class="number">.6312</span><span class="number">.86</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 버전도 맞고 컨테이너 내부에 구글 크롬이 안 깔린것도 아님을 확인</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 구글에 에러 검색/스택오버플로우 탐색. 아래 포스트는 오류 해결에 결정적이었다.</span></span><br><span class="line"><span class="string">&quot;https://stackoverflow.com/questions/48450594/selenium-timed-out-receiving-message-from-renderer?rq=2&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 프로젝트에서 셀레늄이 크롬창을 띄우는 옵션 확인 (ts 기준)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> driver: WebDriver</span><br><span class="line"><span class="keyword">const</span> cOption = <span class="keyword">new</span> chrome.Options()</span><br><span class="line">cOption.addArguments(<span class="string">&quot;--no-sandbox&quot;</span>)</span><br><span class="line">.addArguments(<span class="string">&quot;--headless&quot;</span>) <span class="comment">// 인터넷창 안띄우는 옵션 추가</span></span><br><span class="line">.addArguments(<span class="string">&quot;--enable-automation&quot;</span>) <span class="comment">//오토메이션 켜기</span></span><br><span class="line">.addArguments(<span class="string">&quot;--disable-infobars&quot;</span>) <span class="comment">//비활성화 옵션 추가</span></span><br><span class="line">.addArguments(<span class="string">&quot;--start-maximized&quot;</span>) <span class="comment">// 창을 최대로 키우기</span></span><br><span class="line">.addArguments(<span class="string">&quot;--disable-dev-shm-usage&quot;</span>)</span><br><span class="line">.addArguments(<span class="string">&quot;--single-process&quot;</span>)</span><br><span class="line">.addArguments(<span class="string">&quot;--incognito&quot;</span>) <span class="comment">//시크릿 모드</span></span><br><span class="line">.addArguments(<span class="string">&quot;--log-level=off&quot;</span>)</span><br><span class="line">.addArguments(<span class="string">&quot;--disk-cache-size=zero&quot;</span>)</span><br><span class="line">.addArguments(<span class="string">&quot;--disable-gpu&quot;</span>) <span class="comment">// 이것 켜기(로컬에서 이 옵션을 킨 채로 가동하면 오류남)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 이후 빌드 후 배포했을 때 정상 가동 되었음을 확인함.</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="추가"><a href="#추가" class="headerlink" title="추가"></a>추가</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">--headless // 실제로 웹 창을 띄움. 페이지에 따라 돔을 못 읽어오기도 함. 우분투처럼 화면이 없는 OS에 배포할 때 이 옵션을 주석처리하면 DevPorts를 찾을 수 없다면서 오류가 떨어짐(송출할 수 있는 화면이 없기 때문)</span><br><span class="line">--disable-gpu // gpu 비활성화 로컬 컴퓨터에서 이 옵션을 켜고 가동할 경우 커넥팅할수 없다는 오류가 나타남</span><br></pre></td></tr></table></figure>
+
+<p>골머리를 좀 많이 앓았는데 그냥 환경 옵션 추가로 해결되었다.</p>
+<p>ㅡㅡ;; 오류가 좀더 자세했으면 한다. 셀레늄이 문서화가 많이 안 되어있는 듯.</p>
+
+    </div>
+    
+    
+        <div class="reply">
+                
+        <script src="https://utteranc.es/client.js"
+        repo="tazarem/tazarem.github.io"
+        issue-term="post/cluwfwnx300032j5oa1gu6ehj/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    
+        </div>
+    
+</div>
+
+
+
+    </div>
+    <div class="overlay hide">
+    <div class="img-zone">
+        <div class="title"></div>
+        <div class="content"></div>
+    </div>
+    <!-- <div class="btn-banner">
+        <div class="btn close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="btn img-closer">
+            <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="btn img-wider">
+            <i class="fas fa-search-minus"></i>
+        </div>
+    </div> -->
+</div>
+    <div class="footer">
+    <div class="footer-contents">
+        <div>Copyright 2021 코딩코코넛 All rights reserved.</div>
+        <div>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></div>
+    </div>
+</div>
+    </body>
+</html>

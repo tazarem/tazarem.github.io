@@ -7,6 +7,7 @@
         <language>ko</language>
         <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
         <lastBuildDate>Fri, 17 Sep 2021 09:30:08 +0900</lastBuildDate>
+        <category>certbot</category>
         <category>cluster</category>
         <category>docker</category>
         <category>podman</category>
@@ -18,7 +19,6 @@
         <category>문제해결</category>
         <category>이슈</category>
         <category>error</category>
-        <category>certbot</category>
         <category>aws</category>
         <category>배포</category>
         <category>dns</category>
@@ -28,26 +28,26 @@
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
+        <category>문제</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
-        <category>문제</category>
+        <category>스크랩</category>
         <category>dontstarve</category>
         <category>modding</category>
-        <category>스크랩</category>
         <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>cluwfj5nk0041wc5o7w0r2aim</guid>
+            <guid>cluwfwnxc000u2j5o8eq8d10m</guid>
             <title>링크 스크랩 및 참고자료</title>
-            <link>https://coding-coconut.com/post/cluwfj5nk0041wc5o7w0r2aim/</link>
+            <link>https://coding-coconut.com/post/cluwfwnxc000u2j5o8eq8d10m/</link>
             <category>스크랩</category>
             <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
             <description>

@@ -158,12 +158,12 @@ td.gutter{
 }
 .highlight pre{
     font-family: 'NanumGothic Coding';
-    display: grid;
+    /* display: grid; */
     margin: 0;
 }
-.highlight pre br {
+/* .highlight pre br {
     display: none;
-}
+} */
 figure.highlight::after{
     position: absolute;
     right: 0;

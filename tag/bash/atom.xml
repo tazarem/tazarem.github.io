@@ -4,6 +4,7 @@
     <title>Coding Coconut • Posts by &#34;bash&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2022-05-20T08:44:10.000Z</updated>
+    <category term="certbot" />
     <category term="cluster" />
     <category term="docker" />
     <category term="podman" />
@@ -15,7 +16,6 @@
     <category term="문제해결" />
     <category term="이슈" />
     <category term="error" />
-    <category term="certbot" />
     <category term="aws" />
     <category term="배포" />
     <category term="dns" />
@@ -25,26 +25,26 @@
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
+    <category term="문제" />
+    <category term="https" />
+    <category term="인증서" />
+    <category term="apache" />
     <category term="ssh" />
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="https" />
-    <category term="인증서" />
-    <category term="apache" />
-    <category term="문제" />
+    <category term="스크랩" />
     <category term="dontstarve" />
     <category term="modding" />
-    <category term="스크랩" />
     <category term="잡담" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cluwfj5nb000mwc5o54vve0oa/</id>
+        <id>https://coding-coconut.com/post/cluwfwnxb000s2j5ohm0ke9ro/</id>
         <title>SSH키로 로그인하는 법</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfj5nb000mwc5o54vve0oa/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnxb000s2j5ohm0ke9ro/"/>
         <content type="html">&lt;h2 id=&#34;SSH키로-로그인하는-법&#34;&gt;&lt;a href=&#34;#SSH키로-로그인하는-법&#34; class=&#34;headerlink&#34; title=&#34;SSH키로 로그인하는 법&#34;&gt;&lt;/a&gt;SSH키로 로그인하는 법&lt;/h2&gt;&lt;h3 id=&#34;SSH-키-생성하기&#34;&gt;&lt;a href=&#34;#SSH-키-생성하기&#34; class=&#34;headerlink&#34; title=&#34;SSH 키 생성하기&#34;&gt;&lt;/a&gt;SSH 키 생성하기&lt;/h3&gt;&lt;p&gt;깃허브나 벌쳐 인증서버/원격 데이터베이스에 접속할 때 키로그인을 필요로 하기도 한다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;키 생성하기&lt;/p&gt;
