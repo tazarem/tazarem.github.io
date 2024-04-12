@@ -7,15 +7,24 @@
         <language>ko</language>
         <pubDate>Fri, 21 Jan 2022 16:40:37 +0900</pubDate>
         <lastBuildDate>Fri, 21 Jan 2022 16:40:37 +0900</lastBuildDate>
-        <category>certbot</category>
+        <category>cluster</category>
         <category>docker</category>
+        <category>podman</category>
+        <category>pm2</category>
+        <category>ubuntu</category>
+        <category>selenium</category>
+        <category>chrome</category>
+        <category>web_crawling</category>
+        <category>문제해결</category>
+        <category>이슈</category>
+        <category>error</category>
+        <category>certbot</category>
         <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -26,24 +35,19 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
-        <category>문제</category>
-        <category>이슈</category>
-        <category>podman</category>
-        <category>cluster</category>
-        <category>ubuntu</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>스크랩</category>
         <category>잡담</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>문제</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clhu8ccpg003tb05o0i2m9zlo</guid>
+            <guid>cluwf5cih002vi45o6v4t5lvf</guid>
             <title>블로그 새단장</title>
-            <link>https://coding-coconut.com/post/clhu8ccpg003tb05o0i2m9zlo/</link>
+            <link>https://coding-coconut.com/post/cluwf5cih002vi45o6v4t5lvf/</link>
             <category>잡담</category>
             <pubDate>Fri, 21 Jan 2022 16:40:37 +0900</pubDate>
             <description>

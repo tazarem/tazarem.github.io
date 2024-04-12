@@ -4,15 +4,24 @@
     <title>Coding Coconut • Posts by &#34;aws&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2023-04-19T02:41:06.000Z</updated>
-    <category term="certbot" />
+    <category term="cluster" />
     <category term="docker" />
+    <category term="podman" />
+    <category term="pm2" />
+    <category term="ubuntu" />
+    <category term="selenium" />
+    <category term="chrome" />
+    <category term="web_crawling" />
+    <category term="문제해결" />
+    <category term="이슈" />
+    <category term="error" />
+    <category term="certbot" />
     <category term="hexo" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="error" />
-    <category term="aws" />
-    <category term="배포" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
@@ -23,24 +32,19 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="pm2" />
-    <category term="문제" />
-    <category term="이슈" />
-    <category term="podman" />
-    <category term="cluster" />
-    <category term="ubuntu" />
-    <category term="dontstarve" />
-    <category term="modding" />
     <category term="스크랩" />
     <category term="잡담" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="문제" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/clhu8ccp60009b05o8kc146oa/</id>
+        <id>https://coding-coconut.com/post/cluwf5ci20008i45o80yrbu5n/</id>
         <title>EC2에 도메인 바인딩하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clhu8ccp60009b05o8kc146oa/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cluwf5ci20008i45o80yrbu5n/"/>
         <content type="html">&lt;h2 id=&#34;도메인-로드밸런서-대상그룹-보안규칙-EC2-설정하기&#34;&gt;&lt;a href=&#34;#도메인-로드밸런서-대상그룹-보안규칙-EC2-설정하기&#34; class=&#34;headerlink&#34; title=&#34;도메인-로드밸런서-대상그룹-보안규칙-EC2 설정하기&#34;&gt;&lt;/a&gt;도메인-로드밸런서-대상그룹-보안규칙-EC2 설정하기&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;도메인 접근 -&amp;gt; 내부 포트 접근&lt;br&gt;80|443 -&amp;gt; 8102&lt;/p&gt;
 &lt;/blockquote&gt;

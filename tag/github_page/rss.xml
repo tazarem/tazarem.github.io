@@ -7,15 +7,24 @@
         <language>ko</language>
         <pubDate>Thu, 28 Jul 2022 09:56:12 +0900</pubDate>
         <lastBuildDate>Thu, 28 Jul 2022 09:56:12 +0900</lastBuildDate>
-        <category>certbot</category>
+        <category>cluster</category>
         <category>docker</category>
+        <category>podman</category>
+        <category>pm2</category>
+        <category>ubuntu</category>
+        <category>selenium</category>
+        <category>chrome</category>
+        <category>web_crawling</category>
+        <category>문제해결</category>
+        <category>이슈</category>
+        <category>error</category>
+        <category>certbot</category>
         <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -26,27 +35,22 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
-        <category>문제</category>
-        <category>이슈</category>
-        <category>podman</category>
-        <category>cluster</category>
-        <category>ubuntu</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>스크랩</category>
         <category>잡담</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>문제</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clhu8ccp7000db05o1xmdbvrb</guid>
+            <guid>cluwf5ci6000di45o1stm0oh9</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/clhu8ccp7000db05o1xmdbvrb/</link>
+            <link>https://coding-coconut.com/post/cluwf5ci6000di45o1stm0oh9/</link>
             <category>hexo</category>
-            <category>github_page</category>
             <category>배포</category>
+            <category>github_page</category>
             <category>issue</category>
             <category>custom_domain</category>
             <category>hexo_deploy</category>
@@ -56,9 +60,9 @@
             </description>
         </item>
         <item>
-            <guid>clhu8ccp50007b05odfpc9q13</guid>
+            <guid>cluwf5ci50009i45o37l2eywo</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>
-            <link>https://coding-coconut.com/post/clhu8ccp50007b05odfpc9q13/</link>
+            <link>https://coding-coconut.com/post/cluwf5ci50009i45o37l2eywo/</link>
             <category>dns</category>
             <category>github_page</category>
             <category>domain</category>

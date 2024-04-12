@@ -7,15 +7,24 @@
         <language>ko</language>
         <pubDate>Sun, 15 Jan 2023 16:19:15 +0900</pubDate>
         <lastBuildDate>Sun, 15 Jan 2023 16:19:15 +0900</lastBuildDate>
-        <category>certbot</category>
+        <category>cluster</category>
         <category>docker</category>
+        <category>podman</category>
+        <category>pm2</category>
+        <category>ubuntu</category>
+        <category>selenium</category>
+        <category>chrome</category>
+        <category>web_crawling</category>
+        <category>문제해결</category>
+        <category>이슈</category>
+        <category>error</category>
+        <category>certbot</category>
         <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -26,24 +35,19 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
-        <category>문제</category>
-        <category>이슈</category>
-        <category>podman</category>
-        <category>cluster</category>
-        <category>ubuntu</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>스크랩</category>
         <category>잡담</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>문제</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clhu8ccpa0010b05o2cnw0q4r</guid>
+            <guid>cluwf5cih002wi45ogz4p2smt</guid>
             <title>굶지마 캐릭터 모드 만드는 과정 정리</title>
-            <link>https://coding-coconut.com/post/clhu8ccpa0010b05o2cnw0q4r/</link>
+            <link>https://coding-coconut.com/post/cluwf5cih002wi45ogz4p2smt/</link>
             <category>dontstarve</category>
             <category>modding</category>
             <pubDate>Sun, 15 Jan 2023 16:19:15 +0900</pubDate>

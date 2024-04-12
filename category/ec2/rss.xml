@@ -7,15 +7,24 @@
         <language>ko</language>
         <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
         <lastBuildDate>Wed, 26 Apr 2023 17:25:10 +0900</lastBuildDate>
-        <category>certbot</category>
+        <category>cluster</category>
         <category>docker</category>
+        <category>podman</category>
+        <category>pm2</category>
+        <category>ubuntu</category>
+        <category>selenium</category>
+        <category>chrome</category>
+        <category>web_crawling</category>
+        <category>문제해결</category>
+        <category>이슈</category>
+        <category>error</category>
+        <category>certbot</category>
         <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -26,27 +35,22 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
-        <category>문제</category>
-        <category>이슈</category>
-        <category>podman</category>
-        <category>cluster</category>
-        <category>ubuntu</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>스크랩</category>
         <category>잡담</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>문제</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clhu8ccp9000xb05o3mrsf1pg</guid>
+            <guid>cluwf5cih0031i45o3pm228ew</guid>
             <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-            <link>https://coding-coconut.com/post/clhu8ccp9000xb05o3mrsf1pg/</link>
-            <category>배포</category>
+            <link>https://coding-coconut.com/post/cluwf5cih0031i45o3pm228ew/</link>
             <category>podman</category>
             <category>ubuntu</category>
+            <category>배포</category>
             <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
             <description>
                 ubuntu 20.10 이하 버전에서 podman 설치하기 배포기준 AWS EC2 Ubuntu 20.04 LTS 에 설치하였다. 1. 쿠빅 리포지토리 추가 1sudo sh -c &amp;quot;echo &amp;#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&amp;#x27; &amp;gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&amp;quot;  입력하고 ...

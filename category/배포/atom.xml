@@ -4,15 +4,24 @@
     <title>Coding Coconut • Posts by &#34;배포&#34; category</title>
     <link href="https://coding-coconut.com" />
     <updated>2023-05-19T07:18:52.000Z</updated>
-    <category term="certbot" />
+    <category term="cluster" />
     <category term="docker" />
+    <category term="podman" />
+    <category term="pm2" />
+    <category term="ubuntu" />
+    <category term="selenium" />
+    <category term="chrome" />
+    <category term="web_crawling" />
+    <category term="문제해결" />
+    <category term="이슈" />
+    <category term="error" />
+    <category term="certbot" />
     <category term="hexo" />
+    <category term="aws" />
+    <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="error" />
-    <category term="aws" />
-    <category term="배포" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
@@ -23,24 +32,19 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
-    <category term="pm2" />
-    <category term="문제" />
-    <category term="이슈" />
-    <category term="podman" />
-    <category term="cluster" />
-    <category term="ubuntu" />
-    <category term="dontstarve" />
-    <category term="modding" />
     <category term="스크랩" />
     <category term="잡담" />
+    <category term="dontstarve" />
+    <category term="modding" />
+    <category term="문제" />
     <category term="비동기" />
     <category term="asyncawait" />
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/clhu8ccp9000vb05odi7xa05t/</id>
+        <id>https://coding-coconut.com/post/cluwf5cih002zi45o7hdxe8kg/</id>
         <title>podman 컨테이너 내부 pm2 강제 종료 현상</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/clhu8ccp9000vb05odi7xa05t/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/cluwf5cih002zi45o7hdxe8kg/"/>
         <content type="html">&lt;p&gt;podman 컨테이너가 자꾸 강제 종료되길래 컨테이너를 재가동하고 로그를 찍어봤다.&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 컨테이너 가동&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman start [컨테이너 명]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 가동중인 컨테이너 확인&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman ps&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 컨테이너 내부의 로그를 확인&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; [컨테이너 명]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
@@ -57,11 +61,11 @@
 &lt;/ul&gt;
 &lt;p&gt;해당 내역때문에 lamdba의 헤비한 로직을 비동기로 처리하고, 응답을 먼저 돌려주는 방식으로 바꾸었다.&lt;/p&gt;
 </content>
-        <category term="pm2" />
-        <category term="문제" />
-        <category term="이슈" />
-        <category term="podman" />
         <category term="cluster" />
+        <category term="podman" />
+        <category term="pm2" />
+        <category term="이슈" />
+        <category term="문제" />
         <updated>2023-05-19T07:18:52.000Z</updated>
     </entry>
 </feed>

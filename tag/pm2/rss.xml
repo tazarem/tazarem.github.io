@@ -5,17 +5,26 @@
         <link>https://coding-coconut.com</link>
         <description>주니어 웹 프론트엔드/백엔드 개발자. \n  공부하는 것도, 노는 것도 그만큼 좋아합니다. \n 현 직장에서는 AWS Lambda 와 Typscript 를 접목한 서드파티 모듈 개발을 하고 있습니다.</description>
         <language>ko</language>
-        <pubDate>Fri, 19 May 2023 16:18:52 +0900</pubDate>
-        <lastBuildDate>Fri, 19 May 2023 16:18:52 +0900</lastBuildDate>
-        <category>certbot</category>
+        <pubDate>Fri, 12 Apr 2024 17:16:08 +0900</pubDate>
+        <lastBuildDate>Fri, 12 Apr 2024 17:16:08 +0900</lastBuildDate>
+        <category>cluster</category>
         <category>docker</category>
+        <category>podman</category>
+        <category>pm2</category>
+        <category>ubuntu</category>
+        <category>selenium</category>
+        <category>chrome</category>
+        <category>web_crawling</category>
+        <category>문제해결</category>
+        <category>이슈</category>
+        <category>error</category>
+        <category>certbot</category>
         <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -26,38 +35,53 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
-        <category>문제</category>
-        <category>이슈</category>
-        <category>podman</category>
-        <category>cluster</category>
-        <category>ubuntu</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>스크랩</category>
         <category>잡담</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>문제</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clhu8ccp9000vb05odi7xa05t</guid>
-            <title>podman 컨테이너 내부 pm2 강제 종료 현상</title>
-            <link>https://coding-coconut.com/post/clhu8ccp9000vb05odi7xa05t/</link>
-            <category>pm2</category>
-            <category>문제</category>
-            <category>이슈</category>
-            <category>podman</category>
+            <guid>cluwf5chz0001i45o83d69cuw</guid>
+            <title>Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</title>
+            <link>https://coding-coconut.com/post/cluwf5chz0001i45o83d69cuw/</link>
             <category>cluster</category>
+            <category>docker</category>
+            <category>podman</category>
+            <category>pm2</category>
+            <category>ubuntu</category>
+            <category>selenium</category>
+            <category>chrome</category>
+            <category>web_crawling</category>
+            <category>문제해결</category>
+            <category>이슈</category>
+            <category>error</category>
+            <pubDate>Fri, 12 Apr 2024 17:16:08 +0900</pubDate>
+            <description>
+                이전에 selenium 프로젝트를 했다고 안일했었는지 크롤링 프로젝트를 만들고 배포하자마자 오류가 났다. 1Timed out receiving message from renderer: 600.000 원인이 뭔지 도통 모르겠어서 이것저것 찾아봤는데 결국 해결하긴 했음. 오류 고치는 과정 1234567891011121314151617181920212223242526272829303132333435363738394041Ubuntu 20.04 LTSPodman Container Build프로젝트 이미지 생성용 DockerfileFROM s...
+            </description>
+        </item>
+        <item>
+            <guid>cluwf5cih002zi45o7hdxe8kg</guid>
+            <title>podman 컨테이너 내부 pm2 강제 종료 현상</title>
+            <link>https://coding-coconut.com/post/cluwf5cih002zi45o7hdxe8kg/</link>
+            <category>cluster</category>
+            <category>podman</category>
+            <category>pm2</category>
+            <category>이슈</category>
+            <category>문제</category>
             <pubDate>Fri, 19 May 2023 16:18:52 +0900</pubDate>
             <description>
                 podman 컨테이너가 자꾸 강제 종료되길래 컨테이너를 재가동하고 로그를 찍어봤다. 12345678# 컨테이너 가동podman start [컨테이너 명]# 가동중인 컨테이너 확인podman ps# 컨테이너 내부의 로그를 확인podman log [컨테이너 명]   콘솔 확인 결과, 아래의 스택오버플로우 포스트처럼 pm2에서 코드 0 으로 종료된다는 문구가 출력됐다. https://stackoverflow.com/questions/58947629/node-js-pm2-log-app-server0-exited-with-code-0-via...
             </description>
         </item>
         <item>
-            <guid>clhu8ccp9000tb05ohtmz78ha</guid>
+            <guid>cluwf5cii0038i45o74gm8imo</guid>
             <title>pm2와 클러스터화</title>
-            <link>https://coding-coconut.com/post/clhu8ccp9000tb05ohtmz78ha/</link>
+            <link>https://coding-coconut.com/post/cluwf5cii0038i45o74gm8imo/</link>
             <category>pm2</category>
             <pubDate>Fri, 20 May 2022 16:51:12 +0900</pubDate>
             <description>

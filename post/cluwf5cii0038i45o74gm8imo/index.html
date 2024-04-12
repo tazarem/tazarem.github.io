@@ -1,0 +1,351 @@
+<html lang="ko">
+    <!-- head -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      Coding Coconut
+    </title>
+    <!-- 스크립트들 쓰기~ -->
+    <link rel="alternate" type="application/rss+xml" title="Coding Coconut" href="https://coding-coconut.com/rss.xml" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/icon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/libs/fontawesome5/all.css">
+    <link rel="stylesheet" href="/css/nanumgothic_coding.css">
+    <link rel="stylesheet" href="/css/nanumsquare_round.css">
+    
+    <link rel="stylesheet" href="/css/generic.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/widget.css">
+    <link rel="stylesheet" href="/css/prologue.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/archives.css">
+    <link rel="stylesheet" href="/css/guest.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/tracker.js"></script>
+    <script src="/js/imgoverlay.js"></script>
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4CP2SXC8S"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          let tracking_id = 'G-G4CP2SXC8S'
+          gtag('config', tracking_id);
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="/css/searcher.css">
+      <script src="/js/search.js"></script>
+      <script type="text/javascript">      
+        var search_path = "search.json";
+        if (search_path.length == 0) {
+          search_path = "search.json";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      </script>
+   
+
+   <link rel="stylesheet" href="/css/mobile.css">
+   <link rel="stylesheet" href="/css/hide.css">
+
+   <script src="/js/attacher.js"></script>
+
+   <script>
+    $(function(){
+        draw_tracker()
+    })
+   </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <!-- head -->
+    <body class="scroll">
+    <div class="header-wrap">
+    <div class="header">
+        <div class="mobile-logo" >
+            <!-- Coding Coconut -->
+
+            <div class="header-btn" onclick="toTheTop()">
+                <i class="fas fa-level-up-alt"
+                ></i>
+            </div>
+            
+                <div class="header-btn" id="searchToggler" onclick="toggleSearcher(this)">
+                    <i class="fas fa-search"></i>
+                </div>
+            
+        </div>
+        <div class="menus">
+            
+                <a href="/prologue" class="header-btn ">
+                    <i class="header-icon fas fa-user-astronaut"></i>
+                    <div class="header-name">Prologue
+                    </div>
+                </a>
+            
+                <a href="/" class="header-btn ">
+                    <i class="header-icon fas fa-satellite"></i>
+                    <div class="header-name">Blog
+                    </div>
+                </a>
+            
+                <a href="/archives" class="header-btn ">
+                    <i class="header-icon fas fa-meteor"></i>
+                    <div class="header-name">Archives
+                    </div>
+                </a>
+            
+                <a href="/guest" class="header-btn ">
+                    <i class="header-icon fas fa-rocket"></i>
+                    <div class="header-name">Guest
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+    
+    <div class="header-display">
+        <!-- 슬라이더나 위젯 넣어도 되고.. 헤더 이미지 넣어도 됨 -->
+        <div class="header-title-zone" onclick="goToMain()">
+            <div class="blog-title">
+                Coding Coconut
+            </div>
+            <div class="blog-subtitle">
+                개발 블로그
+            </div>
+        </div>
+    </div>
+    
+        <!-- 검색 위젯 -->
+
+<div class="search-widget">
+    <div class="form-group">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" 
+        id="local-search-input" 
+        name="q" results="0"
+        placeholder="Search Posts"
+        class="st-search-input st-default-search-input form-control"
+        />
+    </div>  
+    <div id="local-search-result"></div>
+</div>
+
+    
+</div>
+
+
+    <div class="contents">
+        
+
+    <!-- 단일 게시물 -->
+    <div class="post">
+    <!-- 토픽 트래커. 작성할 것-->
+<div class="left-widget">
+        <div class="left-component category">
+    <div class="title">
+        <i class="fas fa-bookmark"></i>
+        Category
+    </div>
+    <div class="category-zone">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AWS/">AWS</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AWS/EC2/">EC2</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/">CI/CD</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/Docker/">Docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Express/">Express</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Hexo/">Hexo</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/%EC%B7%A8%EB%AF%B8-%EB%AA%A8%EB%94%A9/">취미&모딩</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EB%B0%B0%ED%8F%AC/">배포</a><span class="category-list-count">1</span></li></ul>
+    </div>
+</div>
+
+        
+    <div class="left-component topic-tracker">
+        <div class="title">
+            <i class="fas fa-thumbtack"></i>
+            Topic Tracker
+        </div>
+        <div class="track-list scroll">
+    
+        </div>
+    </div>
+
+    
+        <div class="left-component tags">
+    <div class="title">
+        <i class="fas fa-tags"></i>
+        Tags</div>
+    <div class="tag-zone scroll">
+        <a href="/tags/apache/" style="font-size: 10px; color: #d17def">apache</a> <a href="/tags/asyncawait/" style="font-size: 10px; color: #d17def">asyncawait</a> <a href="/tags/aws/" style="font-size: 10px; color: #d17def">aws</a> <a href="/tags/bash/" style="font-size: 10px; color: #d17def">bash</a> <a href="/tags/certbot/" style="font-size: 12.5px; color: #ba7fe9">certbot</a> <a href="/tags/chrome/" style="font-size: 10px; color: #d17def">chrome</a> <a href="/tags/cluster/" style="font-size: 12.5px; color: #ba7fe9">cluster</a> <a href="/tags/cmd/" style="font-size: 10px; color: #d17def">cmd</a> <a href="/tags/custom-domain/" style="font-size: 10px; color: #d17def">custom_domain</a> <a href="/tags/dns/" style="font-size: 10px; color: #d17def">dns</a> <a href="/tags/docker/" style="font-size: 12.5px; color: #ba7fe9">docker</a> <a href="/tags/domain/" style="font-size: 10px; color: #d17def">domain</a> <a href="/tags/dontstarve/" style="font-size: 10px; color: #d17def">dontstarve</a> <a href="/tags/error/" style="font-size: 12.5px; color: #ba7fe9">error</a> <a href="/tags/github-page/" style="font-size: 12.5px; color: #ba7fe9">github_page</a> <a href="/tags/hexo/" style="font-size: 20px; color: #7685d8">hexo</a> <a href="/tags/hexo-deploy/" style="font-size: 10px; color: #d17def">hexo_deploy</a> <a href="/tags/https/" style="font-size: 10px; color: #d17def">https</a> <a href="/tags/issue/" style="font-size: 10px; color: #d17def">issue</a> <a href="/tags/modding/" style="font-size: 10px; color: #d17def">modding</a> <a href="/tags/pm2/" style="font-size: 15px; color: #a481e4">pm2</a> <a href="/tags/podman/" style="font-size: 15px; color: #a481e4">podman</a> <a href="/tags/postman/" style="font-size: 10px; color: #d17def">postman</a> <a href="/tags/selenium/" style="font-size: 10px; color: #d17def">selenium</a> <a href="/tags/ssh/" style="font-size: 10px; color: #d17def">ssh</a> <a href="/tags/terminal/" style="font-size: 10px; color: #d17def">terminal</a> <a href="/tags/ubuntu/" style="font-size: 12.5px; color: #ba7fe9">ubuntu</a> <a href="/tags/web-crawling/" style="font-size: 10px; color: #d17def">web_crawling</a> <a href="/tags/%EB%AC%B8%EC%A0%9C/" style="font-size: 10px; color: #d17def">문제</a> <a href="/tags/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/" style="font-size: 10px; color: #d17def">문제해결</a> <a href="/tags/%EB%B0%B0%ED%8F%AC/" style="font-size: 17.5px; color: #8d83de">배포</a> <a href="/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/" style="font-size: 10px; color: #d17def">비동기</a> <a href="/tags/%EC%86%8D%EB%8F%84-%EA%B0%9C%EC%84%A0/" style="font-size: 10px; color: #d17def">속도 개선</a> <a href="/tags/%EC%8A%A4%ED%81%AC%EB%9E%A9/" style="font-size: 10px; color: #d17def">스크랩</a> <a href="/tags/%EC%9D%B4%EC%8A%88/" style="font-size: 12.5px; color: #ba7fe9">이슈</a> <a href="/tags/%EC%9D%B8%EC%A6%9D%EC%84%9C/" style="font-size: 10px; color: #d17def">인증서</a> <a href="/tags/%EC%9E%A1%EB%8B%B4/" style="font-size: 10px; color: #d17def">잡담</a>
+    </div>
+</div>
+
+    <div class="left-component tothetop">
+        <a class="title" onclick="toTheTop()">
+            <i class="fas fa-chevron-up"></i>
+            To the top
+        </a>
+    </div>
+</div>
+
+
+    <div class="right-widget">
+    <!-- 스티커 어태쳐 -->
+
+<div class="right-component sticker-attacher">
+    <div class="title">
+        <i class="fas fa-disease"></i>
+        Stricker Attacher
+    </div>
+    <div class="sticker-list scroll">
+        
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/cocona.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/ggyul.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/pinkwhale.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/sunnysideup.png">
+                </div>
+            
+        
+    </div>
+    <div class="attacher-btn remove"
+    onclick="attacher.toggleDeleteMode(this)">
+        스티커 떼기
+    </div>
+    <div class="attacher-btn deleteAll"
+    onclick="attacher.deleteAllSticker()">
+        이 페이지의 스티커 전부 삭제
+    </div>
+</div>
+
+
+    <div class="right-component recent-post">
+    <div class="title">
+        <i class="fas fa-bolt"></i>
+        Recent Post
+    </div>
+    <div class="post-list">
+        
+              <a href="/post/cluwf5chz0001i45o83d69cuw/">Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</a>
+          
+              <a href="/post/cluwf5cih002zi45o7hdxe8kg/">podman 컨테이너 내부 pm2 강제 종료 현상</a>
+          
+              <a href="/post/cluwf5cih0031i45o3pm228ew/">Ubuntu 20.10 이하 버전에서 podman 설치하기</a>
+          
+              <a href="/post/cluwf5ci20008i45o80yrbu5n/">EC2에 도메인 바인딩하기</a>
+          
+    </div>
+</div>
+    <div class=""></div>
+</div>
+
+
+    <div class="post-header">
+        <div class="post-category">
+            <a class="category-link" href="/categories/javascript/">javascript</a>
+        </div>
+        <div class="post-title">pm2와 클러스터화</div>
+        <div class="post-date">
+            <!-- 작성됨 -->
+            <div class="post-date-write">2022-05-20 16:51:12</div>
+        </div>
+        <div class="post-tag">
+            <a class="tag-none-link" href="/tags/pm2/" rel="tag">pm2</a>
+        </div>
+    </div>
+    <div class="post-content">
+        <h2 id="클러스터화-가동-설정-및-디버깅"><a href="#클러스터화-가동-설정-및-디버깅" class="headerlink" title="클러스터화 가동 설정 및 디버깅"></a>클러스터화 가동 설정 및 디버깅</h2><p>Node.js의 루트 바로 아래에 있는 인덱스 파일들은 package.json 설정 등을 통하면 멀티스레드로 실행할 수 있다.</p>
+<blockquote>
+<p>package.json 파일 설정과 pm2를 이용하여 별개의 프로그램을 클러스터화 가동한다.</p>
+</blockquote>
+<h3 id="1-pm2-npm-모듈-글로벌-옵션으로-깔기-클러스터-작동-확인을-위한-도구"><a href="#1-pm2-npm-모듈-글로벌-옵션으로-깔기-클러스터-작동-확인을-위한-도구" class="headerlink" title="1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구)"></a>1. pm2 npm 모듈 글로벌 옵션으로 깔기(클러스터 작동 확인을 위한 도구)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install pm2 -g</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-클러스터화-파일-작성"><a href="#2-클러스터화-파일-작성" class="headerlink" title="2. 클러스터화 파일 작성"></a>2. 클러스터화 파일 작성</h3><p>  각 클러스터의 dev 실행 명령어 지정 및 클러스터화 시동 명령어 지정(package.json)</p>
+<blockquote>
+<p>package.json 작성 예제. daum/blog/post는 각기 실행할 별개의 index.ts파일이라고 보면 됨.</p>
+</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;:&#123;</span><br><span class="line">    &quot;start:cluster&quot;: &quot;pm2-runtime pm2.config.js&quot;,</span><br><span class="line">    &quot;dev:post&quot;: &quot;nodemon --legacy-watch --watch ./ --exec &#x27;npx&#x27; ts-node -r tsconfig-paths/register ./src/post.ts&quot;,</span><br><span class="line">    &quot;dev:blog&quot;: &quot;nodemon --legacy-watch --watch ./ --exec &#x27;npx&#x27; ts-node -r tsconfig-paths/register ./src/blog.ts&quot;,</span><br><span class="line">    &quot;dev:daum&quot;: &quot;nodemon --legacy-watch --watch ./ --exec &#x27;npx&#x27; ts-node -r tsconfig-paths/register ./src/daum.ts&quot;,</span><br><span class="line">    &quot;dev&quot;: &quot;npm run dev:blog &amp; npm run dev:daum &amp; npm run dev:post&quot;,</span><br><span class="line">    &quot;build&quot;: &quot;tsc -p tsconfig.json &amp;&amp; tsc-alias&quot;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>pm2.config.js 작성 예제. 클러스터화를 할 설정파일들을 지정한다. 인스턴스 갯수만큼 생성이 됨.</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports=&#123;</span><br><span class="line">    apps:[</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;post&quot;</span>, <span class="attr">script</span>: <span class="string">&quot;./dist/post.js&quot;</span>, <span class="attr">instances</span>: <span class="number">1</span>, <span class="attr">exec_mode</span>: <span class="string">&quot;cluster&quot;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;blog&quot;</span>, <span class="attr">script</span>: <span class="string">&quot;./dist/blog.js&quot;</span>, <span class="attr">instances</span>: <span class="number">1</span>, <span class="attr">exec_mode</span>: <span class="string">&quot;cluster&quot;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">name</span>: <span class="string">&quot;daum&quot;</span>, <span class="attr">script</span>: <span class="string">&quot;./dist/daum.js&quot;</span>, <span class="attr">instances</span>: <span class="number">1</span>, <span class="attr">exec_mode</span>: <span class="string">&quot;cluster&quot;</span> &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-빌드하기"><a href="#3-빌드하기" class="headerlink" title="3. 빌드하기"></a>3. 빌드하기</h3><blockquote>
+<p>타입스크립트 파일들이 js로 빌드된다.</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-클러스터-가동"><a href="#4-클러스터-가동" class="headerlink" title="4. 클러스터 가동"></a>4. 클러스터 가동</h3><blockquote>
+<p>package.json에서 선제 명령어 설정을 해줘야 함</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run start:cluster</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-이후-디버깅은-pm2-에서-할-수-있음"><a href="#5-이후-디버깅은-pm2-에서-할-수-있음" class="headerlink" title="5. 이후 디버깅은 pm2 에서 할 수 있음"></a>5. 이후 디버깅은 pm2 에서 할 수 있음</h3><blockquote>
+<p>가동되고 있는 클러스터 확인</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 list</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>클러스터 상세내역 확인(방향키로 조정)</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 monit</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>클러스터 가동 취소</p>
+</blockquote>
+<p>npm run start:cluster 명령어를 쳤던 커맨드창 ctrl+c </p>
+<p>이렇게 취소하면 pm2 list 했을 때 생성되었던 클러스터들이 사라진 것을 볼 수 있다.</p>
+
+    </div>
+    
+    
+        <div class="reply">
+                
+        <script src="https://utteranc.es/client.js"
+        repo="tazarem/tazarem.github.io"
+        issue-term="post/cluwf5cii0038i45o74gm8imo/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    
+        </div>
+    
+</div>
+
+
+
+    </div>
+    <div class="overlay hide">
+    <div class="img-zone">
+        <div class="title"></div>
+        <div class="content"></div>
+    </div>
+    <!-- <div class="btn-banner">
+        <div class="btn close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="btn img-closer">
+            <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="btn img-wider">
+            <i class="fas fa-search-minus"></i>
+        </div>
+    </div> -->
+</div>
+    <div class="footer">
+    <div class="footer-contents">
+        <div>Copyright 2021 코딩코코넛 All rights reserved.</div>
+        <div>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></div>
+    </div>
+</div>
+    </body>
+</html>

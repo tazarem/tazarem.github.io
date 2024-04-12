@@ -7,15 +7,24 @@
         <language>ko</language>
         <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
         <lastBuildDate>Wed, 26 Apr 2023 17:25:10 +0900</lastBuildDate>
-        <category>certbot</category>
+        <category>cluster</category>
         <category>docker</category>
+        <category>podman</category>
+        <category>pm2</category>
+        <category>ubuntu</category>
+        <category>selenium</category>
+        <category>chrome</category>
+        <category>web_crawling</category>
+        <category>문제해결</category>
+        <category>이슈</category>
+        <category>error</category>
+        <category>certbot</category>
         <category>hexo</category>
+        <category>aws</category>
+        <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>error</category>
-        <category>aws</category>
-        <category>배포</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
@@ -26,36 +35,31 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>pm2</category>
-        <category>문제</category>
-        <category>이슈</category>
-        <category>podman</category>
-        <category>cluster</category>
-        <category>ubuntu</category>
-        <category>dontstarve</category>
-        <category>modding</category>
         <category>스크랩</category>
         <category>잡담</category>
+        <category>dontstarve</category>
+        <category>modding</category>
+        <category>문제</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>clhu8ccp9000xb05o3mrsf1pg</guid>
+            <guid>cluwf5cih0031i45o3pm228ew</guid>
             <title>Ubuntu 20.10 이하 버전에서 podman 설치하기</title>
-            <link>https://coding-coconut.com/post/clhu8ccp9000xb05o3mrsf1pg/</link>
-            <category>배포</category>
+            <link>https://coding-coconut.com/post/cluwf5cih0031i45o3pm228ew/</link>
             <category>podman</category>
             <category>ubuntu</category>
+            <category>배포</category>
             <pubDate>Wed, 26 Apr 2023 17:25:10 +0900</pubDate>
             <description>
                 ubuntu 20.10 이하 버전에서 podman 설치하기 배포기준 AWS EC2 Ubuntu 20.04 LTS 에 설치하였다. 1. 쿠빅 리포지토리 추가 1sudo sh -c &amp;quot;echo &amp;#x27;deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /&amp;#x27; &amp;gt; /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list&amp;quot;  입력하고 ...
             </description>
         </item>
         <item>
-            <guid>clhu8ccp60009b05o8kc146oa</guid>
+            <guid>cluwf5ci20008i45o80yrbu5n</guid>
             <title>EC2에 도메인 바인딩하기</title>
-            <link>https://coding-coconut.com/post/clhu8ccp60009b05o8kc146oa/</link>
+            <link>https://coding-coconut.com/post/cluwf5ci20008i45o80yrbu5n/</link>
             <category>aws</category>
             <category>배포</category>
             <pubDate>Wed, 19 Apr 2023 11:41:06 +0900</pubDate>
@@ -64,9 +68,9 @@
             </description>
         </item>
         <item>
-            <guid>clhu8ccp8000mb05o8sirdxxj</guid>
+            <guid>cluwf5cig002qi45oh7y2cb3d</guid>
             <title>Linux 서버에서 https 인증과 Apache2 프록시패스 설정하기</title>
-            <link>https://coding-coconut.com/post/clhu8ccp8000mb05o8sirdxxj/</link>
+            <link>https://coding-coconut.com/post/cluwf5cig002qi45oh7y2cb3d/</link>
             <category>certbot</category>
             <category>배포</category>
             <category>https</category>
@@ -78,12 +82,12 @@
             </description>
         </item>
         <item>
-            <guid>clhu8ccp7000db05o1xmdbvrb</guid>
+            <guid>cluwf5ci6000di45o1stm0oh9</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/clhu8ccp7000db05o1xmdbvrb/</link>
+            <link>https://coding-coconut.com/post/cluwf5ci6000di45o1stm0oh9/</link>
             <category>hexo</category>
-            <category>github_page</category>
             <category>배포</category>
+            <category>github_page</category>
             <category>issue</category>
             <category>custom_domain</category>
             <category>hexo_deploy</category>
