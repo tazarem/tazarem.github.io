@@ -19,38 +19,38 @@
         <category>이슈</category>
         <category>error</category>
         <category>certbot</category>
-        <category>hexo</category>
         <category>aws</category>
         <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
+        <category>hexo</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
-        <category>https</category>
-        <category>인증서</category>
-        <category>apache</category>
         <category>ssh</category>
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
-        <category>스크랩</category>
-        <category>잡담</category>
+        <category>https</category>
+        <category>인증서</category>
+        <category>apache</category>
+        <category>문제</category>
         <category>dontstarve</category>
         <category>modding</category>
-        <category>문제</category>
+        <category>스크랩</category>
+        <category>잡담</category>
         <category>비동기</category>
         <category>asyncawait</category>
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>cluwf5ci6000di45o1stm0oh9</guid>
+            <guid>cluwfj5n9000dwc5ocza98o5q</guid>
             <title>Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈</title>
-            <link>https://coding-coconut.com/post/cluwf5ci6000di45o1stm0oh9/</link>
-            <category>hexo</category>
+            <link>https://coding-coconut.com/post/cluwfj5n9000dwc5ocza98o5q/</link>
             <category>배포</category>
             <category>github_page</category>
+            <category>hexo</category>
             <category>issue</category>
             <category>custom_domain</category>
             <category>hexo_deploy</category>

@@ -5,15 +5,15 @@
     "home_page_url": "https://coding-coconut.com",
     "items": [
         {
-            "id": "https://coding-coconut.com/post/cluwf5ci6000di45o1stm0oh9/",
-            "url": "https://coding-coconut.com/post/cluwf5ci6000di45o1stm0oh9/",
+            "id": "https://coding-coconut.com/post/cluwfj5n9000dwc5ocza98o5q/",
+            "url": "https://coding-coconut.com/post/cluwfj5n9000dwc5ocza98o5q/",
             "title": "Hexo 배포 커맨드와 커스텀 도메인에 관한 이슈",
             "date_published": "2022-07-28T00:56:12.000Z",
             "content_html": "<h3 id=\"문제점\"><a href=\"#문제점\" class=\"headerlink\" title=\"문제점\"></a>문제점</h3><p> 기존 도메인에서 블로그 전용 도메인을 구매하고, 깃허브 페이지에 연결해 놓았었는데<br>Hexo로 만든 블로그 프로젝트에서 <code>hexo deploy</code> 커맨드를 이용해 배포하면<br>깃허브 페이지의 퍼블리싱된 커스텀 도메인이 초기화가 되는 이슈가 발생했다.</p>\n<h3 id=\"해결\"><a href=\"#해결\" class=\"headerlink\" title=\"해결\"></a>해결</h3><p>이를 해결하려면 hexo 의 블로그 프로젝트 source 폴더에<br>CNAME 파일을 생성하고, 안에 퍼블리싱할 커스텀 도메인을 입력한다.</p>\n<p><img src=\"/img/postimg/cname_file.png\" alt=\"cname_file\"></p>\n<p>이후 <code>hexo deploy</code> 커맨드를 입력하여 배포해도 깃허브 페이지의 커스텀 도메인이 해제되지 않는다.</p>\n",
             "tags": [
-                "hexo",
                 "배포",
                 "github_page",
+                "hexo",
                 "issue",
                 "custom_domain",
                 "hexo_deploy"
