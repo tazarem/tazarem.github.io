@@ -4,7 +4,6 @@
     <title>Coding Coconut • Posts by &#34;selenium&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2024-04-12T08:16:08.000Z</updated>
-    <category term="certbot" />
     <category term="cluster" />
     <category term="docker" />
     <category term="podman" />
@@ -16,16 +15,16 @@
     <category term="문제해결" />
     <category term="이슈" />
     <category term="error" />
+    <category term="hexo" />
     <category term="aws" />
     <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="hexo" />
+    <category term="certbot" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
-    <category term="문제" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -33,6 +32,7 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="문제" />
     <category term="스크랩" />
     <category term="dontstarve" />
     <category term="modding" />
@@ -42,9 +42,9 @@
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cluwfwnx300032j5oa1gu6ehj/</id>
+        <id>https://coding-coconut.com/post/clv4m958b00016m5o06sj0ojx/</id>
         <title>Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnx300032j5oa1gu6ehj/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clv4m958b00016m5o06sj0ojx/"/>
         <content type="html">&lt;p&gt;이전에 selenium 프로젝트를 했다고 안일했었는지 크롤링 프로젝트를 만들고 배포하자마자 오류가 났다.&lt;/p&gt;
 &lt;figure class=&#34;highlight sh&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Timed out receiving message from renderer: 600.000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;원인이 뭔지 도통 모르겠어서 이것저것 찾아봤는데 결국 해결하긴 했음.&lt;/p&gt;

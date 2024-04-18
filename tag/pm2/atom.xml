@@ -4,7 +4,6 @@
     <title>Coding Coconut • Posts by &#34;pm2&#34; tag</title>
     <link href="https://coding-coconut.com" />
     <updated>2024-04-12T08:16:08.000Z</updated>
-    <category term="certbot" />
     <category term="cluster" />
     <category term="docker" />
     <category term="podman" />
@@ -16,16 +15,16 @@
     <category term="문제해결" />
     <category term="이슈" />
     <category term="error" />
+    <category term="hexo" />
     <category term="aws" />
     <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="hexo" />
+    <category term="certbot" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
-    <category term="문제" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -33,6 +32,7 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="문제" />
     <category term="스크랩" />
     <category term="dontstarve" />
     <category term="modding" />
@@ -42,9 +42,9 @@
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cluwfwnx300032j5oa1gu6ehj/</id>
+        <id>https://coding-coconut.com/post/clv4m958b00016m5o06sj0ojx/</id>
         <title>Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnx300032j5oa1gu6ehj/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clv4m958b00016m5o06sj0ojx/"/>
         <content type="html">&lt;p&gt;이전에 selenium 프로젝트를 했다고 안일했었는지 크롤링 프로젝트를 만들고 배포하자마자 오류가 났다.&lt;/p&gt;
 &lt;figure class=&#34;highlight sh&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Timed out receiving message from renderer: 600.000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;원인이 뭔지 도통 모르겠어서 이것저것 찾아봤는데 결국 해결하긴 했음.&lt;/p&gt;
@@ -69,9 +69,9 @@
         <updated>2024-04-12T08:16:08.000Z</updated>
     </entry>
     <entry>
-        <id>https://coding-coconut.com/post/cluwfwnxa000n2j5o2juma63x/</id>
+        <id>https://coding-coconut.com/post/clv4m958o003e6m5ocm702nys/</id>
         <title>podman 컨테이너 내부 pm2 강제 종료 현상</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnxa000n2j5o2juma63x/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clv4m958o003e6m5ocm702nys/"/>
         <content type="html">&lt;p&gt;podman 컨테이너가 자꾸 강제 종료되길래 컨테이너를 재가동하고 로그를 찍어봤다.&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 컨테이너 가동&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman start [컨테이너 명]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 가동중인 컨테이너 확인&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman ps&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 컨테이너 내부의 로그를 확인&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;podman &lt;span class=&#34;built_in&#34;&gt;log&lt;/span&gt; [컨테이너 명]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 
@@ -96,9 +96,9 @@
         <updated>2023-05-19T07:18:52.000Z</updated>
     </entry>
     <entry>
-        <id>https://coding-coconut.com/post/cluwfwnxm00402j5o3x324yvm/</id>
+        <id>https://coding-coconut.com/post/clv4m958h000o6m5o7d2y86sc/</id>
         <title>pm2와 클러스터화</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnxm00402j5o3x324yvm/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clv4m958h000o6m5o7d2y86sc/"/>
         <content type="html">&lt;h2 id=&#34;클러스터화-가동-설정-및-디버깅&#34;&gt;&lt;a href=&#34;#클러스터화-가동-설정-및-디버깅&#34; class=&#34;headerlink&#34; title=&#34;클러스터화 가동 설정 및 디버깅&#34;&gt;&lt;/a&gt;클러스터화 가동 설정 및 디버깅&lt;/h2&gt;&lt;p&gt;Node.js의 루트 바로 아래에 있는 인덱스 파일들은 package.json 설정 등을 통하면 멀티스레드로 실행할 수 있다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;package.json 파일 설정과 pm2를 이용하여 별개의 프로그램을 클러스터화 가동한다.&lt;/p&gt;

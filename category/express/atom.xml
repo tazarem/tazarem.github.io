@@ -4,7 +4,6 @@
     <title>Coding Coconut • Posts by &#34;express&#34; category</title>
     <link href="https://coding-coconut.com" />
     <updated>2021-08-12T23:55:12.000Z</updated>
-    <category term="certbot" />
     <category term="cluster" />
     <category term="docker" />
     <category term="podman" />
@@ -16,16 +15,16 @@
     <category term="문제해결" />
     <category term="이슈" />
     <category term="error" />
+    <category term="hexo" />
     <category term="aws" />
     <category term="배포" />
     <category term="dns" />
     <category term="github_page" />
     <category term="domain" />
-    <category term="hexo" />
+    <category term="certbot" />
     <category term="issue" />
     <category term="custom_domain" />
     <category term="hexo_deploy" />
-    <category term="문제" />
     <category term="https" />
     <category term="인증서" />
     <category term="apache" />
@@ -33,6 +32,7 @@
     <category term="terminal" />
     <category term="cmd" />
     <category term="bash" />
+    <category term="문제" />
     <category term="스크랩" />
     <category term="dontstarve" />
     <category term="modding" />
@@ -42,9 +42,9 @@
     <category term="postman" />
     <category term="속도 개선" />
     <entry>
-        <id>https://coding-coconut.com/post/cluwfwnwz00012j5og2zfap83/</id>
+        <id>https://coding-coconut.com/post/clv4m958f00096m5o49753jlh/</id>
         <title>Certbot으로 https 서브도메인 등록하기</title>
-        <link rel="alternate" href="https://coding-coconut.com/post/cluwfwnwz00012j5og2zfap83/"/>
+        <link rel="alternate" href="https://coding-coconut.com/post/clv4m958f00096m5o49753jlh/"/>
         <content type="html">&lt;p&gt;시행착오가 좀 많았다.&lt;/p&gt;
 &lt;p&gt;회사서 홈페이지를 새로 구축했다. 구축하는 김에 구식이었던 정적 호스팅을 버리고.. 서버도 올릴 수 있도록 요즘 클라우드 호스팅으로 갈아탔다!&lt;/p&gt;
 &lt;p&gt;AWS EC2처럼 가상컴퓨터지만.. 클라우드라서 훨씬 가격이 저렴하다.  (사실 써본 입장으로써 AWS는 좀 깡패라는 생각이 든다 가격 측정상…ㅡ,.ㅡ)&lt;/p&gt;

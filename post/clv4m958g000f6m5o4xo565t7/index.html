@@ -1,0 +1,329 @@
+<html lang="ko">
+    <!-- head -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>
+      Coding Coconut
+    </title>
+    <!-- 스크립트들 쓰기~ -->
+    <link rel="alternate" type="application/rss+xml" title="Coding Coconut" href="https://coding-coconut.com/rss.xml" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/icon/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/libs/fontawesome5/all.css">
+    <link rel="stylesheet" href="/css/nanumgothic_coding.css">
+    <link rel="stylesheet" href="/css/nanumsquare_round.css">
+    
+    <link rel="stylesheet" href="/css/generic.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/widget.css">
+    <link rel="stylesheet" href="/css/prologue.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/archives.css">
+    <link rel="stylesheet" href="/css/guest.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/tracker.js"></script>
+    <script src="/js/imgoverlay.js"></script>
+
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4CP2SXC8S"></script>
+      <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          let tracking_id = 'G-G4CP2SXC8S'
+          gtag('config', tracking_id);
+      </script>
+    
+
+    
+      <link rel="stylesheet" href="/css/searcher.css">
+      <script src="/js/search.js"></script>
+      <script type="text/javascript">      
+        var search_path = "search.json";
+        if (search_path.length == 0) {
+          search_path = "search.json";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      </script>
+   
+
+   <link rel="stylesheet" href="/css/mobile.css">
+   <link rel="stylesheet" href="/css/hide.css">
+
+   <script src="/js/attacher.js"></script>
+
+   <script>
+    $(function(){
+        draw_tracker()
+    })
+   </script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+    <!-- head -->
+    <body class="scroll">
+    <div class="header-wrap">
+    <div class="header">
+        <div class="mobile-logo" >
+            <!-- Coding Coconut -->
+
+            <div class="header-btn" onclick="toTheTop()">
+                <i class="fas fa-level-up-alt"
+                ></i>
+            </div>
+            
+                <div class="header-btn" id="searchToggler" onclick="toggleSearcher(this)">
+                    <i class="fas fa-search"></i>
+                </div>
+            
+        </div>
+        <div class="menus">
+            
+                <a href="/prologue" class="header-btn ">
+                    <i class="header-icon fas fa-user-astronaut"></i>
+                    <div class="header-name">Prologue
+                    </div>
+                </a>
+            
+                <a href="/" class="header-btn ">
+                    <i class="header-icon fas fa-satellite"></i>
+                    <div class="header-name">Blog
+                    </div>
+                </a>
+            
+                <a href="/archives" class="header-btn ">
+                    <i class="header-icon fas fa-meteor"></i>
+                    <div class="header-name">Archives
+                    </div>
+                </a>
+            
+                <a href="/guest" class="header-btn ">
+                    <i class="header-icon fas fa-rocket"></i>
+                    <div class="header-name">Guest
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+    
+    <div class="header-display">
+        <!-- 슬라이더나 위젯 넣어도 되고.. 헤더 이미지 넣어도 됨 -->
+        <div class="header-title-zone" onclick="goToMain()">
+            <div class="blog-title">
+                Coding Coconut
+            </div>
+            <div class="blog-subtitle">
+                개발 블로그
+            </div>
+        </div>
+    </div>
+    
+        <!-- 검색 위젯 -->
+
+<div class="search-widget">
+    <div class="form-group">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" 
+        id="local-search-input" 
+        name="q" results="0"
+        placeholder="Search Posts"
+        class="st-search-input st-default-search-input form-control"
+        />
+    </div>  
+    <div id="local-search-result"></div>
+</div>
+
+    
+</div>
+
+
+    <div class="contents">
+        
+
+    <!-- 단일 게시물 -->
+    <div class="post">
+    <!-- 토픽 트래커. 작성할 것-->
+<div class="left-widget">
+        <div class="left-component category">
+    <div class="title">
+        <i class="fas fa-bookmark"></i>
+        Category
+    </div>
+    <div class="category-zone">
+        <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/AWS/">AWS</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/AWS/EC2/">EC2</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/">CI/CD</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/CI-CD/Docker/">Docker</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/">Framework</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Express/">Express</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Framework/Hexo/">Hexo</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/">기타</a><span class="category-list-count">4</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%EA%B8%B0%ED%83%80/%EC%B7%A8%EB%AF%B8-%EB%AA%A8%EB%94%A9/">취미&모딩</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%EB%B0%B0%ED%8F%AC/">배포</a><span class="category-list-count">1</span></li></ul>
+    </div>
+</div>
+
+        
+    <div class="left-component topic-tracker">
+        <div class="title">
+            <i class="fas fa-thumbtack"></i>
+            Topic Tracker
+        </div>
+        <div class="track-list scroll">
+    
+        </div>
+    </div>
+
+    
+        <div class="left-component tags">
+    <div class="title">
+        <i class="fas fa-tags"></i>
+        Tags</div>
+    <div class="tag-zone scroll">
+        <a href="/tags/apache/" style="font-size: 10px; color: #d17def">apache</a> <a href="/tags/asyncawait/" style="font-size: 10px; color: #d17def">asyncawait</a> <a href="/tags/aws/" style="font-size: 10px; color: #d17def">aws</a> <a href="/tags/bash/" style="font-size: 10px; color: #d17def">bash</a> <a href="/tags/certbot/" style="font-size: 12px; color: #bf7fea">certbot</a> <a href="/tags/chrome/" style="font-size: 10px; color: #d17def">chrome</a> <a href="/tags/cluster/" style="font-size: 12px; color: #bf7fea">cluster</a> <a href="/tags/cmd/" style="font-size: 10px; color: #d17def">cmd</a> <a href="/tags/custom-domain/" style="font-size: 10px; color: #d17def">custom_domain</a> <a href="/tags/dns/" style="font-size: 10px; color: #d17def">dns</a> <a href="/tags/docker/" style="font-size: 12px; color: #bf7fea">docker</a> <a href="/tags/domain/" style="font-size: 10px; color: #d17def">domain</a> <a href="/tags/dontstarve/" style="font-size: 10px; color: #d17def">dontstarve</a> <a href="/tags/error/" style="font-size: 12px; color: #bf7fea">error</a> <a href="/tags/github-page/" style="font-size: 12px; color: #bf7fea">github_page</a> <a href="/tags/hexo/" style="font-size: 20px; color: #7685d8">hexo</a> <a href="/tags/hexo-deploy/" style="font-size: 10px; color: #d17def">hexo_deploy</a> <a href="/tags/https/" style="font-size: 10px; color: #d17def">https</a> <a href="/tags/issue/" style="font-size: 10px; color: #d17def">issue</a> <a href="/tags/modding/" style="font-size: 10px; color: #d17def">modding</a> <a href="/tags/pm2/" style="font-size: 14px; color: #ad80e6">pm2</a> <a href="/tags/podman/" style="font-size: 16px; color: #9a82e1">podman</a> <a href="/tags/postman/" style="font-size: 10px; color: #d17def">postman</a> <a href="/tags/selenium/" style="font-size: 10px; color: #d17def">selenium</a> <a href="/tags/ssh/" style="font-size: 10px; color: #d17def">ssh</a> <a href="/tags/terminal/" style="font-size: 10px; color: #d17def">terminal</a> <a href="/tags/ubuntu/" style="font-size: 14px; color: #ad80e6">ubuntu</a> <a href="/tags/web-crawling/" style="font-size: 10px; color: #d17def">web_crawling</a> <a href="/tags/%EB%AC%B8%EC%A0%9C/" style="font-size: 10px; color: #d17def">문제</a> <a href="/tags/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0/" style="font-size: 10px; color: #d17def">문제해결</a> <a href="/tags/%EB%B0%B0%ED%8F%AC/" style="font-size: 18px; color: #8883dd">배포</a> <a href="/tags/%EB%B9%84%EB%8F%99%EA%B8%B0/" style="font-size: 10px; color: #d17def">비동기</a> <a href="/tags/%EC%86%8D%EB%8F%84-%EA%B0%9C%EC%84%A0/" style="font-size: 10px; color: #d17def">속도 개선</a> <a href="/tags/%EC%8A%A4%ED%81%AC%EB%9E%A9/" style="font-size: 10px; color: #d17def">스크랩</a> <a href="/tags/%EC%9D%B4%EC%8A%88/" style="font-size: 12px; color: #bf7fea">이슈</a> <a href="/tags/%EC%9D%B8%EC%A6%9D%EC%84%9C/" style="font-size: 10px; color: #d17def">인증서</a> <a href="/tags/%EC%9E%A1%EB%8B%B4/" style="font-size: 10px; color: #d17def">잡담</a>
+    </div>
+</div>
+
+    <div class="left-component tothetop">
+        <a class="title" onclick="toTheTop()">
+            <i class="fas fa-chevron-up"></i>
+            To the top
+        </a>
+    </div>
+</div>
+
+
+    <div class="right-widget">
+    <!-- 스티커 어태쳐 -->
+
+<div class="right-component sticker-attacher">
+    <div class="title">
+        <i class="fas fa-disease"></i>
+        Stricker Attacher
+    </div>
+    <div class="sticker-list scroll">
+        
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/cocona.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/ggyul.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/pinkwhale.png">
+                </div>
+            
+                <div class="sticker-thumb">
+                    <img src="/sticker/sunnysideup.png">
+                </div>
+            
+        
+    </div>
+    <div class="attacher-btn remove"
+    onclick="attacher.toggleDeleteMode(this)">
+        스티커 떼기
+    </div>
+    <div class="attacher-btn deleteAll"
+    onclick="attacher.deleteAllSticker()">
+        이 페이지의 스티커 전부 삭제
+    </div>
+</div>
+
+
+    <div class="right-component recent-post">
+    <div class="title">
+        <i class="fas fa-bolt"></i>
+        Recent Post
+    </div>
+    <div class="post-list">
+        
+              <a href="/post/clv4m958p003k6m5ohyl772jj/">ubuntu 22버전에서 podman 설치하기</a>
+          
+              <a href="/post/clv4m958b00016m5o06sj0ojx/">Docker 또는 Podman Container에서의 Selenium 웹 크롤링 Timed out 오류</a>
+          
+              <a href="/post/clv4m958o003e6m5ocm702nys/">podman 컨테이너 내부 pm2 강제 종료 현상</a>
+          
+              <a href="/post/clv4m958o003f6m5o4ifu9yvp/">Ubuntu 20.10 이하 버전에서 podman 설치하기</a>
+          
+    </div>
+</div>
+    <div class=""></div>
+</div>
+
+
+    <div class="post-header">
+        <div class="post-category">
+            <a class="category-link" href="/categories/Framework/">Framework</a>  >  <a class="category-link" href="/categories/Framework/Hexo/">Hexo</a>
+        </div>
+        <div class="post-title">Hexo 테마 블로그 적용기</div>
+        <div class="post-date">
+            <!-- 작성됨 -->
+            <div class="post-date-write">2021-02-09 12:19:02</div>
+        </div>
+        <div class="post-tag">
+            <a class="tag-none-link" href="/tags/hexo/" rel="tag">hexo</a>
+        </div>
+    </div>
+    <div class="post-content">
+        <p>블로그의 첫 게시물은 도커가 장식했지만, 그래도 명색이 헥소로 기껏 만든 블로그인데 적용기를 써보자~<br>다른 블로그를 봐도 헥소 테마 레이아웃을 만드는 방법은 잘 나와있지 않아서, 이왕 하는 김에 테마 만드는 법도 같이 기술하련다.<br>헥소 프레임워크를 좀 만져봤는데, 작동원리는 쪼끔 알겠고 헥소 기반 테마 만드는법을 모르는 사람에게 추천한다. 헥소 공식 사이트에도 만드는 방법이 어렴풋하게나마 나와있으니 참조해도 좋다(그리 자세히 나와있진 않지만..)</p>
+<h3 id="1-레이아웃-폴더-만들기"><a href="#1-레이아웃-폴더-만들기" class="headerlink" title="1. 레이아웃 폴더 만들기"></a>1. 레이아웃 폴더 만들기</h3><p>우선… 블로그 폴더 구조는 다음과 같다.</p>
+<p><img src="/img/postimg/blog_structure.png" alt="blog_structure"></p>
+<p>먼저  프로젝트 루트 폴더에 themes 폴더를 만들고, 내부에 자기가 만들 테마의 이름을 짓자.<br>이 안에 블로그 틀이 들어갈 📁layout 폴더와 img/js/font처럼 정적 소스들이 들어갈 📁source 폴더를 만든다.<br>블로그 테마에 적용시킬 변수들을 모아 관리하는 <code>_config.yml</code>파일도 만든다.</p>
+<h3 id="3-렌더링할-템플릿-엔진-선택"><a href="#3-렌더링할-템플릿-엔진-선택" class="headerlink" title="3. 렌더링할 템플릿 엔진 선택"></a>3. 렌더링할 템플릿 엔진 선택</h3><p>필자는 Express를 사용해와서.. 상대적으로 익숙한 ejs로 작성할 것이다.<br>블로그의 전체 레이아웃을 담당하는 <code>layout.ejs</code> 파일을 📁layout 폴더 안에 만들어준다.<br>이 <code>layout.ejs</code> 파일이 블로그의 뼈대 역할을 해줄 것이다.</p>
+<h3 id="4-부분-렌더링-파츠별로-작성"><a href="#4-부분-렌더링-파츠별로-작성" class="headerlink" title="4. 부분 렌더링 파츠별로 작성"></a>4. 부분 렌더링 파츠별로 작성</h3><p>📁layout 폴더 안에 각 부분별 파츠가 들어갈📁_partial 폴더를 만들어주고, <code>layout.ejs</code> 파일을 한번 보자.</p>
+<h3 id="5-레이아웃-변수를-담당할-config-yml-파일-작성"><a href="#5-레이아웃-변수를-담당할-config-yml-파일-작성" class="headerlink" title="5. 레이아웃 변수를 담당할 _config.yml 파일 작성"></a>5. 레이아웃 변수를 담당할 _config.yml 파일 작성</h3><p>ejs 문법 속에 동적으로 들어갈 변수들을 yml 로 작성한다.</p>
+<h3 id="6-부가적인-것"><a href="#6-부가적인-것" class="headerlink" title="6. 부가적인 것"></a>6. 부가적인 것</h3><blockquote>
+<p>서버 통신이 필요한 무언가를 만들고 싶다.. 가령 댓글이라거나..</p>
+</blockquote>
+<p>Hexo가 직접 댓글서비스를 지원하진 않지만, 관련 플러그인을 지원한다.<br>댓글을 붙이고 싶다면, 상세한 커스터마이징 없이 <a target="_blank" rel="noopener" href="https://utteranc.es/">Utterances</a>나 <a target="_blank" rel="noopener" href="https://help.disqus.com/en/">Disqus</a>처럼 댓글 위젯을 서비스받는 방법도 있다. Hexo 에서 직접 추천하는 방법이며, 공식 메뉴얼도 있다!</p>
+<p>직접 만들고 싶다면, 아쉽게도 Hexo는 정적 서비스를 중점적으로 빠르게 작성하기 위한 프레임워크이기 때문에, 서버통신이 필요한 무언가를 작성할 때 그렇게 용이하지는 않다. 이렇게 되면.. 정적 소스 폴더 안의 js로 직접 서버 API로 ajax를 날리는 방법을 택해야💦..</p>
+<p>이럴 바에야 차라리 서버사이드 렌더링(SSR) 방식으로 만드는 게 더 낫지 않은가 고민해보길 바란다. </p>
+<p>그래도 Hexo 블로그에 서버 API를 이용하는 덧글 위젯을 직접 만들고 싶다면… <a href="#">[링크]:Hexo 와 API 서버 간의 통신</a></p>
+<blockquote>
+<p>iframe 으로 위젯 만들기?</p>
+</blockquote>
+<p>iframe 내부에 들어갈 위젯이 고정 높이폭과 너비를 가진다면 가능하다!<br>혹은 position: absolute; 로 동동 떠 있으면 iframe으로 위젯을 만들어도 좋다.</p>
+
+    </div>
+    
+    
+        <div class="reply">
+                
+        <script src="https://utteranc.es/client.js"
+        repo="tazarem/tazarem.github.io"
+        issue-term="post/clv4m958g000f6m5o4xo565t7/"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+        </script>
+    
+        </div>
+    
+</div>
+
+
+
+    </div>
+    <div class="overlay hide">
+    <div class="img-zone">
+        <div class="title"></div>
+        <div class="content"></div>
+    </div>
+    <!-- <div class="btn-banner">
+        <div class="btn close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="btn img-closer">
+            <i class="fas fa-search-plus"></i>
+        </div>
+        <div class="btn img-wider">
+            <i class="fas fa-search-minus"></i>
+        </div>
+    </div> -->
+</div>
+    <div class="footer">
+    <div class="footer-contents">
+        <div>Copyright 2021 코딩코코넛 All rights reserved.</div>
+        <div>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></div>
+    </div>
+</div>
+    </body>
+</html>

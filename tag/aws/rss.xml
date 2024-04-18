@@ -7,7 +7,6 @@
         <language>ko</language>
         <pubDate>Wed, 19 Apr 2023 11:41:06 +0900</pubDate>
         <lastBuildDate>Wed, 19 Apr 2023 11:41:06 +0900</lastBuildDate>
-        <category>certbot</category>
         <category>cluster</category>
         <category>docker</category>
         <category>podman</category>
@@ -19,16 +18,16 @@
         <category>문제해결</category>
         <category>이슈</category>
         <category>error</category>
+        <category>hexo</category>
         <category>aws</category>
         <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
+        <category>certbot</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
-        <category>문제</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -36,6 +35,7 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>문제</category>
         <category>스크랩</category>
         <category>dontstarve</category>
         <category>modding</category>
@@ -45,9 +45,9 @@
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>cluwfwnx500072j5obk9fhr74</guid>
+            <guid>clv4m958e00066m5o0okl3zml</guid>
             <title>EC2에 도메인 바인딩하기</title>
-            <link>https://coding-coconut.com/post/cluwfwnx500072j5obk9fhr74/</link>
+            <link>https://coding-coconut.com/post/clv4m958e00066m5o0okl3zml/</link>
             <category>aws</category>
             <category>배포</category>
             <pubDate>Wed, 19 Apr 2023 11:41:06 +0900</pubDate>

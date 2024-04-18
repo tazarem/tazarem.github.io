@@ -7,7 +7,6 @@
         <language>ko</language>
         <pubDate>Sun, 15 Jan 2023 16:19:15 +0900</pubDate>
         <lastBuildDate>Sun, 15 Jan 2023 16:19:15 +0900</lastBuildDate>
-        <category>certbot</category>
         <category>cluster</category>
         <category>docker</category>
         <category>podman</category>
@@ -19,16 +18,16 @@
         <category>문제해결</category>
         <category>이슈</category>
         <category>error</category>
+        <category>hexo</category>
         <category>aws</category>
         <category>배포</category>
         <category>dns</category>
         <category>github_page</category>
         <category>domain</category>
-        <category>hexo</category>
+        <category>certbot</category>
         <category>issue</category>
         <category>custom_domain</category>
         <category>hexo_deploy</category>
-        <category>문제</category>
         <category>https</category>
         <category>인증서</category>
         <category>apache</category>
@@ -36,6 +35,7 @@
         <category>terminal</category>
         <category>cmd</category>
         <category>bash</category>
+        <category>문제</category>
         <category>스크랩</category>
         <category>dontstarve</category>
         <category>modding</category>
@@ -45,9 +45,9 @@
         <category>postman</category>
         <category>속도 개선</category>
         <item>
-            <guid>cluwfwnxl003s2j5o5p5lb5rg</guid>
+            <guid>clv4m958p003m6m5o1esgerfv</guid>
             <title>굶지마 캐릭터 모드 만드는 과정 정리</title>
-            <link>https://coding-coconut.com/post/cluwfwnxl003s2j5o5p5lb5rg/</link>
+            <link>https://coding-coconut.com/post/clv4m958p003m6m5o1esgerfv/</link>
             <category>dontstarve</category>
             <category>modding</category>
             <pubDate>Sun, 15 Jan 2023 16:19:15 +0900</pubDate>
@@ -56,9 +56,9 @@
             </description>
         </item>
         <item>
-            <guid>cluwfwnx500082j5ofw4m4nmy</guid>
+            <guid>clv4m958e00086m5of8044yza</guid>
             <title>Github Page에 커스텀 도메인 연결하기</title>
-            <link>https://coding-coconut.com/post/cluwfwnx500082j5ofw4m4nmy/</link>
+            <link>https://coding-coconut.com/post/clv4m958e00086m5of8044yza/</link>
             <category>dns</category>
             <category>github_page</category>
             <category>domain</category>
@@ -68,9 +68,9 @@
             </description>
         </item>
         <item>
-            <guid>cluwfwnxm003v2j5o0tfz88dw</guid>
+            <guid>clv4m958p003q6m5ognjk3wy7</guid>
             <title>블로그 새단장</title>
-            <link>https://coding-coconut.com/post/cluwfwnxm003v2j5o0tfz88dw/</link>
+            <link>https://coding-coconut.com/post/clv4m958p003q6m5ognjk3wy7/</link>
             <category>잡담</category>
             <pubDate>Fri, 21 Jan 2022 16:40:37 +0900</pubDate>
             <description>
@@ -78,9 +78,9 @@
             </description>
         </item>
         <item>
-            <guid>cluwfwnxc000u2j5o8eq8d10m</guid>
+            <guid>clv4m958o003i6m5oescf2427</guid>
             <title>링크 스크랩 및 참고자료</title>
-            <link>https://coding-coconut.com/post/cluwfwnxc000u2j5o8eq8d10m/</link>
+            <link>https://coding-coconut.com/post/clv4m958o003i6m5oescf2427/</link>
             <category>스크랩</category>
             <pubDate>Fri, 17 Sep 2021 09:30:08 +0900</pubDate>
             <description>
