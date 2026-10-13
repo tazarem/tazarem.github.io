@@ -220,7 +220,7 @@ width: 10rem;
 .overlay .btn-banner{
     display: flex;
     flex-direction: column;
-    height: -webkit-fill-available;
+    align-self: stretch;
 }
 .overlay .btn-banner .btn{
     width: 5rem;

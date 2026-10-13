@@ -23,8 +23,8 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
+    /* 높이·너비는 flex가 알아서 채움. (height: -webkit-fill-available 은 아이폰에서 탑바를 화면 높이만큼 늘려 버림) */
+    align-self: stretch;
     font-size: 1.15rem;
     align-items: center;
 }
