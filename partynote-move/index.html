@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>파티노트 이사 도우미</title>
+    <style>
+        :root { --bg: #FFCDD2; --surface: #FFF5F6; --text: #3A1F26; --sub: #8A5A66; --accent: #FF8FAB; }
+        * { box-sizing: border-box; }
+        body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, 'Apple SD Gothic Neo', sans-serif; line-height: 1.6; word-break: keep-all; }
+        .card { width: 100%; max-width: 380px; background: var(--surface); border-radius: 16px; padding: 24px 20px; text-align: center; box-shadow: 0 2px 12px #0000001a; }
+        .icon { font-size: 40px; }
+        h1 { margin: 8px 0 12px; font-size: 1.15rem; }
+        p { margin: 0 0 10px; font-size: .92rem; }
+        .sub { color: var(--sub); font-size: .82rem; }
+        a.btn { display: inline-block; margin-top: 8px; padding: 9px 18px; border-radius: 999px; background: var(--accent); color: var(--text); font-weight: 600; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">🚚</div>
+        <h1>파티노트 이사 도우미</h1>
+        <div class="status"><p>준비하는 중…</p></div>
+    </div>
+    <script>
+    // 파티노트가 coding-coconut.com/partynote → party-note.com 으로 이사했어요.
+    // 브라우저 저장소는 주소(사이트)별이라, 이 주소(coding-coconut.com)에 남은 글·책·설정을 읽어서
+    // 이 창을 연 새 파티노트(party-note.com)에게만 보냅니다. (다른 사이트로는 보내지 않음)
+    // 원본: _blog/source/partynote-move/index.html · 받는 쪽: partynote/js/move.js
+    (function () {
+        var NEW_ORIGIN = 'https://party-note.com'
+        var NEW_URL = 'https://party-note.com/'
+        var DB_NAME = 'partynote_v1'
+        var status = document.querySelector('.status')
+        function show(html) { status.innerHTML = html }
+
+        if (!window.opener) {
+            show('<p>새 파티노트에서 <b>메뉴 → 백업 → 옛 주소에서 글 가져오기</b>를 누르면 이 창이 열리면서 글이 옮겨져요.</p><a class="btn" href="' + NEW_URL + '">새 파티노트 열기</a>')
+            return
+        }
+
+        function send(message) {
+            window.opener.postMessage(Object.assign({ type: 'partynote-move' }, message), NEW_ORIGIN)
+        }
+
+        function readAll(db, store) {
+            return new Promise(function (res, rej) {
+                var req = db.transaction(store, 'readonly').objectStore(store).getAll()
+                req.onsuccess = function () { res(req.result || []) }
+                req.onerror = function () { rej(req.error) }
+            })
+        }
+
+        // 파티노트 백업 파일과 같은 모양 (기기마다 번호가 달라서 서로를 가리키는 값은 uid로)
+        function payloadOf(books, memos) {
+            var bookUid = {}, memoUid = {}
+            books.forEach(function (b) { bookUid[b.id] = b.uid })
+            memos.forEach(function (m) { memoUid[m.id] = m.uid })
+            return {
+                app: 'partynote',
+                version: 'move',
+                exported_at: new Date().toISOString(),
+                books: books.map(function (b) {
+                    var o = Object.assign({}, b); delete o.id; delete o.bookmark_id
+                    o.bookmark_uid = memoUid[b.bookmark_id] || ''
+                    return o
+                }),
+                memos: memos.map(function (m) {
+                    var o = Object.assign({}, m); delete o.id; delete o.book_id
+                    o.book_uid = bookUid[m.book_id] || ''
+                    return o
+                }),
+            }
+        }
+
+        function config() {
+            try { return JSON.parse(localStorage.getItem('ptnt_config') || 'null') } catch (e) { return null }
+        }
+
+        // 받았다는 답이 오면 끝
+        window.addEventListener('message', function (e) {
+            if (e.origin !== NEW_ORIGIN || !e.data || e.data.type !== 'partynote-move-received') return
+            show('<p><b>다 옮겼어요!</b></p><p class="sub">새 파티노트에서 합칠지 물어보면 \'합치기\'를 눌러 주세요. 이 창은 곧 닫혀요.</p>')
+            setTimeout(function () { window.close() }, 2500)
+        })
+
+        // 저장소가 없으면 새로 만들지 않고 '글 없음'으로 (열기만 해도 빈 저장소가 생기므로 먼저 목록 확인)
+        var check = indexedDB.databases ? indexedDB.databases() : Promise.resolve(null)
+        check.then(function (list) {
+            if (list && !list.some(function (d) { return d.name === DB_NAME })) {
+                show('<p>이 브라우저의 옛 주소에는 파티노트 글이 없어요.</p><p class="sub">예전에 다른 브라우저나 기기에서 썼다면, 그 브라우저에서 새 파티노트를 열고 다시 해 주세요.</p>')
+                send({ empty: true })
+                return
+            }
+            var open = indexedDB.open(DB_NAME)
+            open.onerror = function () { show('<p>옛 글을 읽지 못했어요. 잠시 뒤 다시 해 주세요.</p>') }
+            open.onsuccess = function () {
+                var db = open.result
+                if (!db.objectStoreNames.contains('memo') || !db.objectStoreNames.contains('book')) {
+                    show('<p>이 브라우저의 옛 주소에는 파티노트 글이 없어요.</p>')
+                    send({ empty: true })
+                    return
+                }
+                Promise.all([readAll(db, 'book'), readAll(db, 'memo')]).then(function (r) {
+                    // 휴지통에 있는 것은 옮기지 않음
+                    var books = r[0].filter(function (b) { return !b.deleted_at })
+                    var memos = r[1].filter(function (m) { return !m.deleted_at })
+                    if (!books.length && !memos.length) {
+                        show('<p>이 브라우저의 옛 주소에는 파티노트 글이 없어요.</p>')
+                        send({ empty: true })
+                        return
+                    }
+                    show('<p>메모 ' + memos.length + '개, 책 ' + books.length + '권을 새 파티노트로 보내는 중…</p>')
+                    send({ payload: payloadOf(books, memos), config: config() })
+                }, function () {
+                    show('<p>옛 글을 읽지 못했어요. 잠시 뒤 다시 해 주세요.</p>')
+                })
+            }
+        })
+    })()
+    </script>
+</body>
+</html>
